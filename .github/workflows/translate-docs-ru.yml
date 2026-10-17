@@ -38,7 +38,7 @@ jobs:
         id: api
         shell: bash
         env:
-          OPENAI_API_KEY: \${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           if [[ -z "$OPENAI_API_KEY" ]]; then
             echo "configured=false" >> "$GITHUB_OUTPUT"
@@ -75,12 +75,12 @@ jobs:
         if: steps.api.outputs.configured == 'true'
         shell: bash
         env:
-          OPENAI_API_KEY: \${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: \${{ vars.DOCS_TRANSLATION_MODEL }}
-          EVENT_NAME: \${{ github.event_name }}
-          BASE_SHA: \${{ github.event.before }}
-          SOURCE_SHA: \${{ github.sha }}
-          FORCE_ALL: \${{ inputs.force }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.DOCS_TRANSLATION_MODEL }}
+          EVENT_NAME: ${{ github.event_name }}
+          BASE_SHA: ${{ github.event.before }}
+          SOURCE_SHA: ${{ github.sha }}
+          FORCE_ALL: ${{ inputs.force }}
         run: |
           set -euo pipefail
 
@@ -95,7 +95,7 @@ jobs:
             args+=(--base "$BASE_SHA" --head "$SOURCE_SHA")
           fi
 
-          python Tools/i18n/translate_markdown.py "\${args[@]}"
+          python Tools/i18n/translate_markdown.py "${args[@]}"
 
       - name: Commit and push generated translations
         if: steps.api.outputs.configured == 'true'
@@ -126,7 +126,7 @@ jobs:
         if: steps.api.outputs.configured == 'true' && steps.publish.outputs.has_changes == 'true'
         shell: bash
         env:
-          GH_TOKEN: \${{ github.token }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
 
