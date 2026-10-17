@@ -87,7 +87,10 @@ Do not make the whole game brown/gray. The contrast between healthy living color
 - timber/log construction first in rural spaces;
 - strong roof silhouettes;
 - fences, barns, sheds, granaries, workshops and utility structures matter as much as hero buildings;
-- settlements should feel grown from daily work and landscape rather than laid out as fantasy theme parks.
+- settlements should feel grown from daily work and landscape rather than laid out as fantasy theme parks;
+- **settlement topography matters:** villages and permanent farmsteads should normally occupy comparatively dry, elevated ground, ridges, terraces or gentle rises near forest, rivers, meadows and wetlands rather than sit directly inside boggy terrain;
+- the wet lowlands between settlement and bog/river should more often carry hay meadows, grazing, seasonal pasture, paths, livestock access, floodplain use and small field/work areas;
+- marsh/bog should remain a nearby ecological and supernatural presence, not the default foundation under village houses.
 
 ### Supernatural
 Supernatural forms can break ordinary shape rules, but should still feel derived from:
@@ -348,7 +351,22 @@ Seasonal work should reuse geometry and assets where possible while visibly chan
 
 ## Initial region direction
 
-The first region is based on an Upper Berezina / Berezinsky-reserve-like forest-marsh landscape:
+The first region is based on an Upper Berezina / Berezinsky-reserve-like forest-marsh landscape.
+
+### Settlement-to-wetland spatial grammar
+
+Use a clear topographic gradient where appropriate:
+
+**dry/elevated ground**
+-> village / khutor / permanent buildings / gardens
+-> fields and working yards
+-> meadow / hayfield / pasture / livestock routes
+-> wet meadow / floodplain / sedge and reed edge
+-> marsh / bog / open water / ritual wilderness.
+
+This is not a rigid map template, but it should be the default ecological logic. Permanent dwellings should not appear casually built in standing marsh water unless there is a specific exceptional historical or narrative reason.
+
+Landscape vocabulary:
 - mixed forest;
 - bog and peatland;
 - river headwaters;
