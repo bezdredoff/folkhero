@@ -34,31 +34,25 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Check translation API configuration
-        id: api
-        shell: bash
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: |
-          if [[ -z "$OPENAI_API_KEY" ]]; then
-            echo "configured=false" >> "$GITHUB_OUTPUT"
-            echo "::warning::OPENAI_API_KEY is not configured. Add it in Settings > Secrets and variables > Actions, then run this workflow manually."
-          else
-            echo "configured=true" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Set up Python
-        if: steps.api.outputs.configured == 'true'
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
-      - name: Install translator dependency
-        if: steps.api.outputs.configured == 'true'
-        run: python -m pip install --disable-pip-version-check openai
+      - name: Cache translation model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: docs-translation-${{ runner.os }}-helsinki-en-ru-v1
+
+      - name: Install local translation dependencies
+        run: |
+          python -m pip install --disable-pip-version-check \
+            "transformers<5" \
+            sentencepiece \
+            torch
 
       - name: Prepare persistent translation branch
-        if: steps.api.outputs.configured == 'true'
         shell: bash
         run: |
           git fetch origin main
@@ -71,12 +65,10 @@ jobs:
             git checkout -B automation/docs-ru origin/main
           fi
 
-      - name: Translate changed documentation
-        if: steps.api.outputs.configured == 'true'
+      - name: Translate documentation
         shell: bash
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.DOCS_TRANSLATION_MODEL }}
+          DOCS_TRANSLATION_MODEL: ${{ vars.DOCS_TRANSLATION_MODEL }}
           EVENT_NAME: ${{ github.event_name }}
           BASE_SHA: ${{ github.event.before }}
           SOURCE_SHA: ${{ github.sha }}
@@ -86,7 +78,10 @@ jobs:
 
           args=()
 
-          if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
+          if [[ ! -d ru/Docs ]]; then
+            echo "Russian mirror is not initialized; translating all canonical docs."
+            args+=(--all)
+          elif [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
             args+=(--all)
             if [[ "$FORCE_ALL" == "true" ]]; then
               args+=(--force)
@@ -98,7 +93,6 @@ jobs:
           python Tools/i18n/translate_markdown.py "${args[@]}"
 
       - name: Commit and push generated translations
-        if: steps.api.outputs.configured == 'true'
         id: publish
         shell: bash
         run: |
@@ -123,7 +117,7 @@ jobs:
           echo "has_changes=true" >> "$GITHUB_OUTPUT"
 
       - name: Open or update translation pull request
-        if: steps.api.outputs.configured == 'true' && steps.publish.outputs.has_changes == 'true'
+        if: steps.publish.outputs.has_changes == 'true'
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
@@ -146,6 +140,6 @@ jobs:
             --base main \
             --head automation/docs-ru \
             --title "docs(i18n): sync Russian translations" \
-            --body "Automated Russian mirror of the canonical README.md and Docs/**/*.md files. Generated files live under /ru and should not be edited manually."; then
-            echo "::warning::Translations were pushed to automation/docs-ru, but GitHub Actions could not create the PR. If repository policy blocks PR creation, enable it under Settings > Actions > General > Workflow permissions, or open the PR manually."
+            --body "Automated Russian mirror of canonical README.md and Docs/**/*.md. Generated with the local Helsinki-NLP/opus-mt-en-ru model on GitHub Actions; no paid translation API is used."; then
+            echo "::warning::Translations were pushed to automation/docs-ru, but GitHub Actions could not create the PR. Enable pull-request creation under Settings > Actions > General > Workflow permissions, or open the PR manually."
           fi
