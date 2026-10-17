@@ -78,15 +78,25 @@ Architecture references from later open-air museums may be used for construction
 
 ## Landscape integration
 
-Village should feel embedded in the Upper Berezina ecology:
-- forest edge;
-- wet meadow;
-- small fields;
-- drainage/wet ground;
-- river/spring access;
-- bog nearby;
-- muddy seasonal routes;
-- winter snow and spring flood variants.
+The village should feel embedded in the Upper Berezina ecology **without being built directly in the bog**.
+
+Default spatial relationship:
+- village / khutor on dry raised ground, a gentle hill, terrace or ridge;
+- forest edge or mixed woodland close to the settlement;
+- household gardens, yards and small fields around the buildings;
+- lower ground used for meadow, haymaking and seasonal pasture;
+- horses, cattle and sheep may occupy the low meadow zone;
+- wet meadow and floodplain beyond;
+- bog/marsh edge, reeds, sedge, open water and peatland farther out;
+- river/spring access where appropriate;
+- muddy seasonal roads may cross the low ground, but houses should not casually stand in permanent waterlogged soil;
+- winter snow and spring flood variants should visibly alter the lowland zone before threatening the elevated village.
+
+A useful visual-section rule is:
+
+**settlement on rise -> fields/yards -> hay meadow/pasture -> wet meadow -> marsh/bog/water.**
+
+This separation is important both for geographic believability and for gameplay readability: the player can understand when they are leaving human-managed land and entering liminal/supernatural wetland.
 
 ## Religion
 
@@ -117,6 +127,8 @@ When generating exploratory concepts:
 - show groups, not a single heroic model;
 - include at least one work activity;
 - include ordinary built environment;
+- place permanent houses on visibly drier/elevated ground;
+- show the marsh as adjacent lower terrain, with meadow/hayfield/pasture between village and true bog;
 - keep magic absent in the first pass;
 - use realistic proportions;
 - use late-16th-century regional material culture as the design anchor;
