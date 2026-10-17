@@ -1,5 +1,7 @@
 # Folkhero
 
+**Languages:** English (canonical) · [Русский](./ru/README.md)
+
 **Folkhero** is a story-driven cooperative systemic action RPG / hack-and-slash inspired by Belarusian and wider Slavic folklore, set in an alternate-history late Grand Duchy of Lithuania / early Polish–Lithuanian Commonwealth world.
 
 The project is designed for a very small human team working with AI agents. The goal is not to compensate for team size by generating large amounts of disposable content. The goal is to build a reusable **content factory**: data-driven gameplay systems, modular procedural regions, repeatable asset pipelines, specialized AI agents, automated QA, and strong human approval gates.
@@ -33,6 +35,7 @@ See:
 - [Decision Log](./Docs/Production/Decision_Log.md)
 - [Early Access and Long-Term Support](./Docs/LiveOps/Early_Access_and_Live_Service.md)
 - [AI Production System](./Docs/Production/AI_Production_System.md)
+- [Documentation Translation](./Docs/Production/Documentation_Translation.md)
 
 ## Product direction
 
