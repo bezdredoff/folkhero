@@ -38,6 +38,8 @@ When documents disagree:
 - record the conflict;
 - request human direction if it changes product scope.
 
+Russian documentation under `ru/` is an automatically generated mirror for human readers. Never treat `ru/` as a source of truth and do not edit generated translations directly.
+
 ## Current phase
 
 Pre-production, milestone **PP-01: Production Foundation**.
