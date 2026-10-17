@@ -1,231 +1,342 @@
 # Production Roadmap
 
-Status: v0.1.
+Status: v0.2.
 
 ## Development principle
 
 Each phase removes a different risk.
 
-The sequence is:
+The project should prove the **game factory** before scaling content.
+
+Sequence:
 
 Vision Lock
 -> AI Production Foundation
--> Gameplay Risk Prototypes
+-> Gameplay + Network Risk Prototypes
 -> System Grammar
--> Content Production Pipeline
+-> Procedural Region / Content Pipeline
 -> Production Playgrounds
 -> Vertical Slice
--> MVP / Alpha
+-> MVP / Closed Alpha
 -> Early Access
--> Live Service.
+-> Full Campaign Growth
+-> Expansions / Long-Term Support.
 
 ## Phase 0 — Vision Lock
 
+### Purpose
+Make sure two independent agents reading the repository describe approximately the same product.
+
+### Locked direction
+- story-driven systemic action RPG / hack-and-slash;
+- persistent progression, not roguelite run resets;
+- Warrior + Vedun initial classes;
+- systemic status/surface/weather combat;
+- ornament affinity build system;
+- 3 regions / 5 acts for the first full campaign;
+- host-based campaign co-op;
+- PC-first, mobile-aware;
+- premium buy-to-play;
+- one-region Act I Early Access launch target.
+
+### Remaining work
+- approved art references;
+- exact networking technology;
+- exact first enemy roster;
+- detailed Act I quest scripting;
+- numeric balance.
+
+## Phase 1 — PP-01: Production Foundation
+
 Prove:
-- we can explain the game;
-- core pillars are coherent;
-- run structure is understood;
-- platform and multiplayer assumptions are explicit.
+- agents have reliable source-of-truth documents;
+- Unity can be edited/tested through a closed loop;
+- core combat primitives are reusable;
+- networking can support the committed 2-player slice;
+- successful workflows can be captured as skills.
 
 Deliverables:
-- Game Vision;
-- Game Bible;
-- initial System Bible;
-- open-decision list.
+- AGENTS.md and source-of-truth docs;
+- Unity 6 URP initialization;
+- Odin + Feel/MMFeedbacks integration;
+- CombatLab;
+- System/ContentLab;
+- NetworkLab;
+- initial data schemas;
+- CI smoke validation;
+- production metrics.
 
-Exit:
-two independent agents reading the repository should describe approximately the same product.
+## Phase 2 — Gameplay + Network Risk Prototypes
 
-## Phase 1 — AI Production Foundation
-
-Prove:
-- agents have a reliable source of truth;
-- work can be specialized;
-- successful workflows can be captured;
-- implementation can be tested.
-
-Deliverables:
-- AGENTS.md;
-- AI/Roles;
-- AI/Skills;
-- Unity MCP/tool setup;
-- Git workflow;
-- production metrics;
-- PP-01 backlog.
-
-## Phase 2 — Gameplay Risk Prototypes
-
-Create CombatLab with primitive art.
+Use primitive art.
 
 Validate:
 - movement;
-- camera;
-- basic attack;
-- ranged attack;
-- AoE;
-- dodge/dash;
-- damage;
-- death;
-- hit feedback.
+- fixed/limited-rotation camera + zoom;
+- Warrior basic melee;
+- Vedun basic ranged;
+- cooldown skills;
+- smart/manual aiming experiment;
+- health/healing/death;
+- Downed/revive;
+- hit feedback;
+- 2-player host/join;
+- status synchronization;
+- loot/progression ownership semantics.
+
+Do not require production-quality art.
 
 Exit:
-combat feels promising without production art.
+the basic solo + 2-player combat loop is promising and technically credible.
 
 ## Phase 3 — System Grammar
 
 Implement initial reusable primitives.
 
-Ability grammar:
-delivery + effects + modifiers + feedback.
+Required gameplay foundation:
+- Physical;
+- Wet;
+- Fire/Burning;
+- Cold/Frozen;
+- Shock/Lightning;
+- Poison;
+- Curse.
 
-Enemy grammar:
-chassis + movement + role + attack + defense + status + modifier.
+Required reactions:
+- Wet + Cold;
+- Wet + Lightning;
+- Wet + Fire;
+- Wet + Poison;
+- Frozen + heavy impact;
+- Curse overlays.
 
-Interaction grammar:
-small set of status/environment systems that interact.
+Implement:
+- ability grammar;
+- enemy capability grammar;
+- boss-safe status responses;
+- ornament affinity totals/thresholds;
+- one-primary/one-secondary build model;
+- simple Armor + resistances;
+- weather/system modifiers.
 
 Exit:
-multiple abilities/enemies can be authored mainly from existing primitives.
+Warrior and Vedun can create meaningfully different builds mostly from shared primitives.
 
-## Phase 4 — Content Production Pipeline
+## Phase 4 — Procedural Region + Content Pipeline
 
-Benchmark one real folklore enemy end-to-end:
-research -> gameplay role -> concept -> approval -> model -> cleanup -> rig -> animations -> Unity -> behavior -> VFX/SFX -> test -> documentation.
+Build the first-region production grammar.
 
-Then produce related enemy #2 and #3.
+Target:
+Upper Berezina / forest-marsh region.
+
+Prove:
+- authored gameplay modules;
+- rule-based assembly;
+- mandatory quest anchors;
+- repeatable wilderness/dungeon generation;
+- weather/season overlays;
+- GeNa-assisted dressing where useful.
+
+State targets include:
+- baseline/summer;
+- rainy/autumn;
+- winter;
+- flood or another wet extreme.
+
+Not every state must be production-complete before the Vertical Slice, but the architecture must support them.
+
+## Phase 5 — Content Production Benchmarks
+
+Produce one folklore enemy end-to-end:
+research
+-> gameplay role
+-> concept
+-> approval
+-> model/asset
+-> cleanup
+-> rig/animation
+-> Unity
+-> behavior
+-> VFX/SFX
+-> test
+-> documentation.
+
+Then produce related Enemy #2 and Enemy #3.
+
+Track:
+- human time;
+- agent runtime;
+- API/cloud cost;
+- rework;
+- new code;
+- reused primitives;
+- defects.
 
 Exit:
-production time should fall significantly rather than remain flat.
+later related content is materially cheaper/faster to produce.
 
-## Phase 5 — Production Playgrounds
+## Phase 6 — Production Playgrounds
 
-Create:
+Required:
 - CombatLab;
-- ContentLab;
+- Content/SystemLab;
 - AnimationVFXLab;
 - EncounterLab;
+- ProceduralRegionLab;
 - PerformanceLab;
-- optionally NetworkLab.
+- NetworkLab.
 
 Exit:
-common content can be inspected without playing a whole run.
+a human or agent can test one enemy/status/build/weather/network interaction without playing the whole campaign.
 
 # Gate A — Ready for Vertical Slice
 
 Required:
-- enjoyable primitive combat;
-- proven system interactions;
-- content production acceleration;
-- risky technology tested;
-- no core feature depends on a one-off hack.
+- promising primitive combat;
+- 2-player networking proven at core-loop level;
+- core reaction grammar works;
+- ornament thresholds alter builds;
+- weather changes gameplay;
+- procedural region assembly is coherent;
+- content production acceleration is measurable;
+- no core slice feature depends on an unreviewed one-off architecture.
 
 # Vertical Slice
 
-Target:
-- 1 playable hero;
-- 1 biome family;
-- 3 sub-zones/states;
-- 3 weapon families;
-- about 6 base enemy roles;
-- 5–8 elite modifiers;
-- 1 miniboss;
-- 1 boss;
-- about 20 upgrades;
-- 3–4 systemic interactions;
-- 20–30 minute run.
+Target duration: **20–30 minutes**.
+
+Required:
+- Warrior;
+- Vedun;
+- solo;
+- 2-player co-op;
+- basic attack + 2 skills per class;
+- Physical + six core status/system families;
+- at least 3–4 meaningful reactions;
+- ornament affinity thresholds;
+- rain or snow materially changing combat;
+- small procedurally assembled forest/swamp zone;
+- one authored quest anchor;
+- several normal enemies;
+- one elite;
+- one boss using boss-safe reactions;
+- Downed/revive;
+- one familiar community NPC in a mini-hub;
+- reward + ornament swap;
+- meaningful second playthrough with a different build/weather state.
 
 Success:
-- players want another run;
-- another build feels different;
-- additional content has predictable cost;
-- architecture survives content growth.
+- the second run is interesting for systemic reasons;
+- Warrior and Vedun feel distinct;
+- co-op adds interaction rather than only more damage;
+- the architecture survives content growth;
+- additional content has increasingly predictable cost.
 
-# Gate B — Ready for MVP
+# Gate B — Ready for MVP / Closed Alpha
 
 Required:
 - repeat-play intent;
-- meaningful build variety;
-- content uses factories/frameworks;
+- meaningful build differences;
+- stable 2-player co-op foundation;
+- procedural region generation reliable enough for repeated testing;
+- save ownership semantics proven;
 - smoke/regression tests;
 - reproducible builds;
-- agents can complete bounded production tasks and validate them.
+- bounded AI production tasks can be validated with evidence.
 
-# MVP / Alpha
+# MVP / Closed Alpha
+
+Purpose:
+prove a small end-to-end campaign loop inside the first region before public Early Access.
+
+Should include:
+- both classes;
+- persistent level/equipment/ornament progression;
+- hub/community loop;
+- several main/side quests;
+- repeatable wilderness/dungeon farming;
+- weather/season variation;
+- meaningful loot/economy;
+- multiple boss encounters;
+- save migration baseline;
+- telemetry;
+- 2-player co-op.
+
+Exact content counts should be set after Vertical Slice production benchmarks.
+
+# Gate C — Ready for Early Access
+
+Required:
+- stable PC build/release pipeline;
+- first region content factory works;
+- complete Act I narrative;
+- co-op stable enough to be a product promise;
+- save migration;
+- telemetry;
+- performance budgets;
+- progression economy;
+- repeatable farming loop;
+- at least several meaningful weather/season states.
+
+# Early Access Launch
 
 Target:
-- 2 characters/archetypes;
-- 2 biomes;
-- 4–5 weapon families;
-- 12–15 enemy archetypes/variants;
-- 3–4 bosses/minibosses;
-- 40–60 meaningful upgrades;
-- 40–60 minute full run;
-- meta progression;
-- production save system;
-- telemetry;
-- controller support.
+- PC-first premium release;
+- 1 complete region;
+- 1 complete Act I;
+- about 2–3 hours of main story;
+- several additional hours of side content, farming and replay;
+- Warrior + Vedun;
+- co-op from launch;
+- persistent progression;
+- ornaments;
+- core status/reaction system;
+- procedural wilderness/dungeons;
+- seasonal/weather variation;
+- multiple bosses.
 
-If multiplayer is a core promise, 2-player full-run co-op must work here.
+The Early Access launch is sold on depth/reuse of one region, not raw biome count.
 
-# Gate C — Ready for Early Access production
+# Post-EA campaign growth
 
-Required content factories:
-- Ability Factory;
-- Enemy Factory;
-- Encounter Factory;
-- Biome Factory;
-- Loot Factory;
-- VFX library;
-- animation library;
-- AI skills library;
-- automated QA;
-- telemetry;
-- save migration;
-- release pipeline.
+Grow toward the first full campaign target:
+- 3 regions;
+- 5 acts;
+- about 8–10 hours mandatory story;
+- about 12–15 hours typical first playthrough;
+- approximately 10–12 bosses;
+- about 15–20 main quests;
+- systemic consequences across local/regional/campaign horizons.
 
-# Early Access
+Add new regions/acts only when the content factory makes them sustainable.
 
-Approximate launch target:
-- 3 playable characters;
-- 3–4 biome families;
-- around 6 weapon families;
-- 18–24 base enemy types;
-- many effective variants through modifiers;
-- 5–6 bosses;
-- 80–100+ meaningful upgrades;
-- complete meta progression;
-- proven co-op only if stable.
+# Long-term support / expansions
 
-The product should be sold on replayability, not linear campaign hours.
+The project may continue for several years.
 
-# Live Service
+New chapters/expansions should ideally add:
+- a new systemic variable or interaction;
+- new enemy family;
+- new boss;
+- new ornaments/build possibilities;
+- new region/state;
+- new quest/event combinations.
 
-Cadence hypothesis:
-- smaller balance/content patches;
-- approximately 3 major folklore chapters per year.
+Prefer additions that also remix old content.
 
-Each major chapter should add a systemic variable, not only assets.
+Business model:
+- premium base game;
+- substantial paid expansions;
+- optional cosmetics if useful;
+- no sale of power/progression.
 
-Example structure:
-- biome/theme;
-- new gameplay system;
-- enemy family;
-- boss;
-- weapon/ability family;
-- modifiers;
-- encounters.
+## Scope discipline
 
-New systems should modify old content where possible.
-
-# Year 2
-
-Potential expansion areas:
-- new character archetypes;
-- deeper system interactions;
-- world modifiers;
-- boss mutations;
-- endgame;
-- new co-op interactions;
-- remixed old biomes.
-
-The live-service plan must remain sustainable for a very small team.
+Do not expand to:
+- many classes before Warrior + Vedun are proven;
+- many regions before the first region factory works;
+- complex crafting before ornaments work;
+- deep item rarity ladders;
+- large companion-party systems;
+- giant handcrafted cities;
+- networking postponed until late production.

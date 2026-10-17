@@ -1,38 +1,190 @@
 # System Bible
 
-Status: v0.1.
+Status: v0.2.
 
-The purpose of the System Bible is to define the reusable grammar from which gameplay content is assembled.
+The System Bible defines the reusable grammar from which player abilities, enemies, environments, loot and encounters are assembled.
 
 ## Core rule
 
-A new content item should usually be configuration/composition of known primitives.
+A new content item should normally be configuration/composition of known primitives.
 
-New code is justified when the requested behavior is genuinely new and reusable.
+New runtime code is justified when the requested behavior is:
+- genuinely new;
+- readable;
+- reusable by several future content pieces.
+
+The game should not require a unique architecture for every weapon, enemy, boss or quest.
+
+## Damage grammar
+
+Primary damage families:
+- Physical;
+- Fire;
+- Cold;
+- Lightning;
+- Poison;
+- Curse.
+
+Wet is a state, not a damage family.
+
+Physical remains one unified type.
+
+Do not split Physical into slash/pierce/blunt damage.
+
+## Status grammar
+
+Initial core states:
+- Wet;
+- Burning;
+- Cold / Frozen;
+- Shock;
+- Poison;
+- Curse.
+
+Bleed is deferred as a possible later status.
+
+Where useful, Burning, Poison and future Bleed may share generic damage-over-time runtime primitives while preserving different tags, visuals and interactions.
+
+## Core interaction matrix
+
+Do not require every state to react with every other state.
+
+Prioritize a small number of readable, intentional interactions.
+
+### Wet + Cold
+Result:
+- Frozen target and/or ice surface;
+- Cold thresholds can be easier to reach when already Wet.
+
+### Wet + Lightning
+Result:
+- stronger Shock behavior;
+- chaining/spread through valid nearby wet targets/surfaces.
+
+### Wet + Fire/Burning
+Result:
+- extinguish;
+- suppress Burning;
+- reduce fire persistence where appropriate.
+
+### Wet + Poison
+Result:
+- contaminated/poisoned water;
+- poison spreads through valid wet surfaces/targets.
+
+Poison does not need broad chemistry interactions with every element in the first version.
+
+### Frozen + Heavy impact
+Result:
+- Shatter;
+- increased burst/stagger/secondary effect depending on target type.
+
+### Curse + any core system
+Curse is a supernatural overlay.
+
+It may modify:
+- Wet;
+- Fire;
+- Cold;
+- Lightning;
+- Poison;
+- Physical effects.
+
+Avoid treating Curse as only another colored damage element.
+
+## Boss-safe reactions
+
+Bosses participate in the same systemic grammar.
+
+Do not use broad immunities to invalidate builds.
+
+Strong control reactions map to reduced boss-safe outcomes such as:
+- stagger;
+- interrupt;
+- vulnerability window;
+- partial duration;
+- meter contribution.
+
+## Surface grammar
+
+Initial surface families:
+- Water / Wet Ground;
+- Snow / Ice;
+- Fire;
+- Poisoned Water.
+
+Surface state must be:
+- readable;
+- bounded in simulation cost;
+- useful to both combat and weather.
+
+Avoid simulating every material in the environment.
+
+## Weather grammar
+
+Weather is a ruleset modifier.
+
+Examples:
+
+### Rain
+- increases Wet application/prevalence;
+- creates/maintains wet surfaces;
+- weakens fire persistence;
+- changes encounter assumptions.
+
+### Heat / drought
+- dries surfaces faster;
+- increases fire risk/spread;
+- changes vegetation/material state.
+
+### Cold
+- makes freezing easier;
+- increases snow/ice persistence;
+- changes route/surface behavior.
+
+### Blizzard / deep snow
+- reduces visibility;
+- affects movement;
+- changes encounter ranges.
+
+### Fog
+- reduces perception/detection;
+- reduces effective long-range visibility.
+
+The exact numeric effects are data, not bespoke weather code in every system.
 
 ## Ability grammar
 
 Candidate delivery primitives:
+- melee;
 - projectile;
 - area;
 - cone;
-- dash;
-- orbit;
-- trap;
-- beam;
-- summon.
+- line;
+- chain;
+- aura;
+- movement/dash when a specific skill needs it;
+- summon later if required.
 
-Candidate effect primitives:
+Candidate effects:
 - damage;
-- knockback;
-- pull;
 - apply status;
-- spawn entity;
-- transform state;
-- shield;
+- spawn surface/entity;
+- push / movement;
+- modify state;
 - heal;
-- modify movement;
+- shield;
 - trigger secondary effect.
+
+Candidate triggers:
+- OnHit;
+- OnCrit;
+- OnKill;
+- OnDamageTaken;
+- OnCast;
+- OnStatusApplied;
+- OnReaction;
+- OnEnterArea.
 
 Candidate modifiers:
 - count;
@@ -41,123 +193,325 @@ Candidate modifiers:
 - speed;
 - duration;
 - trajectory;
-- element;
+- affinity/system type;
 - trigger condition;
 - repeat;
 - chaining;
-- targeting rule.
+- targeting rule;
+- scaling rule.
 
-Conceptual ability formula:
+Conceptual formula:
 
-Delivery + Effect(s) + Modifier(s) + Feedback Profile.
+Delivery + Shape + Effect(s) + Status/Affinity + Trigger(s) + Modifier(s) + Feedback Profile.
 
-The same mechanical primitive can support different fantasy through data, VFX, SFX and status behavior.
+## Player-class use of the grammar
+
+### Warrior
+
+Primary identity:
+- melee;
+- Physical damage;
+- weapon reach/cadence;
+- stagger;
+- heavy impact;
+- Shatter;
+- optional elemental/curse overlays from ornaments.
+
+A Warrior must remain viable as a mostly Physical build.
+
+Initial weapon families:
+- axe;
+- spear.
+
+Weapon differentiation should come from:
+- reach;
+- speed;
+- attack shape;
+- stagger;
+- moveset;
+- tags;
+- special behavior;
+
+not separate slash/pierce damage systems.
+
+### Vedun
+
+Primary identity:
+- ranged/ritual control;
+- projectile;
+- persistent area;
+- more direct application/manipulation of systemic states.
+
+Both classes may use the same affinities but create different tactical patterns.
+
+## Skill-slot and cooldown grammar
+
+Baseline:
+- one basic attack;
+- up to four active skills;
+- cooldowns as the first resource model.
+
+Do not add mana/stamina/rage until playtesting proves a need.
+
+A class-specific resource may be introduced later only if it adds meaningful rhythm/depth.
+
+## Ornament affinity grammar
+
+An ornament contributes affinity weight to the entire equipped build.
+
+Example conceptual totals:
+- Cold Affinity;
+- Lightning Affinity;
+- Poison Affinity;
+- Curse Affinity;
+- Fire Affinity.
+
+Thresholds can activate:
+- skill conversion;
+- extra status application;
+- reaction amplification;
+- conditional triggers;
+- secondary behavior.
+
+Baseline build shape:
+- one primary affinity;
+- one secondary affinity.
+
+This is a design norm, not an engine hard-limit for all future classes.
+
+## Ornament acquisition grammar
+
+Ornaments are learned patterns, not disposable sockets.
+
+Flow:
+discover/earn pattern
+-> pattern added to permanent knowledge
+-> craftsman can apply pattern
+-> player reconfigures equipment/build.
+
+Baseline item rule:
+- one primary ornament per item.
+
+Possible later exception:
+- selected rare/unique items support two.
+
+## Item grammar
+
+An equipment item should be understood as:
+
+Base Item
++ Weapon/Armor Behavior
++ Base Stats
++ Ornament
++ later Upgrade Level
++ much-later Special Modification.
+
+Do not make rarity the main identity of equipment.
+
+Use fewer rarity tiers than classic loot-rainbow systems.
+
+## Progression grammar
+
+Persistent progression:
+- character level;
+- equipment;
+- skills;
+- ornaments/recipes;
+- resources;
+- story/world state.
+
+Skills unlock through:
+- levels;
+- important quests;
+- potentially class milestones.
+
+Skill depth should come from a small number of meaningful modifiers rather than a huge active-skill list.
+
+## Defense grammar
+
+- Armor -> Physical mitigation.
+- Fire Resistance.
+- Cold Resistance.
+- Lightning Resistance.
+- Poison Resistance.
+- Curse Resistance.
+
+Wet has no resistance stat because it is a state.
+
+## Healing/death grammar
+
+### Healing
+- limited healing charges;
+- safe-point restoration;
+- possible partial between-fight recovery;
+- build-based healing later.
+
+### Death
+- respawn at safe point/checkpoint/hub;
+- keep persistent character progression;
+- lose some temporary outing resources;
+- partial encounter recovery/reset.
+
+### Co-op Downed
+- ally revive before full respawn.
 
 ## Enemy grammar
 
-Candidate layers:
-- body/chassis;
-- locomotion;
-- battlefield role;
-- attack package;
-- defensive package;
-- perception/targeting;
-- status/element;
-- elite modifier;
-- feedback profile.
+Candidate composition:
 
-Example:
-humanoid chassis + chase + melee role + leap attack + poison + exploding elite modifier.
+Chassis
++ Locomotion
++ Battlefield Role
++ Attack Package
++ Defense Package
++ Perception/Targeting
++ Status/Affinity
++ Elite Modifier
++ Feedback Profile.
 
-A different enemy may reuse the same chassis but change movement, range pressure and status.
+Initial battlefield role candidates:
+- melee pursuer;
+- fast flanker;
+- ranged pressure;
+- tank/blocker;
+- support;
+- disruptor/summoner.
 
-## Status / interaction grammar
+## Enemy family categories
 
-Initial candidates:
-- fire/burning;
-- cold/freeze;
-- wet/water;
-- poison;
-- physical force/knockback;
-- curse.
+Content/lore categories:
+1. humans;
+2. neutral/territorial spirits;
+3. inherently dangerous supernatural creatures;
+4. cursed/corrupted beings.
 
-These are hypotheses, not a locked list.
+These categories should reuse gameplay primitives rather than require separate architecture.
 
-The important requirement is interaction.
+## Elite modifier grammar
 
-Examples:
-- wet + cold -> stronger freeze behavior;
-- fire + flammable environment -> hazard;
-- knockback + hazard -> environmental damage;
-- poison + another effect -> special reaction if it improves readability and build depth.
-
-Every added major system should be reviewed for:
-- what old abilities it changes;
-- what old enemies it changes;
-- what old environments it changes;
-- whether it creates new builds.
-
-## Elite modifier system
-
-Elite modifiers are a core content multiplier.
-
-Candidate types:
-- elemental;
-- explosive on death;
+Candidate elite modifiers:
+- affinity/status mutation;
+- explosive death;
 - enraged below threshold;
-- summoner;
-- shielded;
 - aura/support;
+- shielded;
+- summoner;
 - duplicating/spawning;
-- movement mutation.
+- movement mutation;
+- cursed overlay.
 
-Modifiers must remain readable. Combinatorial quantity is not useful if players cannot understand threats.
+Modifiers must remain readable.
+
+## Boss grammar
+
+A boss may use:
+- shared movement primitives;
+- shared status/reaction rules;
+- shared attack/effect primitives;
+- one or two bespoke twists;
+- a unique presentation/arena when justified.
+
+Major story bosses may justify more bespoke content than side/dungeon bosses.
 
 ## Encounter grammar
 
-Encounter configuration should include:
+Encounter configuration:
 - enemy roster;
 - role mix;
 - spawn timing;
 - arena tags;
-- environmental hazards;
+- environmental surfaces;
+- weather state;
 - optional objective;
 - difficulty budget;
-- reward tier.
+- reward tier;
+- world-state modifiers.
 
-The goal is to create encounter variation without bespoke scripting for every room.
+Variation should come from composition, not one script per encounter.
 
-## Loot / upgrade grammar
+## Quest grammar
 
-Prefer upgrades that modify behavior.
+Reusable objective primitives may include:
+- Find;
+- Track;
+- Hunt/Kill;
+- Protect;
+- Escort;
+- Collect;
+- Investigate;
+- Cleanse;
+- Survive;
+- Perform Ritual;
+- Deliver;
+- Rescue;
+- Choose;
+- Return.
 
-Low-value example:
-+5% damage.
+Main quests use authored narrative anchors.
 
-Higher-value examples:
-- projectile returns;
-- dash creates a trail;
-- freeze creates an explosion;
-- critical hit spreads curse;
-- summons inherit player element;
-- status consumption causes a secondary effect.
+Repeatable/low-cost content may combine primitives more aggressively.
 
-Simple numerical upgrades may exist but should not dominate build identity.
+## World-state grammar
 
-## Biome grammar
+Candidate persistent variables include:
+- HumanInfluence;
+- SpiritInfluence;
+- Corruption;
+- Flooding;
+- ForestHealth;
+- VillageSafety;
+- LocalSpiritDisposition;
+- PoliticalHeat;
+- LocalSupport.
 
-Candidate composition:
+Content should react declaratively.
 
-Geometry kit
-+ vegetation/prop kit
-+ material set
-+ decals
-+ lighting/weather
-+ environmental system
-+ encounter rules
-+ creature pool.
+Examples:
+- high Corruption -> cursed modifiers, visual corruption, altered events;
+- high Flooding -> more Wet surfaces, water spirits, blocked/alternate paths;
+- high LocalSupport -> hidden routes, shelter, cheaper/special services;
+- high PoliticalHeat -> checkpoints, patrols, bounty hunters.
 
-One production kit should ideally produce several visually and mechanically distinct states.
+## Procedural-region grammar
+
+A generated wilderness/dungeon is not arbitrary noise.
+
+Composition:
+
+Authored Modules
++ Connectivity Rules
++ Required Anchors
++ Route Rules
++ Encounter Tables
++ Event Tables
++ Weather/Season State
++ World-State Modifiers
++ Dressing Rules
++ Reward Rules.
+
+This follows a Path-of-Exile-like philosophy:
+- authored pieces;
+- rule-based assembly;
+- coherent identity;
+- meaningful variation.
+
+## Biome/region grammar
+
+Region content:
+
+Geometry Kit
++ Vegetation/Prop Kit
++ Material State
++ Decals
++ Lighting
++ Weather
++ Seasonal State
++ Environmental Rules
++ Encounter Rules
++ Creature Pool
++ World-State Overlay.
+
+One good kit should create several visually and mechanically distinct states.
 
 ## Feedback grammar
 
@@ -167,19 +521,25 @@ Feel/MMFeedbacks should provide reusable profiles for:
 - flash;
 - scale punch;
 - damage audio;
-- death feedback;
+- death;
 - projectile impact;
-- level-up;
+- status application;
+- reaction trigger;
 - elite spawn;
-- status application.
+- boss phase;
+- objective completion;
+- level-up.
 
-Content should reference profiles rather than recreate the same feedback logic.
+Content should reference profiles rather than rebuild feedback logic.
 
 ## Evaluation test
 
 The grammar is working if:
-- several different abilities are built without new gameplay architecture;
-- several enemies share capabilities but feel tactically different;
-- modifiers create readable variation;
-- new systems alter old content;
-- authoring becomes faster with each repeated task.
+- several abilities can be authored without new parallel architectures;
+- Warrior and Vedun use the same primitives but feel tactically different;
+- bosses respect the player's systemic build without being trivialized;
+- the same region plays differently under rain, winter and flood states;
+- changing ornaments changes skill behavior;
+- enemies reuse substantial code/assets while remaining tactically distinct;
+- new world-state variables alter existing content;
+- authoring becomes measurably faster with repeated content.
