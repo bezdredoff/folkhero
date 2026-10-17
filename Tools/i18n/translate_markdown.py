@@ -185,6 +185,20 @@ Source file: {relative_source}
 """
 
 
+def postprocess_translation(source: Path, translated: str) -> str:
+    # README is mirrored one directory deeper, so its language-switch link
+    # cannot preserve the canonical relative destination unchanged.
+    if source == README:
+        lines = translated.splitlines()
+        for index, line in enumerate(lines):
+            if "./ru/README.md" in line:
+                lines[index] = "**Языки:** [English (canonical)](../README.md) · Русский"
+                break
+        translated = "\n".join(lines)
+
+    return translated
+
+
 def translate_markdown(client: OpenAI, model: str, source: Path, markdown: str) -> str:
     prompt = translation_prompt(source, markdown)
 
@@ -200,6 +214,7 @@ def translate_markdown(client: OpenAI, model: str, source: Path, markdown: str) 
             translated = strip_accidental_outer_fence(response.output_text)
             if not translated.strip():
                 raise RuntimeError("Model returned an empty translation.")
+            translated = postprocess_translation(source, translated)
             return translated.rstrip() + "\n"
         except Exception as exc:
             last_error = exc
