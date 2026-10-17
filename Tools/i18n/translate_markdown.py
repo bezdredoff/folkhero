@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Translate canonical Markdown documentation into a generated Russian mirror."""
+"""Translate canonical Markdown documentation into a generated Russian mirror.
+
+The translator runs a local open-source MarianMT model on the GitHub Actions
+runner. No paid translation API or API key is required.
+"""
 
 from __future__ import annotations
 
@@ -8,23 +12,37 @@ import hashlib
 import os
 import re
 import subprocess
-import sys
-import time
 from pathlib import Path
 
-from openai import OpenAI
+import torch
+from transformers import MarianMTModel, MarianTokenizer
 
 
 ROOT = Path(__file__).resolve().parents[2]
 TARGET_ROOT = ROOT / "ru"
 DOCS_ROOT = ROOT / "Docs"
 README = ROOT / "README.md"
-FENCE = chr(96) * 3
+
+DEFAULT_MODEL = "Helsinki-NLP/opus-mt-en-ru"
 
 MARKER_RE = re.compile(
     r"<!-- AUTO-TRANSLATED: source=(?P<source>\S+) "
     r"sha256=(?P<sha>[0-9a-f]{64}) model=(?P<model>\S+) target=ru -->"
 )
+
+FENCE_RE = re.compile(r"^\s*((?:\x60){3}|~~~)")
+HEADING_RE = re.compile(r"^(\s{0,3}#{1,6}\s+)(.*)$")
+LIST_RE = re.compile(r"^(\s*(?:(?:[-+*])|(?:\d+[.)]))\s+)(.*)$")
+QUOTE_RE = re.compile(r"^(\s*>\s?)(.*)$")
+TABLE_SEPARATOR_RE = re.compile(r"^\s*\|?(?:\s*:?-{3,}:?\s*\|)+\s*:?-{3,}:?\s*\|?\s*$")
+
+LINK_RE = re.compile(r"!?\[([^\]]*)\]\(([^)]*)\)")
+INLINE_CODE_RE = re.compile(r"\x60[^\x60\n]+\x60")
+RAW_URL_RE = re.compile(r"https?://[^\s>)\]]+")
+HTML_RE = re.compile(r"<[^>\n]+>")
+ISSUE_REF_RE = re.compile(r"(?<!\w)#\d+\b")
+FILE_RE = re.compile(r"\b(?:[A-Za-z0-9_.-]+/)*[A-Za-z0-9_.-]+\.(?:md|yml|yaml|json|cs|py|sh|ps1)\b")
+EMPHASIS_RE = re.compile(r"(\*\*|__|~~|\*|_)")
 
 CANONICAL_GAMEPLAY_TERMS = [
     "Physical",
@@ -41,7 +59,23 @@ CANONICAL_GAMEPLAY_TERMS = [
     "Downed",
     "Shatter",
     "PP-01",
+    "Vertical Slice",
+    "Early Access",
 ]
+
+PROTECTED_RE = re.compile(
+    "|".join(
+        [
+            INLINE_CODE_RE.pattern,
+            RAW_URL_RE.pattern,
+            HTML_RE.pattern,
+            ISSUE_REF_RE.pattern,
+            FILE_RE.pattern,
+            r"\b(?:" + "|".join(re.escape(term) for term in CANONICAL_GAMEPLAY_TERMS) + r")\b",
+            EMPHASIS_RE.pattern,
+        ]
+    )
+)
 
 
 def run_git(*args: str) -> str:
@@ -145,87 +179,220 @@ def existing_source_hash(target: Path) -> str | None:
     return match.group("sha") if match else None
 
 
-def strip_accidental_outer_fence(text: str) -> str:
-    value = text.strip()
-    if not value.startswith(FENCE):
-        return value
+class LocalTranslator:
+    def __init__(self, model_name: str, batch_size: int = 16) -> None:
+        self.model_name = model_name
+        self.batch_size = batch_size
+        self.tokenizer = MarianTokenizer.from_pretrained(model_name)
+        self.model = MarianMTModel.from_pretrained(model_name)
+        self.model.eval()
+        torch.set_num_threads(max(1, min(4, os.cpu_count() or 1)))
 
-    lines = value.splitlines()
-    if len(lines) >= 3 and lines[-1].strip() == FENCE:
-        return "\n".join(lines[1:-1]).strip()
+    @torch.inference_mode()
+    def translate_many(self, texts: list[str]) -> list[str]:
+        if not texts:
+            return []
 
-    return value
+        output: list[str] = []
 
+        for start in range(0, len(texts), self.batch_size):
+            batch = texts[start : start + self.batch_size]
+            encoded = self.tokenizer(
+                batch,
+                return_tensors="pt",
+                padding=True,
+                truncation=True,
+                max_length=480,
+            )
+            generated = self.model.generate(
+                **encoded,
+                max_new_tokens=512,
+                num_beams=4,
+                early_stopping=True,
+            )
+            output.extend(
+                self.tokenizer.batch_decode(generated, skip_special_tokens=True)
+            )
 
-def translation_prompt(source_path: Path, markdown: str) -> str:
-    canonical_terms = ", ".join(CANONICAL_GAMEPLAY_TERMS)
-    relative_source = source_path.relative_to(ROOT).as_posix()
-
-    return f"""Translate the following Folkhero project documentation from English into natural Russian.
-
-This is a faithful documentation translation, not a rewrite or summary.
-
-Rules:
-1. Return ONLY the translated Markdown document. Do not add commentary or wrap it in an outer code fence.
-2. Preserve Markdown structure, heading levels, lists, tables, blockquotes, admonitions and spacing where practical.
-3. Do NOT translate fenced code blocks, inline code, CLI commands, JSON/YAML/code identifiers, file paths, URLs, relative link destinations, GitHub issue/PR references, commit SHAs or version numbers.
-4. Translate human-readable link text, but preserve every link destination exactly.
-5. Preserve product/library names such as Folkhero, Unity, URP, Odin Inspector & Serializer, GeNa Pro, Feel/MMFeedbacks, GitHub, ComfyUI and OpenAI.
-6. Treat these gameplay/system tokens as canonical identifiers and keep them exactly in English when they refer to game mechanics: {canonical_terms}.
-7. Preserve deliberate project milestone names such as Vertical Slice and Early Access when they are used as named production stages; surrounding prose should be natural Russian.
-8. Do not omit, merge, invent or soften requirements, numbers, acceptance criteria or decisions.
-9. If the source already contains Russian text, keep it natural rather than translating it back to English.
-10. Keep terminology consistent throughout the document.
-
-Source file: {relative_source}
-
-<markdown>
-{markdown}
-</markdown>
-"""
+        return output
 
 
-def postprocess_translation(source: Path, translated: str) -> str:
-    # README is mirrored one directory deeper, so its language-switch link
-    # cannot preserve the canonical relative destination unchanged.
+def split_long_text(text: str, max_chars: int = 700) -> list[str]:
+    if len(text) <= max_chars:
+        return [text]
+
+    parts = re.split(r"(?<=[.!?;:])(\s+)", text)
+    chunks: list[str] = []
+    current = ""
+
+    for part in parts:
+        if len(current) + len(part) <= max_chars:
+            current += part
+            continue
+
+        if current:
+            chunks.append(current)
+            current = ""
+
+        if len(part) <= max_chars:
+            current = part
+            continue
+
+        for start in range(0, len(part), max_chars):
+            piece = part[start : start + max_chars]
+            if len(piece) == max_chars:
+                chunks.append(piece)
+            else:
+                current = piece
+
+    if current:
+        chunks.append(current)
+
+    return chunks
+
+
+def add_translatable_segment(text: str, segments: list[str], markers: list[str]) -> str:
+    if not text or not re.search(r"[A-Za-z]", text):
+        return text
+
+    pieces = split_long_text(text)
+    rendered: list[str] = []
+
+    for piece in pieces:
+        if not re.search(r"[A-Za-z]", piece):
+            rendered.append(piece)
+            continue
+
+        marker = f"@@TR{len(segments):06d}@@"
+        segments.append(piece)
+        markers.append(marker)
+        rendered.append(marker)
+
+    return "".join(rendered)
+
+
+def mark_plain_inline(text: str, segments: list[str], markers: list[str]) -> str:
+    output: list[str] = []
+    cursor = 0
+
+    for match in PROTECTED_RE.finditer(text):
+        before = text[cursor : match.start()]
+        output.append(add_translatable_segment(before, segments, markers))
+        output.append(match.group(0))
+        cursor = match.end()
+
+    output.append(add_translatable_segment(text[cursor:], segments, markers))
+    return "".join(output)
+
+
+def mark_inline(text: str, segments: list[str], markers: list[str]) -> str:
+    output: list[str] = []
+    cursor = 0
+
+    for match in LINK_RE.finditer(text):
+        output.append(mark_plain_inline(text[cursor : match.start()], segments, markers))
+
+        full = match.group(0)
+        label = match.group(1)
+        destination = match.group(2)
+        prefix = "!" if full.startswith("!") else ""
+
+        translated_label = mark_plain_inline(label, segments, markers)
+        output.append(f"{prefix}[{translated_label}]({destination})")
+        cursor = match.end()
+
+    output.append(mark_plain_inline(text[cursor:], segments, markers))
+    return "".join(output)
+
+
+def mark_table_line(line: str, segments: list[str], markers: list[str]) -> str:
+    if TABLE_SEPARATOR_RE.match(line):
+        return line
+
+    cells = line.split("|")
+    translated: list[str] = []
+
+    for cell in cells:
+        leading = cell[: len(cell) - len(cell.lstrip())]
+        trailing = cell[len(cell.rstrip()) :]
+        core = cell.strip()
+        if core:
+            core = mark_inline(core, segments, markers)
+        translated.append(leading + core + trailing)
+
+    return "|".join(translated)
+
+
+def build_template(markdown: str) -> tuple[str, list[str], list[str]]:
+    segments: list[str] = []
+    markers: list[str] = []
+    output: list[str] = []
+    in_fence = False
+    fence_token = ""
+
+    for line in markdown.splitlines(keepends=True):
+        newline = "\n" if line.endswith("\n") else ""
+        body = line[:-1] if newline else line
+
+        fence = FENCE_RE.match(body)
+        if fence:
+            token = fence.group(1)
+            if not in_fence:
+                in_fence = True
+                fence_token = token
+            elif token == fence_token:
+                in_fence = False
+                fence_token = ""
+            output.append(body + newline)
+            continue
+
+        if in_fence or body.startswith("    "):
+            output.append(body + newline)
+            continue
+
+        if "|" in body and not body.lstrip().startswith(">"):
+            output.append(mark_table_line(body, segments, markers) + newline)
+            continue
+
+        prefix = ""
+        content = body
+
+        for regex in (HEADING_RE, LIST_RE, QUOTE_RE):
+            match = regex.match(content)
+            if match:
+                prefix += match.group(1)
+                content = match.group(2)
+                break
+
+        output.append(prefix + mark_inline(content, segments, markers) + newline)
+
+    return "".join(output), segments, markers
+
+
+def render_translation(translator: LocalTranslator, markdown: str) -> str:
+    template, segments, markers = build_template(markdown)
+    translated_segments = translator.translate_many(segments)
+
+    if len(translated_segments) != len(markers):
+        raise RuntimeError("Translation segment count mismatch.")
+
+    result = template
+    for marker, translated in zip(markers, translated_segments):
+        result = result.replace(marker, translated, 1)
+
+    return result
+
+
+def fix_mirrored_links(source: Path, translated: str) -> str:
     if source == README:
         lines = translated.splitlines()
         for index, line in enumerate(lines):
             if "./ru/README.md" in line:
                 lines[index] = "**Языки:** [English (canonical)](../README.md) · Русский"
                 break
-        translated = "\n".join(lines)
+        translated = "\n".join(lines) + ("\n" if translated.endswith("\n") else "")
 
     return translated
-
-
-def translate_markdown(client: OpenAI, model: str, source: Path, markdown: str) -> str:
-    prompt = translation_prompt(source, markdown)
-
-    last_error: Exception | None = None
-    for attempt in range(1, 4):
-        try:
-            response = client.responses.create(
-                model=model,
-                input=prompt,
-                store=False,
-                max_output_tokens=65536,
-            )
-            translated = strip_accidental_outer_fence(response.output_text)
-            if not translated.strip():
-                raise RuntimeError("Model returned an empty translation.")
-            translated = postprocess_translation(source, translated)
-            return translated.rstrip() + "\n"
-        except Exception as exc:
-            last_error = exc
-            if attempt == 3:
-                break
-            wait = 2 ** attempt
-            print(f"Translation attempt {attempt} failed for {source}: {exc}", file=sys.stderr)
-            print(f"Retrying in {wait}s...", file=sys.stderr)
-            time.sleep(wait)
-
-    raise RuntimeError(f"Translation failed for {source}: {last_error}")
 
 
 def generated_header(source: Path, source_hash: str, model: str, target: Path) -> str:
@@ -259,13 +426,9 @@ def main() -> int:
     parser.add_argument("--force", action="store_true")
     parser.add_argument(
         "--model",
-        default=os.environ.get("OPENAI_MODEL") or "gpt-6-luna",
+        default=os.environ.get("DOCS_TRANSLATION_MODEL") or DEFAULT_MODEL,
     )
     args = parser.parse_args()
-
-    if not os.environ.get("OPENAI_API_KEY"):
-        print("OPENAI_API_KEY is required.", file=sys.stderr)
-        return 2
 
     if args.all:
         translate_sources = all_source_files()
@@ -281,13 +444,7 @@ def main() -> int:
             target.unlink()
             remove_empty_parents(target)
 
-    if not translate_sources:
-        print("No canonical Markdown files require translation.")
-        return 0
-
-    client = OpenAI()
-    translated_count = 0
-    skipped_count = 0
+    pending: list[tuple[Path, Path, str, str]] = []
 
     for source in translate_sources:
         markdown = source.read_text(encoding="utf-8")
@@ -296,24 +453,32 @@ def main() -> int:
 
         if not args.force and existing_source_hash(target) == source_hash:
             print(f"Up to date: {target.relative_to(ROOT)}")
-            skipped_count += 1
             continue
 
+        pending.append((source, target, source_hash, markdown))
+
+    if not pending:
+        print("No documentation requires translation.")
+        return 0
+
+    print(f"Loading local translation model: {args.model}")
+    translator = LocalTranslator(args.model)
+
+    for source, target, source_hash, markdown in pending:
         print(f"Translating {source.relative_to(ROOT)} -> {target.relative_to(ROOT)}")
-        translated = translate_markdown(client, args.model, source, markdown)
+        translated = render_translation(translator, markdown)
+        translated = fix_mirrored_links(source, translated)
 
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(
-            generated_header(source, source_hash, args.model, target) + translated,
+            generated_header(source, source_hash, args.model, target)
+            + translated.rstrip()
+            + "\n",
             encoding="utf-8",
             newline="\n",
         )
-        translated_count += 1
 
-    print(
-        f"Translation complete: {translated_count} translated, "
-        f"{skipped_count} already up to date."
-    )
+    print(f"Translation complete: {len(pending)} file(s) updated.")
     return 0
 
 
