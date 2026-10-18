@@ -286,3 +286,23 @@ User sequence: resolve documentation/research gaps, then discuss designs, then t
 - Keep source evidence, later ethnographic continuity, visual target approval and deliberate fiction separate.
 - Record all 60 backlog tasks; do not mark missing images as generated/approved. Final asset counts follow selected child-object briefs.
 - House construction, local date/authority, clothing cuts, motifs, roster and target images remain open where evidence or selection is missing. Documentation standards do not approve a design.
+
+## 2026-10-18 — Home village, households and hero concept briefs
+User-approved discussion consolidated in:
+- [Act I Village Design](../Art/Act_I_Village_Design.md)
+- [Act I Community](../Vision/Act_I_Community.md)
+- [Act I Character Briefs](../Art/Act_I_Character_Briefs.md)
+
+Decisions:
+- Modest rural village; low log houses, simple pitched thatch roofs, small membrane windows with shutters as selected game treatment, low stone supports. Baseline smoke-heated house; exact exhaust open.
+- Hazel wattle and pine pole/plank fences accepted as sufficient material extrapolation; stronger horse enclosures, researched joints/braces.
+- Shared sweep wells for clusters of 2–3 simple homes, household wells for larger livestock farms with neighbor access; windlass on higher/deeper sites. Natural-drop stream watermill, no large millpond.
+- Family economy: children/teens graze stock, no dedicated shepherd; miller is also carpenter/joiner; no dedicated potter.
+- Local Belarusian/Ruthenian residents are a substantial majority; provisional 80–90% target and 12–16 additional local households need census reconciliation. Minority households are individual authored families; Cossack past is biography.
+- Weaver household: mother, husband, three daughters, mother's elder sister, grandmother. Only eldest daughter leaves; she supplies ornament service. Others stay.
+- Initial displaced group includes daughter, smith, Roma healer. Smith/healer relatives and hunter's later participation remain open. Miller/starosta/most residents stay.
+- First civilian pair shares identity across warm, cool/rain and winter clothing. Wool cloth and sheepskin are baseline; wild fur limited to researched individual details.
+- First male Warrior and Vedun references, normal proportions and minimal metal. Warrior axe/spear and necessary fittings; no baseline metal armor. Vedun wooden staff and small useful kit. Does not lock future player gender/customization.
+- No images generated/selected and no historical certainty invented. Read evidence dossier R11–R18 for additional scoped sources and fiction boundaries.
+
+Open: exact names/ages where ranges, full population, date/authority, local costume details, motif set, mechanism/equipment geometry, departure causes/relatives and selected image targets.
