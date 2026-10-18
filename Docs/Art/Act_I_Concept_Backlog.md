@@ -454,3 +454,6 @@ one house, one tree, one ground/water patch, one civilian, one humanoid Bolotnik
 First route: limited tree/vegetation kit; bridge/ford only. Broader habitats/crossings remain deferred.
 Heavy boulder fragmentation and permanently missing pieces replace earlier simple-crack/post-marker alternatives.
 Source links belong in each child packet; accepted fiction remains labeled.
+
+## Pilot progress — 2026-10-18
+[Selection review](Concept_Pilot_Review.md) and [native image gallery](../../References/Targets/Act_I_Pilot/README.md) record five selected base directions and six state studies. B01/C01/D01/F01–F03/I02 have partial child-level exploration outputs; the 60 parent tasks remain the coverage plan. A01/A02/A03 await consolidated modeling/camera/material validation; broad status sheets are not complete. Do not generate every season/status combination to fill the backlog.

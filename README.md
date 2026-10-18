@@ -30,6 +30,8 @@ See:
 - [Vertical Slice Specification](./Docs/GameDesign/Vertical_Slice_Spec.md)
 - [Technical Bible](./Docs/Technical/Technical_Bible.md)
 - [Art Bible](./Docs/Art/Art_Bible.md)
+- [Selected Act I Concept Gallery](./References/Targets/Act_I_Pilot/README.md)
+- [Concept Pilot Review and Remaining Work](./Docs/Art/Concept_Pilot_Review.md)
 - [Act I Village Design](./Docs/Art/Act_I_Village_Design.md)
 - [Act I Community and Households](./Docs/Vision/Act_I_Community.md)
 - [Act I Character Briefs](./Docs/Art/Act_I_Character_Briefs.md)

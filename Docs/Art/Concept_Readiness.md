@@ -1,5 +1,7 @@
 # Concept Readiness and Open Decisions
-Status: 2026-10-18 audit; no generation started or authorized by this document.
+Status: updated 2026-10-18 after the individually reviewed concept pilot. Five base directions and six state studies are selected; no modeling-ready packets. See [pilot review](Concept_Pilot_Review.md) and [verified image manifest](../../References/Targets/Act_I_Pilot/manifest.json).
+
+The initial audit and later-discussion sections below are retained as dated preparation history. Their missing-target/no-generation statements are superseded by the current manifest; historical costume, dimensions, authority and gameplay-validation gaps remain open.
 
 ## Authority
 The current Art Bible and 2026-10-18 Decision Log override old painterly wording. Read Asset_Sheet_Standard.md, Concept_Register.md and References/Act_I_Evidence_Dossier.md with the backlog.
@@ -83,3 +85,6 @@ DEC-02/03/06/08/09/10 are not all fully resolved by this discussion. Specificall
 Date/authority, spirit/enemy design, weather benchmark and ritual object selection remain open.
 R11–R18 and explicit accepted extrapolations supplement the evidence dossier. No claim that source gaps are all closed.
 No image generation requested in the documentation pass; do not infer mass-generation authorization from agreement to a written character/house brief.
+
+## Current readiness after selection
+DEC-04 now has actual selected target images with hashes and scoped acceptance. DEC-02 has a selected House A construction direction with continuous fieldstone foundation. DEC-03 has one selected male summer/winter exploration; exact cut/headwear/footwear remain open. Bolotnik visual direction is selected but height/scale repair and final views remain open. DEC-01/05/09 and the engine weather/camera benchmark remain unresolved. No selected child makes an entire parent family Modeling-ready.
