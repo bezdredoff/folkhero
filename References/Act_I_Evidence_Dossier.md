@@ -177,3 +177,44 @@ Limits: no chosen local outfit, no evidence for a particular hunter/fisher or lo
 - Homemade simple ceramics is a game possibility, not a claim that every household produces all its pottery.
 - Group presence sources cannot establish population ratio, occupation, fictional magic or shared residence. Those are authored choices.
 Approved extrapolation allows discussion to move forward; preserve the evidence label in prompts and modeling notes.
+
+## Ecology and visual discussion supplement
+### R19 — modern vegetation map
+D. G. Grummo, R. V. Tsvirko, N. A. Zelenkevich, E. V. Moyseychik (2025), “Карта растительности Березинского биосферного заповедника”, Geobotanical Mapping, pp.3–20. DOI 10.31111/geobotmap/2025.03.
+https://www.binran.ru/publications/geobotanicheskoe-kartografirovanie/2344/17620/
+Access: REVIEWED publisher abstract/metadata; linked full-text retrieval failed. Ground/remote-sensing based current map, 59 mapped units. Supports a mosaic of coniferous forest, deciduous swamp forest and open mire; not a XVI-century map.
+Use: habitat-level assembly C/D; do not copy modern coverage percentages into historic settlement layout.
+
+### R20 — black-alder swamp woodland
+V. S. Ivkovich, E. N. Ivkovich, V. M. Arnolbik, “Фиторазнообразие и естественная динамика растительности черноольховых лесов Березинского заповедника”, pp.165–166, reproduced research.
+https://bp21.org.by/ru/books/celeb055.html
+Access: REVIEWED research text by reserve staff, third-party reproduction.
+Supports willow/fern/sedge-associated alder communities, downy birch/spruce admixture, and oak/ash/aspen near mineral-island transitions. Modern ecological evidence.
+Use: D02/C01 wetland tree and lower-vegetation placement; not uniform plant distribution.
+
+### R21 — mixed forest / birch research
+Parfenov et al., “Особенности биоразнообразия еловых лесов Беловежской пущи, Березинского биосферного и Припятского заповедников”.
+https://bp21.org.by/ru/books/gef_bp10.html
+Access: REVIEWED relevant Berezinsky section; other sections discuss other reserves and must not be transplanted silently.
+Supports mixed spruce/broadleaf forest on mineral islands.
+Starikova, Yermokhin, Pugachevsky, Ivkovich (2023), “Динамика структуры высоковозрастных древостоев березы повислой ...”, Botanika 52, pp.100–113.
+https://www.researchgate.net/publication/374922017
+Access: SEARCH-EXCERPT of author-uploaded paper; full content not inspected. Lead for local silver-birch/hazel associations; no final modeling measurements extracted.
+Use: C01/C02; local silver/downy birches are not one undifferentiated habitat asset.
+
+### R22 — mire ground/vegetation
+“Soil Cover Patterns and Pedo- and Biodiversity of the Berezinsky Biospheric Reserve”.
+https://www.researchgate.net/publication/364580429
+Access: SEARCH-EXCERPT of research publication, not full text inspection.
+Supports cotton-grass/sphagnum and Ledum/sphagnum pine-community references in reserve. Use as scoped lead for open-bog plants, not precise species distribution.
+D02 plant forms still need visual specimen references before final model sheets.
+
+### INSP-01 — user systems-first video
+https://www.youtube.com/watch?v=KuWTf7KrF6Y
+User-supplied production inspiration, repeatedly identified as desired approach. No new video/transcript verification in this pass.
+Project's approved interpretation: few bases; material/module/state multiplication; separate genuine geometry changes; validate a small set before expanding. Do not attribute unverified implementation details to video author.
+
+## Current accepted visual decisions
+See [Environment and States](../Docs/Art/Act_I_Environment_and_States.md) and [Production Pilot](../Docs/Art/Concept_Production_Pilot.md).
+Bolotnik barefoot/plain mossy clothing, concealed eyes, short clumped hair/beard and standard humanoid anatomy are accepted adaptations, not all sourced folklore features.
+Boulder fragmentation/removal, visiting cloth-dominant military palette, violet Curse, status colors and seasonal production hierarchy are authored game decisions.
