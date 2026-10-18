@@ -88,3 +88,9 @@ Implementation status requires Unity validation; a generated image is not implem
 [Village](Act_I_Village_Design.md), [Community](../Vision/Act_I_Community.md), [Characters](Act_I_Character_Briefs.md).
 Acceptance cells above refer only to the written scope described by these briefs, not image approval. Family stage remains Research because detailed object briefs, sources/targets and geometry still need work. No output image/model exists.
 Child packets named in Character Briefs are scoped candidates; create individual execution records as their geometry/brief is resolved. Do not duplicate a row for each weather/material state.
+
+## Environment written scope accepted — 2026-10-18
+[Environment and States](Act_I_Environment_and_States.md), [Production Pilot](Concept_Production_Pilot.md).
+Applies to C01–C04/D01–D03/E01–E03/H01–H02/I02/J01–J04 and M04–M08 as relevant; geometry/source/image checks remain open.
+First execution record: B01-HOUSE-A, exploration r01; prompt/constraints in pilot. Not Selected/Modeling-ready.
+No inferred combat attack approval. Broader backlog is not the immediate production queue.
