@@ -327,3 +327,7 @@ See [Environment and States](../Art/Act_I_Environment_and_States.md) and [Produc
 - Terrain Curse and winter + Curse selected: localized plum/inky-violet stains and sparse lilac activity preserve seasonal colors; same base/mask composition proposed.
 - Store 17 unresized PNGs (11 selected, six superseded/rejected), dimensions/hashes/edit lineage and scoped approvals. No invented final resolution, measured height, historical certification, shader validation or production throughput.
 - These studies remain incomplete modeling packets. Bolotnik scale/ruler repair, coherent dimensions/views, rain/wet and gameplay-camera/URP tests are still required. Existing 60-task plan and human review gates remain.
+
+## 2026-10-18 — Village layout and concept continuation
+
+User approved exactly 23 households (HH-01–09 plus HH-10–23), functional yard assignments, dry ridge/lower terrace, field/pasture/utility access, no village church and burial ground on a hill by the lake beyond the forest. Initial four-house art was insufficient; rectilinear schematic was rejected for estate-road crossings and terrain mismatch. Revised terrain schematic accepted; full generated image remains provisional, not proof of 23 mapped estates. Preserve all 20 new PNGs, earlier variants and bridge with unreviewed status. Outdoor hearth explicitly accepted; other utility sheets retain their scale/view caveats. See [plan](../Art/Act_I_Village_Plan.md) and [review](../Art/Village_Concept_Review.md).

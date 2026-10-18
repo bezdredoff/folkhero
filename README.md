@@ -200,3 +200,7 @@ Enemy #3: substantially faster
 ```
 
 If every new enemy, weapon, quest or encounter costs the same as the first, the production system is failing even if visible content is increasing.
+
+## 2026-10-18 — Village layout and concept continuation
+
+[Accepted 23-household village plan](Docs/Art/Act_I_Village_Plan.md) · [Village concept review](Docs/Art/Village_Concept_Review.md) · [New image gallery](References/Targets/Act_I_Village/README.md) · [Terrain map](References/Targets/Act_I_Village/Layout/village-terrain-selected.svg).

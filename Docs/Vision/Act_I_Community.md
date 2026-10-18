@@ -9,7 +9,7 @@ Cossack experience is a biography/social-military affiliation, not an ethnic cen
 Several minority families live here permanently; no equal-sized groups or ethnic costume parade.
 Hair/skin/facial features vary within groups. Clothing, family history, personal objects, names and dialogue carry identity; no exclusive ethnic body/face rig.
 Tatar category here is Tatars of the GDL (later often called Lipka), not a generic “Tatar-Mongol” army.
-12–16 additional local farming households is provisional. Named-family headcounts and local/minority share must be reconciled before a final map/census; do not claim the numbers already guarantee 80–90%.
+The approved village plan has exactly 23 households: HH-01–HH-09 plus 14 additional local farming households HH-10–HH-23. HH-01 is separate and must not be counted twice. Named-family headcounts and local/minority resident share still need census reconciliation; household counts do not guarantee 80–90%. See [accepted plan](../Art/Act_I_Village_Plan.md).
 
 ## Household roster
 | ID | Household | Accepted composition / role | Departure |
@@ -23,8 +23,8 @@ Tatar category here is Tatars of the GDL (later often called Lipka), not a gener
 | HH-07 | Jewish family | Married adults, one child and an elderly relative; local household and kin in nearest small town; shoe/leather repair plus periodic materials/orders | Undecided |
 | HH-08 | Roma healer family | Healer roughly 45–60, husband, adult daughter and younger son; long-established neighbors | Healer leaves; relatives' movement undecided |
 | HH-09 | Starosta | Local householder roughly 50–60, coordinates work and relations with authority; family unspecified | Remains |
-| HH-10+ | Other local farming households | Provisional 12–16 additional households; small, ordinary, large/multigenerational, elderly and child-rich yard patterns | Most remain; individual exceptions open |
-HH-01 may be assigned to one of the general farming households later; do not double-count it by default.
+| HH-10+ | Other local farming households | Exactly 14 additional households (HH-10–HH-23); small, ordinary, larger and livestock-oriented planning patterns; exact biographies/headcounts open | Most remain; individual exceptions open |
+HH-01 is its own estate in the accepted 23-yard plan; it is not one of HH-10–HH-23.
 Specialist families also farm and perform household crafts; a profession is not a separate caste or an exclusive activity.
 
 ## Weaver household — exact family continuity

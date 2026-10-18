@@ -1,0 +1,68 @@
+<div id="folkhero-map">
+  <h3>Деревня на сухой гряде · 23 двора</h3>
+  <div class="text-small">Север сверху · высоты относительно воды условные · участки и дороги разведены</div>
+  <svg class="village-map" role="img" aria-label="План деревни с 23 дворами, хозяйственными зонами, источником, мельницей и кладбищем у озера за лесом"></svg>
+  <div class="viz-row text-small"><span>▭ усадьба с постройками</span><span>━ дорога</span><span>┄ тропа</span><span>тонкие линии — рельеф</span><span>G — гумна</span></div>
+  <div class="card" aria-live="polite" id="village-detail">Выберите номер двора или объект на карте.</div>
+  <div class="viz-row" id="village-picks"></div>
+</div>
+<style>
+#folkhero-map .village-map{width:100%;display:block;overflow:visible}
+#folkhero-map svg text{fill:var(--foreground);font-family:inherit;font-weight:400}
+#folkhero-map .yard{fill:var(--card);stroke:var(--border);stroke-width:1.5}
+#folkhero-map .house{fill:var(--viz-series-1);fill-opacity:.35;stroke:var(--foreground);stroke-width:1}
+#folkhero-map .road{fill:none;stroke:var(--muted-foreground);stroke-width:8;stroke-linecap:round;opacity:.45}
+#folkhero-map .path{fill:none;stroke:var(--muted-foreground);stroke-width:1.5;stroke-dasharray:5 5}
+#folkhero-map .river{fill:none;stroke:var(--viz-series-2);stroke-width:13;opacity:.65;stroke-linecap:round}
+#folkhero-map .terrain{fill:var(--viz-series-3);fill-opacity:.09;stroke:none}
+#folkhero-map .object{fill:var(--card);stroke:var(--foreground);stroke-width:1.5}
+#folkhero-map .selected{stroke:var(--foreground);stroke-width:3}
+#folkhero-map #village-picks{margin-top:12px}
+#folkhero-map #village-detail{margin-top:12px}
+</style>
+<script>
+(()=>{
+const root=document.getElementById('folkhero-map'),svg=root.querySelector('svg'),ns='http://www.w3.org/2000/svg';
+const people={1:['Обычная пара','Хата, клеть, огород, дрова; хлев по потребности.'],2:['Семья ткачихи · 7 человек','Вместительная хата со станком, клеть, хлев, навес и сушка; выход к полям.'],3:['Семья кузнеца','Дом, клеть, огород и небольшой хлев; кузница К отдельно у въезда.'],4:['Семья мельника-плотника','Дом на сухом уступе; клеть, хлев, плотницкий навес Т. Мельница М ниже.'],5:['Охотник-рыбак','Обычный жилой двор, снасти и навес; выход к лесу и рыбалке. Состав семьи открыт.'],6:['Татарская семья · 4 человека','Дом, клеть, конюшня/хлев, сено и конский загон П; прямой выезд.'],7:['Еврейская семья · 4 человека','Дом, ремонт обуви и кожи, сухое хранение материалов, огород; дорога в местечко.'],8:['Семья лекарки · 4 человека','Обычная хата, травяной сад, сушка и хранение; соседство с другими дворами.'],9:['Староста','Ухоженный жилой двор с клетью и хлевом, рядом с местом встреч. Состав семьи открыт.']};
+for(let i=10;i<=23;i++)people[i]=[i===12||i===13?'Крупное земледельческое хозяйство':i===17||i===18?'Небольшое хозяйство':i===22||i===23?'Хозяйство с упором на скот':'Земледельческое хозяйство',i===17||i===18?'Малая хата, скромное хранение, общий колодец; крупный хлев не обязателен.':'Хата, хранение семян и еды, огород, дрова, хлев и корм по размеру хозяйства; полевые участки за деревней.'];
+const yards=[[10,90,235,-8],[11,195,205,-5],[2,305,180,4],[12,420,205,9],[9,530,235,13],[13,650,245,8],[6,770,220,-12],[3,100,395,-6],[7,215,365,-10],[1,320,355,4],[14,445,400,12],[15,585,425,7],[16,705,405,-11],[17,320,470,-9],[18,415,470,6],[19,620,520,-8],[8,235,610,-12],[20,335,650,8],[21,510,630,-8],[22,345,750,9],[23,490,835,-11],[4,680,750,-7],[5,785,685,12]];
+const roads=[[[20,330],[110,320],[230,280],[360,270],[490,300],[620,340],[740,320],[875,270]],[[490,300],[505,360],[530,490],[460,540],[400,600],[410,685],[520,750],[625,795],[670,825]],[[460,540],[340,550],[245,520],[190,540],[180,650]],[[145,307],[140,135],[190,65]],[[820,294],[855,440],[845,590],[850,720]]];
+const objs=[['К',35,395,'Кузница','У въезда, отдельно от дома №03; свободный разрыв до жилых крыш.'],['Т',750,780,'Плотницкий навес','Сухая площадка у дома мельника.'],['М',670,845,'Мельница','На местном перепаде ручья; проезд заканчивается на рабочей площадке. Расход воды нужно проверить.'],['П',840,180,'Конский загон','За двором №06, связан с восточным прогоном.'],['С',65,810,'Источник','Исток у болота; отдельная пешая тропа.'],['В',240,810,'Поение животных','Ниже истока; отдельный подход через луг.'],['Л',810,880,'Стирка','Ниже мельницы по течению.'],['W1',295,263,'Ворот W1','Карман у верхней дороги, за пределами усадеб.'],['W2',700,306,'Ворот W2','Сухая верхняя гряда.'],['W3',350,540,'Журавль W3','В расширении нижнего проезда, вне дворов.'],['W4',435,680,'Журавль W4','На нижней сухой террасе.'],['G1',70,125,'Гумна G1','Задний полевой подъезд с запада.'],['G2',365,90,'Гумна G2','Выше жилой полосы, доступ со стороны полей.'],['G3',650,115,'Гумна G3','Разнесённая группа хранения урожая.'],['G4',80,525,'Гумна G4','На западном сухом выступе.'],['G5',710,545,'Гумна G5','На восточном сухом выступе.']];
+function select(key,title,desc){root.querySelector('#village-detail').textContent=title+' — '+desc;svg.querySelectorAll('.selected').forEach(x=>x.classList.remove('selected'));const el=svg.querySelector('[data-key="'+key+'"]');if(el)el.classList.add('selected');}
+function el(tag,a,parent=svg){const e=document.createElementNS(ns,tag);for(const[k,v]of Object.entries(a))e.setAttribute(k,v);parent.appendChild(e);return e;}
+function draw(){svg.replaceChildren();const width=root.clientWidth,fs=12*900/width;svg.setAttribute('viewBox','0 0 900 1200');svg.style.height=(width*1200/900)+'px';
+function text(x,y,t,anchor='middle',essential=true){if(width<500&&!essential)return;const e=el('text',{x,y,'text-anchor':anchor,'font-size':fs});e.textContent=t;}
+function path(d,cls){return el('path',{d,class:cls});}
+// Contours are schematic terrain bands, not surveyed elevations.
+el('path',{d:'M25 150 Q270 20 530 115 T875 150 L875 440 Q690 485 570 470 Q505 550 570 700 L750 720 L750 805 L620 825 Q445 790 320 830 Q180 800 155 700 L70 600 Q95 455 25 420 Z',class:'terrain'});
+for(const d of ['M20 160 Q220 65 420 110 T880 155','M30 195 Q240 100 450 150 T875 205','M40 440 Q210 330 390 440 T820 465','M100 510 Q245 410 420 525 T790 580','M160 690 Q300 565 435 700 T760 805','M185 735 Q310 630 430 750 T740 855'])el('path',{d,fill:'none',stroke:'var(--border)','stroke-width':1.5});
+text(400,40,'ПОЛЯ');text(865,60,'С ↑');text(500,130,'Сухая гряда +8…12 м','middle',false);text(220,710,'Терраса +3…6 м','middle',false);
+// Piecewise road bends follow the ridge and keep clear of entire yard footprints.
+for(const line of roads)path('M'+line.map(p=>p.join(',')).join(' L'),'road');
+text(15,300,'В местечко','start',false);text(875,240,'В поля','end',false);text(130,70,'В поля','end',false);
+el('path',{d:'M20 765 Q100 710 165 780 L225 865 Q110 915 20 850 Z',fill:'var(--viz-series-2)','fill-opacity':.12});
+path('M65 810 C165 870 260 775 375 825 S540 880 670 845 S785 935 875 895','river');
+text(65,750,'Болото','start',false);text(385,905,'Влажный луг · вода ±0','middle',false);text(830,940,'Течение →','middle',false);
+path('M855 440 Q830 570 845 700 Q815 750 810 855','path');
+path('M190 540 Q110 625 65 790','path');path('M400 600 Q330 700 240 790','path');
+path('M65 835 C100 960 300 990 495 975 S765 1030 810 900','path');
+el('path',{d:'M20 965 Q210 915 370 955 T880 970 L880 1060 Q660 1030 430 1070 T20 1060 Z',class:'terrain'});text(380,1020,'ЛЕС');
+path('M495 975 Q550 1060 620 1095','path');
+el('ellipse',{cx:775,cy:1135,rx:100,ry:43,fill:'var(--viz-series-2)','fill-opacity':.2});text(775,1138,'Озеро');
+for(const r of [65,50,35])el('ellipse',{cx:565,cy:1130,rx:r,ry:r*.65,fill:'none',stroke:'var(--border)'});
+text(565,1120,'Кладбище');text(565,1152,'на горке');
+// Put the estate gate on its perimeter and connect only to its nearest road.
+function nearest(x,y){let best=null;for(const line of roads)for(let i=1;i<line.length;i++){const[a,b]=[line[i-1],line[i]],dx=b[0]-a[0],dy=b[1]-a[1],t=Math.max(0,Math.min(1,((x-a[0])*dx+(y-a[1])*dy)/(dx*dx+dy*dy))),q=[a[0]+t*dx,a[1]+t*dy],dist=Math.hypot(q[0]-x,q[1]-y);if(!best||dist<best.dist)best={q,dist};}return best;}
+for(const[id,x,y,angle]of yards){const g=el('g',{'data-key':'h'+id,transform:`translate(${x} ${y}) rotate(${angle})`});
+el('path',{d:'M-34,-29 L29,-33 L35,26 L-26,34 Z',class:'yard'},g);
+el('rect',{x:-23,y:-22,width:27,height:17,class:'house'},g);el('rect',{x:13,y:-20,width:12,height:12,fill:'var(--muted-foreground)',opacity:.4},g);el('rect',{x:12,y:8,width:14,height:16,fill:'var(--muted-foreground)',opacity:.4},g);el('path',{d:'M-24 14h22m-22 6h22m-22 6h22',stroke:'var(--border)',fill:'none'},g);
+const n=el('text',{x:0,y:6,'text-anchor':'middle','font-size':fs},g);n.textContent=String(id).padStart(2,'0');
+const {q,dist}=nearest(x,y),dx=(q[0]-x)/dist,dy=(q[1]-y)/dist;path(`M${x+dx*43} ${y+dy*43} L${q[0]} ${q[1]}`,'path');
+g.addEventListener('click',()=>select('h'+id,String(id).padStart(2,'0')+' · '+people[id][0],people[id][1]));}
+for(const[k,x,y,title,desc]of objs){const g=el('g',{'data-key':k});el(k.startsWith('W')?'circle':'rect',k.startsWith('W')?{cx:x,cy:y,r:18,class:'object'}:{x:x-21,y:y-17,width:42,height:34,rx:4,class:'object'},g);const t=el('text',{x,y:y+4,'text-anchor':'middle','font-size':fs},g);t.textContent=k;g.addEventListener('click',()=>select(k,title,desc));}
+}
+const picks=root.querySelector('#village-picks');for(let i=1;i<=23;i++){const b=document.createElement('button');b.type='button';b.className='btn';b.textContent=String(i).padStart(2,'0');b.setAttribute('aria-label',b.textContent+' '+people[i][0]);b.onclick=()=>select('h'+i,b.textContent+' · '+people[i][0],people[i][1]);picks.appendChild(b);}
+for(const[k,x,y,t,d]of objs){const b=document.createElement('button');b.type='button';b.className='btn';b.textContent=k;b.setAttribute('aria-label',t);b.onclick=()=>select(k,t,d);picks.appendChild(b);}
+new ResizeObserver(draw).observe(root);draw();
+})();
+</script>

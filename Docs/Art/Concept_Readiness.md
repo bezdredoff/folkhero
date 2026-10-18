@@ -88,3 +88,7 @@ No image generation requested in the documentation pass; do not infer mass-gener
 
 ## Current readiness after selection
 DEC-04 now has actual selected target images with hashes and scoped acceptance. DEC-02 has a selected House A construction direction with continuous fieldstone foundation. DEC-03 has one selected male summer/winter exploration; exact cut/headwear/footwear remain open. Bolotnik visual direction is selected but height/scale repair and final views remain open. DEC-01/05/09 and the engine weather/camera benchmark remain unresolved. No selected child makes an entire parent family Modeling-ready.
+
+## 2026-10-18 — Village layout and concept continuation
+
+[Village concept review](Village_Concept_Review.md): B02/B03/B04 have new exploration images, not final coherent modeling packets. B05 has an accepted 23-yard terrain schematic; full village image count/position unverified. Metric geometry, mill/well checks, consistent views and URP testing remain open.

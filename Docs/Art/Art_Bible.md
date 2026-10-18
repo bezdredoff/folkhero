@@ -568,3 +568,7 @@ Written rendering direction is locked; actual target images must be stored/refer
 
 ## Selected exploration targets — 2026-10-18
 Use [Act I Pilot Review](Concept_Pilot_Review.md) and the [native target gallery](../../References/Targets/Act_I_Pilot/README.md) for the current five-subject visual calibration. Selected targets now exist; earlier missing-target notes are preparation history. Simplified alder/terrain/civilian revisions define the detail ceiling; do not copy every texture mark or winter twig. House A uses round logs, moss chinking, tar-dark corners and a continuous irregular partly buried fieldstone foundation. Curse uses local plum/violet stains and rare lilac activity across seasonal surfaces. All targets remain explorations, with construction, scale and historical limits recorded per object.
+
+## 2026-10-18 — Village layout and concept continuation
+
+[Village assets and reviews](Village_Concept_Review.md) and [accepted 23-household terrain plan](Act_I_Village_Plan.md): no church, cemetery on hill at lake beyond forest, roads outside estate footprints. New native image gallery preserves selected, superseded and unreviewed studies. Schematic overrides village illustration; simplify texture before production.
