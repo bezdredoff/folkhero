@@ -69,3 +69,17 @@ Before broad production: human selection and benchmarks under AGENTS.md.
 ## Honest remaining blockers
 No retrieved approved target image; no complete object-level rural clothing/ornament/military packet; no selected date/authority; no scan-verified comparison of local Bolotnik descriptions; no dimensioned house reconstruction tied to a specific local inventory.
 These are real research/content gaps. A template or source homepage cannot close them. Research findings in the evidence dossier are initial triage, not historical certification.
+
+## Later discussion update — 2026-10-18
+The audit above is the historical preparation snapshot. The user subsequently approved written village/community/character directions:
+- [Village Design](Act_I_Village_Design.md)
+- [Community](../Vision/Act_I_Community.md)
+- [Character Briefs](Act_I_Character_Briefs.md)
+DEC-02/03/06/08/09/10 are not all fully resolved by this discussion. Specifically:
+- DEC-02: ordinary house family and broad construction chosen; exact dimensions, smoke route and joins open.
+- DEC-03: rural/seasonal materials and silhouettes chosen; exact cuts/headwear/footwear open.
+- DEC-04: written style upheld; actual approved target image still missing.
+- DEC-09: ornament worker/family chosen; motifs, techniques and magical mappings still open.
+Date/authority, spirit/enemy design, weather benchmark and ritual object selection remain open.
+R11–R18 and explicit accepted extrapolations supplement the evidence dossier. No claim that source gaps are all closed.
+No image generation requested in the documentation pass; do not infer mass-generation authorization from agreement to a written character/house brief.
