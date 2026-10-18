@@ -100,3 +100,80 @@ Scope: archaeological wool/damask and court/elite material context. Not evidence
 | Bolotnik | R08 late local tradition | Scan check and comparison; human choice of adaptation, rig and combat footprint |
 | Ecology | Existing UNESCO entry | Species-specific visual records for chosen trees/plants; modern ecology ≠ historical settlement |
 Research need not invent certainty: if no narrow evidence can be found, a later discussion may explicitly accept a documented game extrapolation. Such acceptance never changes the evidence classification.
+
+## Discussion supplement — 2026-10-18
+R11–R18 capture sources consulted during the subsequent discussion. Approved fictional biographies/ratios/mechanisms remain separate from source findings. Object-specific source work still applies.
+
+### R11 — boulder foundations, adjacent chronology
+E. D. Kvitnitskaya, “Архитектура Белоруссии XVII в.”, Vseobshchaya istoriya arkhitektury, vol.6 (1968), pp.469–502.
+URL: https://tehne.com/event/arhivsyachina/arhitektura-belorussii-xvii-veka
+Access: REVIEWED reproduced chapter on third-party host; P2 architectural synthesis.
+Locator: opening construction discussion, printed p.469.
+Supports: boulders placed separately at corners or joined in mortar as timber-building foundations in the described XVII-century corpus.
+Limit: not direct evidence for every late-XVI peasant home in Upper Berezina.
+Accepted use: low individual stone supports in B01; precise geometry/dimensions remain game design.
+
+### R12 — hazel, material plausibility
+Woodland Trust, Types of woodland management:
+https://www.woodlandtrust.org.uk/plant-trees/managing-trees-and-woods/types-of-woodland-management/
+Access: SEARCH-EXCERPT; contemporary woodland practice, not period evidence.
+Supports hazel use for hurdle-making.
+Royal Botanic Gardens Kew, Corylus avellana:
+https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:295446-1
+Access: SEARCH-EXCERPT; modern botanical distribution includes Belarus.
+Use: B03 material plausibility. Neither source documents an Upper Berezina XVI-century woven fence or coppice regime.
+
+### R13 — pine, material plausibility
+Woodland Trust, Scots pine:
+https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/scots-pine/
+Access: SEARCH-EXCERPT; contemporary species/use account.
+Supports suitability/use for gate posts and fencing.
+Use: pine pole/plank enclosure material as user-accepted game extrapolation. Does not date diagonal bracing, joints or boards.
+
+### R14 — selected settlement water rule (GAME, not external evidence)
+Origin: user discussion 2026-10-18.
+Shared sweep well for roughly 2–3 simple homes in a lower/shallow-water area; higher/deeper sites use windlass; larger livestock households have a well that neighbors may also access.
+Watermill at natural stream drop, no large pond.
+Historical well/wheel/joint references still required for object construction; no source certifies hydrology or this household allocation.
+
+### R15 — Tatars of the GDL
+National Museum of Lithuania, “Prayers, Divinitions, and Saffron: Lithuanian Tatar Manuscripts from the Vilnius Muftiate Collection”.
+https://lnm.lt/en/events/prayers-divinitions-and-saffron-lithuanian-tatar-manuscripts-from-the-vilnius-muftiate-collection/
+Access: SEARCH-EXCERPT, institutional historical exhibition description.
+Supports settlement of ancestors of Lithuanian Tatars in GDL lands in XIV–XVI centuries.
+Limits: no selected XVI-century garment or evidence for HH-06's exact village/occupation. Mounted-service biography and horse yard are accepted fiction, not a universal ethnic role.
+
+### R16 — Jewish regional context
+POLIN Museum, Paradisus Iudaeorum (1569–1648):
+https://polin.pl/en/wystawy-wystawa-glowna-galerie/paradisus-iudaeorum
+Access: SEARCH-EXCERPT / exhibition scope; detailed clothing evidence not retrieved.
+Use: historical context and research entrypoint only.
+Limits: no direct support for a specific Upper Berezina village family, shoe repair occupation, garment pattern or demographic share. HH-07 is fiction requiring more specific art references.
+
+### R17 — Roma regional presence
+Orbis Lituaniae, “Gypsies, the Vagabonds of Lithuania” (historical title):
+https://www.ldkistorija.lt/gypsies-the-vagabonds-of-lithuania/
+Access: SEARCH-EXCERPT; full account not reviewed in this pass.
+Council of Europe historical education factsheet:
+https://www.coe.int/t/dg4/education/roma/Source/FS/2.0_Ankunft-in-Europa.pdf
+Access: SEARCH-EXCERPT; map lists Vilnius in 1501; no underlying primary document inspected.
+Use: regional presence research leads.
+Limits: not proof of the proposed settled household, healer occupation, magic or a costume. HH-08 and healer knowledge are individual fictional choices.
+
+### R18 — Cossack historical context
+Internet Encyclopedia of Ukraine, Registered Cossacks:
+https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CR%5CE%5CRegisteredCossacks.htm
+Access: SEARCH-EXCERPT; scholarly reference entry, no primary decree inspected.
+Supports registered Cossack formation context from 1572.
+Limits: no chosen local outfit, no evidence for a particular hunter/fisher or local household. A Cossack past is an accepted biography, not a separate ethnic phenotype.
+
+## Explicitly accepted extrapolations vs remaining research
+[Village brief](../Docs/Art/Act_I_Village_Design.md) and [character briefs](../Docs/Art/Act_I_Character_Briefs.md) hold selected game choices.
+- Small membrane windows and shutters are selected for baseline houses. R01 supports membrane-window discussion; universal shutter use and local construction are not established.
+- R02's fence passage lists wattle, poles, boards and other enclosures in estate context. It does not establish the dominant fence of poor local farmers.
+- R01 period clothing discussion includes a 1582 Minsk-district wealthier household with sheepskin and beaver-fur finishing. This supports material possibilities, not fur trim on all villagers.
+- Wool cloth and sheepskin baseline, plus limited selected wild fur, are approved. Clothing cuts, shoes and headwear remain object-level research.
+- Winter fleece-inward concept, smoke exit, anvil shape, leather apron, wheel type and mechanism are not newly certified by source generalities.
+- Homemade simple ceramics is a game possibility, not a claim that every household produces all its pottery.
+- Group presence sources cannot establish population ratio, occupation, fictional magic or shared residence. Those are authored choices.
+Approved extrapolation allows discussion to move forward; preserve the evidence label in prompts and modeling notes.
