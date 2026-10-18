@@ -97,3 +97,7 @@ No inferred combat attack approval. Broader backlog is not the immediate product
 
 ## Pilot accounting
 Five base subjects, 11 selected native images including six state studies, six archived rejected/superseded images. Parent families are partial; A01/A02/A03 are not final, J01–J04 are not completed by a terrain-only Curse example. Rain/wet, final modeling views, scale verification and actual gameplay-camera tests remain open. See [pilot review](Concept_Pilot_Review.md).
+
+## 2026-10-18 — Village layout and concept continuation
+
+[Village follow-up review](Village_Concept_Review.md) and [native gallery](../../References/Targets/Act_I_Village/README.md) add child studies for B02/B03/B04/B05, plus one D03 bridge stored as unreviewed. All 60 parent entries remain unchanged; no parent task is marked complete. B05 uses the accepted 23-estate schematic.

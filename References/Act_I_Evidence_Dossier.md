@@ -227,3 +227,7 @@ Boulder fragmentation/removal, visiting cloth-dominant military palette, violet 
 - Bolotnik: R08 folklore context; clothed barefoot humanoid adaptation with greener hair/moss is original art direction. Generated height labels are not evidence.
 - Curse and season composition: authored GAME visual language, production inspiration INSP-01; no historical/ecological claim about supernatural stains.
 All generated pictures are TARGET or archived ANTI-REFERENCE, never EVIDENCE. Source access/confidence labels above are unchanged.
+
+## 2026-10-18 — Village layout and concept continuation
+
+[Village plan](../Docs/Art/Act_I_Village_Plan.md) fixes 23 fictional households, no church and burial hill beside lake beyond forest. R02 provides broad regional planning context, not this exact parcel map, cemetery arrangement or population. Revised square-tenon fence joints, utility dimensions and mill hydrology remain selected art hypotheses requiring specific validation. [New native images](Targets/Act_I_Village/README.md) are visual targets, not historical evidence.

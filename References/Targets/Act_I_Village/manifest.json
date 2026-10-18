@@ -1,0 +1,345 @@
+{
+  "date": "2026-10-18",
+  "entries": [
+    {
+      "object_id": "B02-STORE-A",
+      "revision": "r01",
+      "status": "Selected exploration",
+      "path": "References/Targets/Act_I_Village/B02-STORE-A/B02-STORE-A_r01.png",
+      "sha256": "6693826005aad595c8bcbb12a3fc6e071c222361706a5c4bba4cbb03fccadd78",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-77475b10-3550-4d72-aa37-089ac23c23c8.png",
+      "notes": "Compact windowless storehouse; excess thatch/wood/stone texture needs simplification.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "B02-LIVESTOCK-A",
+      "revision": "r01",
+      "status": "Selected exploration",
+      "path": "References/Targets/Act_I_Village/B02-LIVESTOCK-A/B02-LIVESTOCK-A_r01.png",
+      "sha256": "20e6677f69142a8bfd989cf09db0a0c818d1f5e1d3f69f678801636da1ac5429",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-9b116718-0972-4b47-a491-9ce33bbdc355.png",
+      "notes": "Low elongated livestock shed; broad ground-level animal entrance.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "B02-THRESHING-A",
+      "revision": "r01",
+      "status": "Selected exploration",
+      "path": "References/Targets/Act_I_Village/B02-THRESHING-A/B02-THRESHING-A_r01.png",
+      "sha256": "02dc067cd63ab110d18e7f4b772014484c0cd93c60c4cec4fc4c2d2a38bdd2f8",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-f462b8e5-4996-4dc2-91c6-82d54c0eb796.png",
+      "notes": "Larger harvest/threshing building with cart entrance; shared log/roof family.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "B02-SHELTER-A",
+      "revision": "r01",
+      "status": "Superseded",
+      "path": "References/Targets/Act_I_Village/Archive/B02-SHELTER-A_r01.png",
+      "sha256": "ae52d4d544ff32b63442f101c7fb155e83268183ebc130d19d0f8467ef1de7c6",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-bc81e74d-e084-44f1-9fe6-ea2a68cee777.png",
+      "notes": "Too realistic; nonstandard dressed human scale reference. Replaced by r02.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "B02-SHELTER-A",
+      "revision": "r02",
+      "status": "Selected exploration",
+      "path": "References/Targets/Act_I_Village/B02-SHELTER-A/B02-SHELTER-A_r02.png",
+      "sha256": "6dca6201b3b8d5f8924de3d98e96d1986d3c333d61e1edf4c9f278bd23179f71",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-5146fbc5-3a86-4938-81e6-6b73420f3840.png",
+      "notes": "Simplified timber/thatch/ground and neutral grey scale mannequin.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "B03-WATTLE-A",
+      "revision": "r01",
+      "status": "Selected exploration",
+      "path": "References/Targets/Act_I_Village/B03-WATTLE-A/B03-WATTLE-A_r01.png",
+      "sha256": "b3acd3313866aa86f3e727e0761c75c0e6d4657fe67979356a3125b5680da83d",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-06179832-60c3-468e-8267-59e09cda80cd.png",
+      "notes": "Hazel wattle; broad readable weave without metal fittings.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "B03-HORSE-FENCE-A",
+      "revision": "r01",
+      "status": "Superseded",
+      "path": "References/Targets/Act_I_Village/Archive/B03-HORSE-FENCE-A_r01.png",
+      "sha256": "efb5eaf4a0e865c0bea65368190c6d27c9aa3862b44fb8bccb79f2d98298e201",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-5ff272c4-b972-4c6b-91b1-cfaf0a7ec620.png",
+      "notes": "Diagonal incorrectly a round pole; end joints needed correction.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "B03-HORSE-FENCE-A",
+      "revision": "r02",
+      "status": "Selected exploration",
+      "path": "References/Targets/Act_I_Village/B03-HORSE-FENCE-A/B03-HORSE-FENCE-A_r02.png",
+      "sha256": "a843d97221f1224d39d66e6ee36889623fa493c4a50c5944c3a19f062b81a4fd",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-7bb829de-dde5-406e-8e50-84801180b936.png",
+      "notes": "Flat diagonal board; squared rail tenons entering post sockets; no external joint collars.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "B03-GATE-A",
+      "revision": "r01",
+      "status": "Selected exploration",
+      "path": "References/Targets/Act_I_Village/B03-GATE-A/B03-GATE-A_r01.png",
+      "sha256": "fe4dd0c17f5affd093617ca084a15f23873526a0aca7aeb54c416c5d7929daf9",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-46807896-90f2-4a8e-8b55-9435c2f4856d.png",
+      "notes": "Round rails socketed into frame; diagonal board; modest hinges and wooden latch. Joint and brace construction still requires verification.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "B04-WELL-SWEEP-A",
+      "revision": "r01",
+      "status": "Superseded",
+      "path": "References/Targets/Act_I_Village/Archive/B04-WELL-SWEEP-A_r01.png",
+      "sha256": "eeee600e408f54f14efc6d0398cd1d5574c702d0e5cc657cb794f39bae47cc2e",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-91de20a4-ba4a-4acf-be34-c38e1cdaea4e.png",
+      "notes": "Forked/duplicated lever at pivot and excessive texture; replaced by single-lever revision.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "B04-WELL-SWEEP-A",
+      "revision": "r02",
+      "status": "Selected exploration",
+      "path": "References/Targets/Act_I_Village/B04-WELL-SWEEP-A/B04-WELL-SWEEP-A_r02.png",
+      "sha256": "523400e015697b213dcbb38544ba985613efbbae8b057168c6b3d10c48d868f3",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-7062fce7-c4c4-48a2-9509-4cd8f9c58815.png",
+      "notes": "One continuous lever in fork support, counterweight and bucket; simplified shared curb.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "B04-WELL-WINDLASS-A",
+      "revision": "r01",
+      "status": "Selected exploration",
+      "path": "References/Targets/Act_I_Village/B04-WELL-WINDLASS-A/B04-WELL-WINDLASS-A_r01.png",
+      "sha256": "73f10123371a5f6cba878470bf5d2045afc32d40480c5c6318b8845e889b86cb",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-7a70ad80-95d9-48db-9e61-d66105c73661.png",
+      "notes": "Two posts, drum, crank, rope and bucket; shared curb where structurally plausible.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "D03-BRIDGE-A",
+      "revision": "r01",
+      "status": "Unreviewed archive",
+      "path": "References/Targets/Act_I_Village/Archive/D03-BRIDGE-A_r01.png",
+      "sha256": "083149d94502a28c4336364d647600f8e6bbb5775f7d6bb73d089d2752cae5a2",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-b1411e23-73b3-4a94-b73f-1df6b8c59c88.png",
+      "notes": "Local generated source exists, but corresponding generation/approval discussion is absent from available context. Do not treat as selected.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "B04-TROUGH-A",
+      "revision": "r01",
+      "status": "Continued exploration",
+      "path": "References/Targets/Act_I_Village/B04-TROUGH-A/B04-TROUGH-A_r01.png",
+      "sha256": "7f08d9965c5e39b9a795ca4e106afb6cfc2c934248306468b27205eaaf7e8401",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-885fb77b-bd68-4dbb-80d7-2ad73f083f11.png",
+      "notes": "Hollowed timber livestock trough on two low supports. User continued; no separate explicit modeling approval. Proposed 2.0 x 0.55 x 0.5 m is provisional.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "B04-DRYING-RACK-A",
+      "revision": "r01",
+      "status": "Continued exploration",
+      "path": "References/Targets/Act_I_Village/B04-DRYING-RACK-A/B04-DRYING-RACK-A_r01.png",
+      "sha256": "1d80787afdc3e0070195a6fc345b934a6706fd7841bd5be6e836ba72a1b2c98c",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-d03a3118-9ec3-4cc2-bb1b-550f0ea7b1a2.png",
+      "notes": "Two forked posts and removable pole; texture/fibres too detailed and height relative to mannequin inconsistent. Proposed 2 m span / 1.5 m height is not validated.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "B04-WORK-TABLE-A",
+      "revision": "r01",
+      "status": "Continued exploration",
+      "path": "References/Targets/Act_I_Village/B04-WORK-TABLE-A/B04-WORK-TABLE-A_r01.png",
+      "sha256": "1f387c50e031b4f85dd6feee35977c879c2b2a27292c6c1e57bc349db18e1615",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-3a9d8266-9125-463d-b136-a60460c3c129.png",
+      "notes": "Three-plank top, four legs and low stretchers; extra upper member in end view needs reconciliation. Proposed 1.6 x 0.7 x 0.8 m is provisional.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "B04-STORAGE-CHEST-A",
+      "revision": "r01",
+      "status": "Continued exploration",
+      "path": "References/Targets/Act_I_Village/B04-STORAGE-CHEST-A/B04-STORAGE-CHEST-A_r01.png",
+      "sha256": "b837799a4dc5b8bae9847dde91694ba817207fd87726b1ee484c91d198c8a589",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-32dcde4f-2160-489c-9c44-1f9d113cf232.png",
+      "notes": "Plain plank box, flat movable lid, two hinges and low supports. Proposed 1.1 x 0.55 x 0.65 m provisional; board/joint consistency to check.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "B04-HEARTH-A",
+      "revision": "r01",
+      "status": "Selected exploration",
+      "path": "References/Targets/Act_I_Village/B04-HEARTH-A/B04-HEARTH-A_r01.png",
+      "sha256": "9c92df236b6cac0bcbd12cbc8197a8d6673a0da577aec9dce1f784cd88925328",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-b756c3cb-7f5b-4a0a-b096-cd4db74b443a.png",
+      "notes": "Explicitly accepted outdoor hearth: irregular partly buried stones, ash and three charred logs. Simplify ash/char texture; fire separate VFX. Not the indoor heating stove.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "Explicit acceptance in visible discussion"
+    },
+    {
+      "object_id": "B05-VILLAGE-A",
+      "revision": "r01",
+      "status": "Rejected for scope",
+      "path": "References/Targets/Act_I_Village/Archive/B05-VILLAGE-A_r01.png",
+      "sha256": "d5106f8dd4e20ae9510ebd7f4bb51e5261bbac75fdcf177518e6a647ae090ed8",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-f8e4ea1c-21cf-48e7-b4a5-01d20b350256.png",
+      "notes": "Four-house illustration insufficient for agreed settlement. Superseded by full layout work; not a plan.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    },
+    {
+      "object_id": "B05-VILLAGE-A",
+      "revision": "r02",
+      "status": "Provisional illustration",
+      "path": "References/Targets/Act_I_Village/B05-VILLAGE-A/B05-VILLAGE-A_r02.png",
+      "sha256": "1db8a32cb588235e2bcb2dcceccd91b2fd688bd13631dc456828b52adcdc94e8",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-441d9d56-149b-423c-94be-3957c97aa372.png",
+      "notes": "Full settlement illustration after accepted terrain schematic. Exact 23-yard correspondence unverified, surface detail too dense, terrace/drop plausibility and mill mechanism need review. Schematic overrides image.",
+      "modeling_ready": false,
+      "historical_certification": false,
+      "provenance": "ChatGPT image_gen, Folkhero conversation, 2026-10-18; original PNG bytes preserved",
+      "approval_basis": "See review: continuation is scoped exploration acceptance, not final packet approval"
+    }
+  ]
+}

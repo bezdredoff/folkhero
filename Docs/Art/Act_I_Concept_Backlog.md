@@ -457,3 +457,7 @@ Source links belong in each child packet; accepted fiction remains labeled.
 
 ## Pilot progress — 2026-10-18
 [Selection review](Concept_Pilot_Review.md) and [native image gallery](../../References/Targets/Act_I_Pilot/README.md) record five selected base directions and six state studies. B01/C01/D01/F01–F03/I02 have partial child-level exploration outputs; the 60 parent tasks remain the coverage plan. A01/A02/A03 await consolidated modeling/camera/material validation; broad status sheets are not complete. Do not generate every season/status combination to fill the backlog.
+
+## 2026-10-18 — Village layout and concept continuation
+
+[Village follow-up](Village_Concept_Review.md): B02 farm-building, B03 fence/gate and B04 utility explorations archived. B05 planning scope is exactly 23 households, no church, burial hill by lake beyond forest; see [accepted plan](Act_I_Village_Plan.md). Full scene illustration is provisional. B06 estate patterns are assigned for planning, not completed model packets.
