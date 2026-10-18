@@ -306,3 +306,15 @@ Decisions:
 - No images generated/selected and no historical certainty invented. Read evidence dossier R11–R18 for additional scoped sources and fiction boundaries.
 
 Open: exact names/ages where ranges, full population, date/authority, local costume details, motif set, mechanism/equipment geometry, departure causes/relatives and selected image targets.
+
+## 2026-10-18 — Environment and visual production discussion
+See [Environment and States](../Art/Act_I_Environment_and_States.md) and [Production Pilot](../Art/Concept_Production_Pilot.md).
+- Upper Berezina modern habitat evidence informs forest/wetland assembly, not exact historical percentages.
+- First route reduced to forest path/wet alder woodland/stream. One bridge and one ford; other crossing families deferred.
+- Ritual landmark is a natural boulder at spring. Authority heavily fragments it and permanently removes part; exact method/motive open.
+- Bolotnik: standard humanoid-compatible body, heavy torso, full human limbs/hands/bare feet, plain mossy shirt/trousers/belt, broad nose/heavy cheeks/simple mouth/concealed eyes, short clumped hair/small beard. Suggested height still provisional. No combat mechanics locked.
+- Well-supplied visiting troops use mainly wool cloth and leather; military family reused later. Gray-blue/linen/dark-brown/muted-red palette accepted as art, not historic uniform.
+- Violet/plum is persistent Curse cue with rare lilac activity; seasonal colors remain. Other state cues in Environment and States.
+- Water uses shared parameterized family; natural peat-dark water is not automatic poison.
+- Pilot: one house/tree/ground-water/civilian/Bolotnik. Approve base before consistent modeling sheets/state multiplication; no combinatorial concept batch.
+- User requested documentation then creation. First creation is one provisional house exploration under the image-generation workflow; no mass asset production authorized.
