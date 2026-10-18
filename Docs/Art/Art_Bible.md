@@ -565,3 +565,6 @@ See Asset_Sheet_Standard.md for mandatory individual object sheets, human-relati
 See Concept_Readiness.md and Concept_Register.md for stage tracking and unresolved choices. Historical claims require scoped evidence; use ../../References/Act_I_Evidence_Dossier.md.
 PC-first release planning and mobile-readable art are compatible: primary PC HUD and separate touch/readability comparisons. Current classes use HP/cooldowns without mana/stamina/rage.
 Written rendering direction is locked; actual target images must be stored/referenced and explicitly identified before they are treated as approved visual targets.
+
+## Selected exploration targets — 2026-10-18
+Use [Act I Pilot Review](Concept_Pilot_Review.md) and the [native target gallery](../../References/Targets/Act_I_Pilot/README.md) for the current five-subject visual calibration. Selected targets now exist; earlier missing-target notes are preparation history. Simplified alder/terrain/civilian revisions define the detail ceiling; do not copy every texture mark or winter twig. House A uses round logs, moss chinking, tar-dark corners and a continuous irregular partly buried fieldstone foundation. Curse uses local plum/violet stains and rare lilac activity across seasonal surfaces. All targets remain explorations, with construction, scale and historical limits recorded per object.

@@ -1,0 +1,498 @@
+{
+  "date": "2026-10-18",
+  "stage": "Selected exploration directions; no modeling-ready packets",
+  "entries": [
+    {
+      "id": "B01-HOUSE-A/summer/r01",
+      "object_id": "B01-HOUSE-A",
+      "state": "summer",
+      "revision": "r01",
+      "status": "Rejected",
+      "path": "References/Targets/Act_I_Pilot/Archive/B01-HOUSE-A_summer_r01.png",
+      "sha256": "0409400082d6bbe393db32872427998609a9800a00b54c4f98d14691666f39a7",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-0414431c-06b0-4eea-866d-ad304ee8d772.png",
+      "provenance": "ChatGPT image_gen generation/edit in Folkhero art discussion, 2026-10-18; original PNG preserved without resizing",
+      "approval_date": null,
+      "approval_basis": null,
+      "approved_aspects": null,
+      "rework_reason": "Floating appearance / isolated decorative supports",
+      "sources": [
+        "R01",
+        "R02",
+        "R11"
+      ],
+      "historical_certification": false,
+      "modeling_ready": false,
+      "reference_images": [],
+      "provenance_limit": "Exact prompt text/model version/seed were not exported for every early call; no deterministic replay claimed."
+    },
+    {
+      "id": "B01-HOUSE-A/summer/r02",
+      "object_id": "B01-HOUSE-A",
+      "state": "summer",
+      "revision": "r02",
+      "status": "Superseded",
+      "path": "References/Targets/Act_I_Pilot/Archive/B01-HOUSE-A_summer_r02.png",
+      "sha256": "57dde13120df2ea6eeb23dea4724ed17dba379947ec99e8c271721738f2f3615",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-e598d3ff-9535-4b1c-827d-2ba14eda09f1.png",
+      "provenance": "ChatGPT image_gen generation/edit in Folkhero art discussion, 2026-10-18; original PNG preserved without resizing",
+      "approval_date": null,
+      "approval_basis": null,
+      "approved_aspects": null,
+      "rework_reason": "Foundation improved; round logs, moss, tarred corners and irregular boulders requested next",
+      "sources": [
+        "R01",
+        "R02",
+        "R11"
+      ],
+      "historical_certification": false,
+      "modeling_ready": false,
+      "reference_images": [
+        "References/Targets/Act_I_Pilot/Archive/B01-HOUSE-A_summer_r01.png"
+      ],
+      "provenance_limit": "Exact prompt text/model version/seed were not exported for every early call; no deterministic replay claimed."
+    },
+    {
+      "id": "B01-HOUSE-A/summer/r03",
+      "object_id": "B01-HOUSE-A",
+      "state": "summer",
+      "revision": "r03",
+      "status": "Selected",
+      "path": "References/Targets/Act_I_Pilot/B01-HOUSE-A/B01-HOUSE-A_summer_r03.png",
+      "sha256": "da56fe71b740a388e3162d76b4870a6b125013f72d1ec7352835d8bb4860de98",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-8e494d5a-8f84-448f-bef2-32f760ae6870.png",
+      "provenance": "ChatGPT image_gen generation/edit in Folkhero art discussion, 2026-10-18; original PNG preserved without resizing",
+      "approval_date": "2026-10-18",
+      "approval_basis": "User accepted the immediately preceding image and continued; acceptance is limited to the aspects and caveats recorded here",
+      "approved_aspects": "Round logs; moss chinking; tar-dark corners; continuous irregular partly buried fieldstones, some boulder-sized; minimal boards",
+      "rework_reason": null,
+      "sources": [
+        "R01",
+        "R02",
+        "R11"
+      ],
+      "historical_certification": false,
+      "modeling_ready": false,
+      "reference_images": [
+        "References/Targets/Act_I_Pilot/Archive/B01-HOUSE-A_summer_r02.png"
+      ],
+      "provenance_limit": "Exact prompt text/model version/seed were not exported for every early call; no deterministic replay claimed."
+    },
+    {
+      "id": "C01-ALDER-A/summer/r01",
+      "object_id": "C01-ALDER-A",
+      "state": "summer",
+      "revision": "r01",
+      "status": "Superseded",
+      "path": "References/Targets/Act_I_Pilot/Archive/C01-ALDER-A_summer_r01.png",
+      "sha256": "8b65922dc78e80aba0885ee28e525f502eebfb8de870b2ac62f62384aa95ab16",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-749684c8-9745-4e8e-8a3a-cd48f0130f7e.png",
+      "provenance": "ChatGPT image_gen generation/edit in Folkhero art discussion, 2026-10-18; original PNG preserved without resizing",
+      "approval_date": null,
+      "approval_basis": null,
+      "approved_aspects": null,
+      "rework_reason": "Too detailed; user requested simplification",
+      "sources": [
+        "R19",
+        "R20"
+      ],
+      "historical_certification": false,
+      "modeling_ready": false,
+      "reference_images": [],
+      "provenance_limit": "Exact prompt text/model version/seed were not exported for every early call; no deterministic replay claimed."
+    },
+    {
+      "id": "C01-ALDER-A/summer/r02",
+      "object_id": "C01-ALDER-A",
+      "state": "summer",
+      "revision": "r02",
+      "status": "Selected",
+      "path": "References/Targets/Act_I_Pilot/C01-ALDER-A/C01-ALDER-A_summer_r02.png",
+      "sha256": "5c04dd7f5b00bf47776c8ba00c5f955e6f57ff495ec3e5de60253117741f8366",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-f484cf0d-8bdc-408e-ab3e-561135b1aad8.png",
+      "provenance": "ChatGPT image_gen generation/edit in Folkhero art discussion, 2026-10-18; original PNG preserved without resizing",
+      "approval_date": "2026-10-18",
+      "approval_basis": "User accepted the immediately preceding image and continued; acceptance is limited to the aspects and caveats recorded here",
+      "approved_aspects": "Few broad canopy masses and simple faceted trunk",
+      "rework_reason": null,
+      "sources": [
+        "R19",
+        "R20"
+      ],
+      "historical_certification": false,
+      "modeling_ready": false,
+      "reference_images": [
+        "References/Targets/Act_I_Pilot/Archive/C01-ALDER-A_summer_r01.png"
+      ],
+      "provenance_limit": "Exact prompt text/model version/seed were not exported for every early call; no deterministic replay claimed."
+    },
+    {
+      "id": "D01-GROUND-WATER-A/summer/r01",
+      "object_id": "D01-GROUND-WATER-A",
+      "state": "summer",
+      "revision": "r01",
+      "status": "Superseded",
+      "path": "References/Targets/Act_I_Pilot/Archive/D01-GROUND-WATER-A_summer_r01.png",
+      "sha256": "d409227aac8878064eec4ff1b2c38aaaf17e6684c437f592f41bc1313b3957d2",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-480ed088-e6d9-40f5-8a0f-af0314fb0fc5.png",
+      "provenance": "ChatGPT image_gen generation/edit in Folkhero art discussion, 2026-10-18; original PNG preserved without resizing",
+      "approval_date": null,
+      "approval_basis": null,
+      "approved_aspects": null,
+      "rework_reason": "Replaced by simpler broad terrain/material masses",
+      "sources": [
+        "R19",
+        "R20",
+        "R22"
+      ],
+      "historical_certification": false,
+      "modeling_ready": false,
+      "reference_images": [],
+      "provenance_limit": "Exact prompt text/model version/seed were not exported for every early call; no deterministic replay claimed."
+    },
+    {
+      "id": "D01-GROUND-WATER-A/summer/r02",
+      "object_id": "D01-GROUND-WATER-A",
+      "state": "summer",
+      "revision": "r02",
+      "status": "Selected",
+      "path": "References/Targets/Act_I_Pilot/D01-GROUND-WATER-A/D01-GROUND-WATER-A_summer_r02.png",
+      "sha256": "61677c491e0b1945c5ba4db2a4dd34c58dad8a470ae2887329308d85ef05b0d3",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-f659c9d1-64f3-4ae3-9e1d-16ab74ca6c1f.png",
+      "provenance": "ChatGPT image_gen generation/edit in Folkhero art discussion, 2026-10-18; original PNG preserved without resizing",
+      "approval_date": "2026-10-18",
+      "approval_basis": "User accepted the immediately preceding image and continued; acceptance is limited to the aspects and caveats recorded here",
+      "approved_aspects": "Gentle bank; broad ground masks; two sedge tufts; natural brown shallow water",
+      "rework_reason": null,
+      "sources": [
+        "R19",
+        "R20",
+        "R22"
+      ],
+      "historical_certification": false,
+      "modeling_ready": false,
+      "reference_images": [
+        "References/Targets/Act_I_Pilot/Archive/D01-GROUND-WATER-A_summer_r01.png"
+      ],
+      "provenance_limit": "Exact prompt text/model version/seed were not exported for every early call; no deterministic replay claimed."
+    },
+    {
+      "id": "F03-PAIR-M/summer/r01",
+      "object_id": "F03-PAIR-M",
+      "state": "summer",
+      "revision": "r01",
+      "status": "Superseded",
+      "path": "References/Targets/Act_I_Pilot/Archive/F03-PAIR-M_summer_r01.png",
+      "sha256": "540c7607ad57034ce7233ee4a55d1c57eef3c10c85c7254db1f0448c88a06f99",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-8da24f4e-0379-4b4a-9b87-17de99709ea8.png",
+      "provenance": "ChatGPT image_gen generation/edit in Folkhero art discussion, 2026-10-18; original PNG preserved without resizing",
+      "approval_date": null,
+      "approval_basis": null,
+      "approved_aspects": null,
+      "rework_reason": "User preferred second, simplified character variant",
+      "sources": [
+        "R01",
+        "R03",
+        "R04"
+      ],
+      "historical_certification": false,
+      "modeling_ready": false,
+      "reference_images": [],
+      "provenance_limit": "Exact prompt text/model version/seed were not exported for every early call; no deterministic replay claimed."
+    },
+    {
+      "id": "F03-PAIR-M/summer/r02",
+      "object_id": "F03-PAIR-M",
+      "state": "summer",
+      "revision": "r02",
+      "status": "Selected",
+      "path": "References/Targets/Act_I_Pilot/F03-PAIR-M/F03-PAIR-M_summer_r02.png",
+      "sha256": "bdf406ac588f3d71436865728cf3df32098b4c9a0a34561b1489373a3a33adfb",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-e34686aa-6794-49c7-8564-d9deef6b0f08.png",
+      "provenance": "ChatGPT image_gen generation/edit in Folkhero art discussion, 2026-10-18; original PNG preserved without resizing",
+      "approval_date": "2026-10-18",
+      "approval_basis": "User accepted the immediately preceding image and continued; acceptance is limited to the aspects and caveats recorded here",
+      "approved_aspects": "Ordinary human proportions; simplified face/hair; linen shirt, belt, trousers, wraps and plain shoes",
+      "rework_reason": null,
+      "sources": [
+        "R01",
+        "R03",
+        "R04"
+      ],
+      "historical_certification": false,
+      "modeling_ready": false,
+      "reference_images": [
+        "References/Targets/Act_I_Pilot/Archive/F03-PAIR-M_summer_r01.png"
+      ],
+      "provenance_limit": "Exact prompt text/model version/seed were not exported for every early call; no deterministic replay claimed."
+    },
+    {
+      "id": "I02-BOLOTNIK-A/base/r01",
+      "object_id": "I02-BOLOTNIK-A",
+      "state": "base",
+      "revision": "r01",
+      "status": "Superseded",
+      "path": "References/Targets/Act_I_Pilot/Archive/I02-BOLOTNIK-A_base_r01.png",
+      "sha256": "451901dc8b84d8b1f9a9893511bbc9c09898f4c04c5c3ca5a038ca80dfa09d4d",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-4f3d1e4a-52aa-4ab2-8056-6ab27ddcbf1f.png",
+      "provenance": "ChatGPT image_gen generation/edit in Folkhero art discussion, 2026-10-18; original PNG preserved without resizing",
+      "approval_date": null,
+      "approval_basis": null,
+      "approved_aspects": null,
+      "rework_reason": "User requested greener hair and more moss on clothing",
+      "sources": [
+        "R08"
+      ],
+      "historical_certification": false,
+      "modeling_ready": false,
+      "reference_images": [],
+      "provenance_limit": "Exact prompt text/model version/seed were not exported for every early call; no deterministic replay claimed."
+    },
+    {
+      "id": "I02-BOLOTNIK-A/base/r02",
+      "object_id": "I02-BOLOTNIK-A",
+      "state": "base",
+      "revision": "r02",
+      "status": "Selected",
+      "path": "References/Targets/Act_I_Pilot/I02-BOLOTNIK-A/I02-BOLOTNIK-A_base_r02.png",
+      "sha256": "ee21be3237242807daa3728341f391add1f1983421e6d7c18a6dad265146b909",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-182485c8-7690-48bf-830f-8acc8f4d8f00.png",
+      "provenance": "ChatGPT image_gen generation/edit in Folkhero art discussion, 2026-10-18; original PNG preserved without resizing",
+      "approval_date": "2026-10-18",
+      "approval_basis": "User accepted the immediately preceding image and continued; acceptance is limited to the aspects and caveats recorded here",
+      "approved_aspects": "Greener olive hair/beard and broader moss coverage; barefoot humanoid in plain clothes",
+      "rework_reason": null,
+      "sources": [
+        "R08"
+      ],
+      "historical_certification": false,
+      "modeling_ready": false,
+      "reference_images": [
+        "References/Targets/Act_I_Pilot/Archive/I02-BOLOTNIK-A_base_r01.png"
+      ],
+      "provenance_limit": "Exact prompt text/model version/seed were not exported for every early call; no deterministic replay claimed."
+    },
+    {
+      "id": "F03-PAIR-M/winter/r01",
+      "object_id": "F03-PAIR-M",
+      "state": "winter",
+      "revision": "r01",
+      "status": "Selected",
+      "path": "References/Targets/Act_I_Pilot/F03-PAIR-M/F03-PAIR-M_winter_r01.png",
+      "sha256": "da6786e2f5df060d49c236c05e66b34c2f3660362d4d62dd49e36ac9a0c6d016",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-4d2f2453-a1a1-4991-8caf-1fee9b44bd53.png",
+      "provenance": "ChatGPT image_gen generation/edit in Folkhero art discussion, 2026-10-18; original PNG preserved without resizing",
+      "approval_date": "2026-10-18",
+      "approval_basis": "User accepted the immediately preceding image and continued; acceptance is limited to the aspects and caveats recorded here",
+      "approved_aspects": "Same male identity; inward-fleece sheepskin coat, warm cap, mittens and boots; cut provisional",
+      "rework_reason": null,
+      "sources": [
+        "R01",
+        "R03",
+        "R04"
+      ],
+      "historical_certification": false,
+      "modeling_ready": false,
+      "reference_images": [
+        "References/Targets/Act_I_Pilot/F03-PAIR-M/F03-PAIR-M_summer_r02.png"
+      ],
+      "provenance_limit": "Exact prompt text/model version/seed were not exported for every early call; no deterministic replay claimed."
+    },
+    {
+      "id": "B01-HOUSE-A/winter/r01",
+      "object_id": "B01-HOUSE-A",
+      "state": "winter",
+      "revision": "r01",
+      "status": "Selected",
+      "path": "References/Targets/Act_I_Pilot/B01-HOUSE-A/B01-HOUSE-A_winter_r01.png",
+      "sha256": "bb5b3e33ed065ca2004e06efaa01bb4181e07c139d1f369c74604dc2a81e6a5c",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-82c3f055-759f-419c-aaff-2fa3a2e053be.png",
+      "provenance": "ChatGPT image_gen generation/edit in Folkhero art discussion, 2026-10-18; original PNG preserved without resizing",
+      "approval_date": "2026-10-18",
+      "approval_basis": "User accepted the immediately preceding image and continued; acceptance is limited to the aspects and caveats recorded here",
+      "approved_aspects": "Same house; closed shutters; roof/stone snow; trodden door approach",
+      "rework_reason": null,
+      "sources": [
+        "R01",
+        "R02",
+        "R11"
+      ],
+      "historical_certification": false,
+      "modeling_ready": false,
+      "reference_images": [
+        "References/Targets/Act_I_Pilot/B01-HOUSE-A/B01-HOUSE-A_summer_r03.png"
+      ],
+      "provenance_limit": "Exact prompt text/model version/seed were not exported for every early call; no deterministic replay claimed."
+    },
+    {
+      "id": "C01-ALDER-A/winter/r01",
+      "object_id": "C01-ALDER-A",
+      "state": "winter",
+      "revision": "r01",
+      "status": "Selected",
+      "path": "References/Targets/Act_I_Pilot/C01-ALDER-A/C01-ALDER-A_winter_r01.png",
+      "sha256": "e547b9e1b58a483c90a6dc71d3d48ca159901e3b32faec560df6983736f479cb",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-f322e6ad-7424-47a1-8613-6d991c9464b0.png",
+      "provenance": "ChatGPT image_gen generation/edit in Folkhero art discussion, 2026-10-18; original PNG preserved without resizing",
+      "approval_date": "2026-10-18",
+      "approval_basis": "User accepted the immediately preceding image and continued; acceptance is limited to the aspects and caveats recorded here",
+      "approved_aspects": "Leafless trunk/branch continuity and restrained snow; simplify excess twigs before modeling",
+      "rework_reason": null,
+      "sources": [
+        "R19",
+        "R20"
+      ],
+      "historical_certification": false,
+      "modeling_ready": false,
+      "reference_images": [
+        "References/Targets/Act_I_Pilot/C01-ALDER-A/C01-ALDER-A_summer_r02.png"
+      ],
+      "provenance_limit": "Exact prompt text/model version/seed were not exported for every early call; no deterministic replay claimed."
+    },
+    {
+      "id": "D01-GROUND-WATER-A/winter/r01",
+      "object_id": "D01-GROUND-WATER-A",
+      "state": "winter",
+      "revision": "r01",
+      "status": "Selected",
+      "path": "References/Targets/Act_I_Pilot/D01-GROUND-WATER-A/D01-GROUND-WATER-A_winter_r01.png",
+      "sha256": "329e19aad4fe272c8364e31946e9c7c9dc7680763e941df8ddc4edf14d79e251",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-d0d0b576-483f-4242-b36a-e55393f36e8e.png",
+      "provenance": "ChatGPT image_gen generation/edit in Folkhero art discussion, 2026-10-18; original PNG preserved without resizing",
+      "approval_date": "2026-10-18",
+      "approval_basis": "User accepted the immediately preceding image and continued; acceptance is limited to the aspects and caveats recorded here",
+      "approved_aspects": "Snow, dry sedge, thin shore ice and open peat-brown water; partial freezing example",
+      "rework_reason": null,
+      "sources": [
+        "R19",
+        "R20",
+        "R22"
+      ],
+      "historical_certification": false,
+      "modeling_ready": false,
+      "reference_images": [
+        "References/Targets/Act_I_Pilot/D01-GROUND-WATER-A/D01-GROUND-WATER-A_summer_r02.png"
+      ],
+      "provenance_limit": "Exact prompt text/model version/seed were not exported for every early call; no deterministic replay claimed."
+    },
+    {
+      "id": "D01-GROUND-WATER-A/curse/r01",
+      "object_id": "D01-GROUND-WATER-A",
+      "state": "curse",
+      "revision": "r01",
+      "status": "Selected",
+      "path": "References/Targets/Act_I_Pilot/D01-GROUND-WATER-A/D01-GROUND-WATER-A_curse_r01.png",
+      "sha256": "fa9dbeb94ebcaf181f9dbadb24654e257e52d6c1bad8f03d9f7412017bc0fd8d",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-102f8135-99a2-4993-a100-ef48bf188df6.png",
+      "provenance": "ChatGPT image_gen generation/edit in Folkhero art discussion, 2026-10-18; original PNG preserved without resizing",
+      "approval_date": "2026-10-18",
+      "approval_basis": "User accepted the immediately preceding image and continued; acceptance is limited to the aspects and caveats recorded here",
+      "approved_aspects": "Localized plum/violet ground-to-water stains; sparse lilac activity; retain ordinary colors",
+      "rework_reason": null,
+      "sources": [
+        "GAME",
+        "INSP-01"
+      ],
+      "historical_certification": false,
+      "modeling_ready": false,
+      "reference_images": [
+        "References/Targets/Act_I_Pilot/D01-GROUND-WATER-A/D01-GROUND-WATER-A_summer_r02.png"
+      ],
+      "provenance_limit": "Exact prompt text/model version/seed were not exported for every early call; no deterministic replay claimed."
+    },
+    {
+      "id": "D01-GROUND-WATER-A/winter-curse/r01",
+      "object_id": "D01-GROUND-WATER-A",
+      "state": "winter-curse",
+      "revision": "r01",
+      "status": "Selected",
+      "path": "References/Targets/Act_I_Pilot/D01-GROUND-WATER-A/D01-GROUND-WATER-A_winter-curse_r01.png",
+      "sha256": "44b6001c2d213b2f742d20773bcc6907b365debc3755bdf3dcd69e1cb5bfc9f0",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "original_filename": "exec-aaeeef48-aef3-45e7-b13e-1373ce5e3a4c.png",
+      "provenance": "ChatGPT image_gen generation/edit in Folkhero art discussion, 2026-10-18; original PNG preserved without resizing",
+      "approval_date": "2026-10-18",
+      "approval_basis": "User accepted the immediately preceding image and continued; acceptance is limited to the aspects and caveats recorded here",
+      "approved_aspects": "Same Curse cue on snow/ice/water; dark value carries winter readability",
+      "rework_reason": null,
+      "sources": [
+        "GAME",
+        "INSP-01"
+      ],
+      "historical_certification": false,
+      "modeling_ready": false,
+      "reference_images": [
+        "References/Targets/Act_I_Pilot/D01-GROUND-WATER-A/D01-GROUND-WATER-A_winter_r01.png",
+        "References/Targets/Act_I_Pilot/D01-GROUND-WATER-A/D01-GROUND-WATER-A_curse_r01.png"
+      ],
+      "provenance_limit": "Exact prompt text/model version/seed were not exported for every early call; no deterministic replay claimed."
+    }
+  ]
+}

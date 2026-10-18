@@ -1,6 +1,6 @@
 # Concept Register
-Status: initial inventory, 2026-10-18.
-All 60 backlog tasks are tracked below. No images are present in main, so all output/approval fields start empty. Existing chat approval is not denied; it is not artifact-verified here.
+Status: pilot selection update, 2026-10-18.
+All 60 parent tasks remain tracked. Selected child images are archived in [the target gallery](../../References/Targets/Act_I_Pilot/README.md), with hashes and approval scope in its manifest. Parent stages below indicate partial family progress, not completed modeling packets.
 Priority is inherited from backlog and is NOT the task's readiness stage.
 Research = registered/research stage, not research completed.
 
@@ -9,17 +9,17 @@ Research = registered/research stage, not research completed.
 | A01 | Final systemic 3D style sheet | P0 | Research | Written direction; provisional B01/F01/C01/D01; target selection | — | — |
 | A02 | Mobile readability benchmark | P0 | Research | Written direction; provisional B01/F01/C01/D01; target selection | — | — |
 | A03 | Final palette and material families | P0 | Research | Written direction; provisional B01/F01/C01/D01; target selection | — | — |
-| B01 | Historically grounded rural house family | P0 | Research |R01/R02; house brief; scale standard; Village §§ House family | — | Written scope accepted 2026-10-18; image — |
+| B01 | Historically grounded rural house family | P0 | Exploration |R01/R02; house brief; scale standard; Village §§ House family | [Selected child targets](Concept_Pilot_Review.md): HOUSE-A summer/winter | Visual direction accepted 2026-10-18; parent incomplete |
 | B02 | Farm/outbuilding kit | P0 | Research |R01/R02; house brief; scale standard; Village §§ Farm buildings / Workplaces | — | Written scope accepted 2026-10-18; image — |
 | B03 | Fence/gate/yard kit | P0 | Research |R01/R02; house brief; scale standard; Village §§ Fences | — | Written scope accepted 2026-10-18; image — |
 | B04 | Well and household utility kit | P1 | Research |R01/R02; house brief; scale standard; Village §§ Water / Dressing / Workplaces | — | Written scope accepted 2026-10-18; image — |
 | B05 | Village layout grammar | P0 | Research |R01/R02; house brief; scale standard; Village landscape and water rules | — | Written scope accepted 2026-10-18; image — |
 | B06 | Rural wealth tiers | P1 | Research |R01/R02; house brief; scale standard; Village household/wealth variation | — | Written scope accepted 2026-10-18; image — |
-| C01 | Tree families | P0 | Research | Ecology references; geometry/material brief | — | — |
+| C01 | Tree families | P0 | Exploration | Ecology references; geometry/material brief | [Selected child targets](Concept_Pilot_Review.md): ALDER-A summer/winter | Visual direction accepted 2026-10-18; parent incomplete |
 | C02 | Forest ground kit | P0 | Research | Ecology references; geometry/material brief | — | — |
 | C03 | Procedural forest modules | P0 | Research | Ecology references; geometry/material brief | — | — |
 | C04 | Forest weather comparison | P1 | Research | Ecology references; geometry/material brief | — | — |
-| D01 | Wetland terrain state family | P0 | Research | Ecology; traversal and surface semantics | — | — |
+| D01 | Wetland terrain state family | P0 | Exploration | Ecology; traversal and surface semantics | [Selected child targets](Concept_Pilot_Review.md): GROUND-WATER-A summer/winter/Curse/winter+Curse | Visual direction accepted 2026-10-18; parent incomplete |
 | D02 | Wetland vegetation kit | P0 | Research | Ecology; traversal and surface semantics | — | — |
 | D03 | Crossing kit | P0 | Research | Ecology; traversal and surface semantics | — | — |
 | D04 | Pasture / hay meadow transition | P1 | Research | Ecology; traversal and surface semantics | — | — |
@@ -27,9 +27,9 @@ Research = registered/research stage, not research completed.
 | E01 | Ritual spring location grammar | P0 | Research | R07/R08; fictional ritual brief; D kit | — | — |
 | E02 | Ritual prop kit | P0 | Research | R07/R08; fictional ritual brief; D kit | — | — |
 | E03 | Pact intact vs broken | P0 | Research | R07/R08; fictional ritual brief; D kit | — | — |
-| F01 | Human base proportions / face language | P0 | Research |R01/R03/R04; garment brief; human base; Character shared human system | — | Written scope accepted 2026-10-18; image — |
-| F02 | Rural clothing modules | P0 | Research |R01/R03/R04; garment brief; human base; Character seasonal clothing | — | Written scope accepted 2026-10-18; image — |
-| F03 | Villager role assemblies | P0 | Research |R01/R03/R04; garment brief; human base; Community roster / character records | — | Written scope accepted 2026-10-18; image — |
+| F01 | Human base proportions / face language | P0 | Exploration |R01/R03/R04; garment brief; human base; Character shared human system | [Selected child targets](Concept_Pilot_Review.md): PAIR-M human proportion exploration | Visual direction accepted 2026-10-18; parent incomplete |
+| F02 | Rural clothing modules | P0 | Exploration |R01/R03/R04; garment brief; human base; Character seasonal clothing | [Selected child targets](Concept_Pilot_Review.md): PAIR-M summer/winter clothing | Visual direction accepted 2026-10-18; parent incomplete |
+| F03 | Villager role assemblies | P0 | Exploration |R01/R03/R04; garment brief; human base; Community roster / character records | [Selected child targets](Concept_Pilot_Review.md): PAIR-M identity only | Visual direction accepted 2026-10-18; parent incomplete |
 | F04 | Displaced community variants | P1 | Research |R01/R03/R04; garment brief; human base; Community displacement / character travel | — | Written scope accepted 2026-10-18; image — |
 | F05 | Service NPCs | P1 | Research |R01/R03/R04; garment brief; human base; Daughter, smith, healer service briefs | — | Written scope accepted 2026-10-18; image — |
 | G01 | Warrior production concept | P0 | Research |F01/F02; sourced equipment; class silhouette brief; Warrior brief; minimal metal | — | Written scope accepted 2026-10-18; image — |
@@ -39,7 +39,7 @@ Research = registered/research stage, not research completed.
 | H02 | Authority visual identity | P0 | Research | DEC-01/DEC-05; military evidence; F base | — | — |
 | H03 | Authority ritual-site action | P1 | Research | DEC-01/DEC-05; military evidence; F base | — | — |
 | I01 | Local spirit design grammar | P0 | Research | R08; roster/rig brief; shared chassis | — | — |
-| I02 | Bolotnik | P0 | Research | R08; roster/rig brief; shared chassis | — | — |
+| I02 | Bolotnik | P0 | Exploration | R08; roster/rig brief; shared chassis | [Selected child targets](Concept_Pilot_Review.md): BOLOTNIK-A r02; scale repair open | Visual direction accepted 2026-10-18; parent incomplete |
 | I03 | Wetland enemy family | P0 | Research | R08; roster/rig brief; shared chassis | — | — |
 | I04 | Cursed humanoid family | P0 | Research | R08; roster/rig brief; shared chassis | — | — |
 | I05 | Predator/animal family | P1 | Research | R08; roster/rig brief; shared chassis | — | — |
@@ -94,3 +94,6 @@ Child packets named in Character Briefs are scoped candidates; create individual
 Applies to C01–C04/D01–D03/E01–E03/H01–H02/I02/J01–J04 and M04–M08 as relevant; geometry/source/image checks remain open.
 First execution record: B01-HOUSE-A, exploration r01; prompt/constraints in pilot. Not Selected/Modeling-ready.
 No inferred combat attack approval. Broader backlog is not the immediate production queue.
+
+## Pilot accounting
+Five base subjects, 11 selected native images including six state studies, six archived rejected/superseded images. Parent families are partial; A01/A02/A03 are not final, J01–J04 are not completed by a terrain-only Curse example. Rain/wet, final modeling views, scale verification and actual gameplay-camera tests remain open. See [pilot review](Concept_Pilot_Review.md).

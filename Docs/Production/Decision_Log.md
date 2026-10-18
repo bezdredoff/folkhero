@@ -318,3 +318,12 @@ See [Environment and States](../Art/Act_I_Environment_and_States.md) and [Produc
 - Water uses shared parameterized family; natural peat-dark water is not automatic poison.
 - Pilot: one house/tree/ground-water/civilian/Bolotnik. Approve base before consistent modeling sheets/state multiplication; no combinatorial concept batch.
 - User requested documentation then creation. First creation is one provisional house exploration under the image-generation workflow; no mass asset production authorized.
+
+## 2026-10-18 — Selected pilot images and state composition
+[Review](../Art/Concept_Pilot_Review.md) · [Actual native images and manifest](../../References/Targets/Act_I_Pilot/README.md).
+- Five bases selected individually: House A, simplified black alder, simplified ground/water patch, simplified male civilian, greener mossier humanoid Bolotnik.
+- House A now uses continuous low irregular fieldstones with large partly buried boulders, round logs, moss chinking, tar-dark corners and minimal boards. This supersedes isolated supports for this asset only; exact construction is accepted extrapolation.
+- Winter civilian/house/alder/terrain selected as exploration directions. Winter alder twigs require simplification; costume construction remains provisional.
+- Terrain Curse and winter + Curse selected: localized plum/inky-violet stains and sparse lilac activity preserve seasonal colors; same base/mask composition proposed.
+- Store 17 unresized PNGs (11 selected, six superseded/rejected), dimensions/hashes/edit lineage and scoped approvals. No invented final resolution, measured height, historical certification, shader validation or production throughput.
+- These studies remain incomplete modeling packets. Bolotnik scale/ruler repair, coherent dimensions/views, rain/wet and gameplay-camera/URP tests are still required. Existing 60-task plan and human review gates remain.

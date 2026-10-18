@@ -100,3 +100,6 @@ Individual sheets for each selected modeled object; family/state boards suppleme
 | Heroes G01/G02 | WARRIOR-A, AXE-A, SPEAR-A, VEDUN-A, STAFF-A; detachable clothing/equipment packets where needed |
 IDs take parent prefix, e.g. B04-WELL-SWEEP-A and G01-AXE-A; these names allocate work, not final geometry/counts.
 First pair and major NPCs each require their own character identity packet with warm/cool/winter states. Do not mark any packet Selected or Modeling-ready before actual review.
+
+## Selected pilot references — 2026-10-18
+F03-PAIR-M summer r02 and winter r01 are selected exploration directions. Use the simplified male face/proportions and identity-preserving winter coat/cap/mittens/boots in the [pilot review](Concept_Pilot_Review.md). Exact garment cut, cap and footwear remain provisional; no final modeling packet or female image has been delivered. Source limitations above remain in force.

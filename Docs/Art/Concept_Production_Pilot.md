@@ -1,19 +1,19 @@
 # Concept Production Pilot
-Status: v0.1 — user approved minimal proof set and authorized creation after documentation, 2026-10-18.
+Status: v0.2 — five base directions and six state studies selected, 2026-10-18. See [selection review](Concept_Pilot_Review.md) and [native gallery](../../References/Targets/Act_I_Pilot/README.md).
 Goal: accepted variants per reusable asset, not maximum image count. Inspired by the user's repeatedly referenced systems-first asset video:
 https://www.youtube.com/watch?v=KuWTf7KrF6Y
 Reference role: production inspiration supplied by user; no fresh transcript analysis or unverified attribution of specific video claims in this pass.
 
 ## Five base subjects
 1. One modest house (B01-HOUSE-A).
-2. One representative tree (C01; choose one suitable first-route species before its brief).
+2. One black alder (C01-ALDER-A), selected for the pilot; other tree families remain deferred.
 3. One ground/water patch (D01).
 4. One ordinary civilian (F01/F02/F03).
 5. One humanoid Bolotnik (I02).
 
 Start with house exploration; obtain selection before expanding to final turnarounds or multiplying variants.
 Each domain uses the same evaluation: coherent form, human-relative scale, source/assumption labels, low detail and plausible reusable 3D construction.
-Five subjects are a proof set, not a batch-generation instruction. Current execution: ONE house exploration.
+Five subjects are a proof set, not a batch-generation instruction. Current result: five individually selected bases, winter house/alder/terrain/civilian, terrain Curse and one winter + Curse stress test. Modeling packets and rain/engine tests remain open.
 
 ## Asset multiplication hierarchy
 Base geometry -> material parameters -> detachable modules -> geometry change only where needed.
@@ -30,12 +30,12 @@ Do not paint a unique model and texture for every season/status combination.
 - No separate concept for every Cartesian combination of weather x season x curse.
 - Summer, winter, rain and curse are the pilot validation states; irrelevant states use N/A with explanation.
 - Exploration image is not a completed modeling packet. Preserve true native resolution; do not claim 6K/native accuracy before delivery.
-- No restored approved image target exists in repository yet. First new image is explicitly provisional style/shape exploration, not historical certification or replacement of a past approval.
+- Actual selected native images and six replaced iterations are now archived under References/Targets/Act_I_Pilot with dimensions, hashes, provenance and approval scope. They remain exploration targets, not historical certification or complete modeling packets.
 
 ## First run brief — B01-HOUSE-A / exploration r01
 Use case: stylized-concept.
 One modest late-XVI Upper Berezina/GDL-inspired rectangular log house with living portion and cold vestibule under one simple pitched thatched roof.
-Low boulder supports, yard-facing plain door via vestibule, few tiny membrane-filled openings with simple shutters, other wall portions blank.
+Continuous low irregular fieldstones with partly buried large boulders (selected revision supersedes isolated supports), yard-facing plain door via vestibule, few tiny membrane-filled openings with simple shutters, other wall portions blank.
 No separate decorative porch, no tall chimney, no invented smoke-hole solution; heating interior not yet designed.
 Broad wall/roof masses, minimal log and thatch surface detail, flat/soft-shaded real game 3D, muted wood/straw/stone palette; not painterly, photoreal PBR, cute miniature or fantasy cottage.
 ONE house subject, neutral background; main 3/4 orthographic-like view and small gameplay top-down comparison; 1.80 m neutral adult ruler on shared ground plane.

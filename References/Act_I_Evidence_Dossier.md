@@ -218,3 +218,12 @@ Project's approved interpretation: few bases; material/module/state multiplicati
 See [Environment and States](../Docs/Art/Act_I_Environment_and_States.md) and [Production Pilot](../Docs/Art/Concept_Production_Pilot.md).
 Bolotnik barefoot/plain mossy clothing, concealed eyes, short clumped hair/beard and standard humanoid anatomy are accepted adaptations, not all sourced folklore features.
 Boulder fragmentation/removal, visiting cloth-dominant military palette, violet Curse, status colors and seasonal production hierarchy are authored game decisions.
+
+## Selected images vs evidence — 2026-10-18
+[Native pilot gallery](Targets/Act_I_Pilot/README.md) and [selection review](../Docs/Art/Concept_Pilot_Review.md) now link actual images to this dossier. The manifest maps each image to existing source IDs; no new source was researched in this archival pass.
+- House A: R01/R02 broad context; R11 adjacent-period stone-support context. Continuous partly buried irregular fieldstones, round logs, moss chinking and tar-dark corners are selected game treatments, not a fully documented local XVI-century reconstruction.
+- Civilian summer/winter: R01 material/context evidence; R03 later continuity; R04 catalogue lead. Exact coat/cap/shoe geometry is still provisional.
+- Alder and bank: R19/R20/R22 habitat context, not evidence of generated branch geometry, measurements or ice pattern. Specimen details still need object-level reference.
+- Bolotnik: R08 folklore context; clothed barefoot humanoid adaptation with greener hair/moss is original art direction. Generated height labels are not evidence.
+- Curse and season composition: authored GAME visual language, production inspiration INSP-01; no historical/ecological claim about supernatural stains.
+All generated pictures are TARGET or archived ANTI-REFERENCE, never EVIDENCE. Source access/confidence labels above are unchanged.

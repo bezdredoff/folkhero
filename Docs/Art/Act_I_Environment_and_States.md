@@ -108,3 +108,7 @@ Winter: removable deciduous foliage, snow on eligible surfaces, selected ice. No
 Spring: wet ground, remnant snow, new growth and local flooding; full flood work deferred.
 First detailed proof: summer + winter. Autumn initially palette/wetness with applicable foliage handling; full spring flood later.
 Material, removable foliage/snow and genuine geometry change must be labeled separately.
+
+## Selected pilot state examples — 2026-10-18
+See [pilot review](Concept_Pilot_Review.md) and [native targets](../../References/Targets/Act_I_Pilot/README.md).
+Selected: simplified summer alder and ground/water; winter leafless alder (reduce excess twigs before production); snowy bank/dry sedge/partial shore ice; summer Curse and winter + Curse with localized plum stains and sparse lilac activity. Bolotnik revision r02 adds greener hair/beard and broad moss coverage. Its scale ruler remains inconsistent; exact height is not finalized. These are visual targets, not measured construction or validated shaders.

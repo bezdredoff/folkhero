@@ -25,7 +25,7 @@ Home remains politically inaccessible after the conflict, not destroyed. Damage/
 | House B | Smaller one-room dwelling for a very modest household | Selected family option; entrance/heating arrangement still needs a coherent brief |
 | Roof | Simple pitched thatch roof, straightforward ridge, believable slopes | R02; exact pitch and construction open |
 | Alternate roof | Split-wood covering may be used on selected buildings | R02; not an automatic wealth label |
-| Foundation | Low stone/boulder supports under corners and selected lower-log points; no high continuous masonry plinth by default | R11 is adjacent-period evidence; accepted extrapolation |
+| Foundation | House A: continuous low irregular fieldstone foundation with some much larger boulders, partly and unevenly buried; no air gap or tall masonry plinth | R11 is adjacent-period evidence; accepted extrapolation |
 | Windows | Few small openings; some walls entirely blank; animal membrane rather than default glazing | R01 plus accepted game choice; no claim that all period buildings lacked large windows |
 | Shutters | Simple wooden shutters on the chosen house windows, open/closed states | Accepted project detail; local XVI-century construction not yet verified |
 | Heating | Smoke-heated stove, no tall external chimney in the baseline | R01; smoke exit, ventilation and stove placement unresolved |
@@ -94,3 +94,7 @@ These are content needs, not a commitment to a full economy/settlement simulatio
 ## Open before modeling
 Metric dimensions; exact opening/shutter/hinge forms; smoke route; window membranes' mounting; roofs/joins; fence joints; well mechanisms; smithy equipment; watermill engineering; dated containers/tools.
 Approved written choices permit bounded concept preparation; they do not mark historical research or image selection complete.
+
+## Selected House A revision — 2026-10-18
+[Image selection and caveats](Concept_Pilot_Review.md) · [Native targets](../../References/Targets/Act_I_Pilot/README.md).
+Round logs with moss chinking, tar-dark corners/log ends and minimal boards. The continuous low stone line above supersedes isolated supports for the selected House A. Exact treatment is accepted game extrapolation; R11 is adjacent-period context, not direct proof. Other building foundations require their own functional brief. Winter keeps the base with closed shutters and removable snow coverage. Image selection does not close the construction/dimension research tasks.
