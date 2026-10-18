@@ -1,6 +1,10 @@
 # Concept Generation Guide
 
-Status: v0.1 — production-oriented concepting rules.
+Status: v0.2 — production-oriented concepting rules.
+
+Required companions: [Asset Sheet Standard](Asset_Sheet_Standard.md), [Concept Readiness](Concept_Readiness.md), [Concept Register](Concept_Register.md), and [Evidence Dossier](../../References/Act_I_Evidence_Dossier.md).
+
+A prompt is executable only after its brief is selected. Source constraints and unresolved assumptions must be included; generic date/region language is not enough.
 
 ## Goal
 
@@ -90,7 +94,7 @@ Example:
 
 Show:
 - one standard humanoid-rig base;
-- front / 3-quarter / back only when useful;
+- family exploration views as needed; every selected object then gets the complete individual modeling packet required by Asset_Sheet_Standard.md;
 - 4–8 head/hair/headwear options;
 - 3–5 torso options;
 - 2–4 lower-body options;
@@ -158,14 +162,14 @@ Persistent effects must remain restrained.
 
 ## UI/gameplay screenshot template
 
-Use:
-- top-down mobile action-RPG framing;
-- left movement joystick;
-- right basic attack + skill cluster;
+Use the PC gameplay frame as the primary deliverable. Add a separate mobile readability/touch-layout comparison; do not overlay touch controls on every PC scene.
+- fixed/limited-rotation top-down action-RPG framing;
+- PC action/cooldown prompts appropriate to the selected input scheme;
+- touch comparison only: left movement joystick and right attack/skill cluster;
 - compact minimap;
 - compact quest/objective panel;
 - target HP/status;
-- minimal player resource display.
+- player HP and cooldowns; no mana/stamina/rage bars under the current design;
 
 Test:
 - village/non-combat;
@@ -191,7 +195,7 @@ UI must not cover telegraphs or systemic surfaces.
 
 ## Example — historical systemic house
 
-> Production concept sheet for Folkhero. Show one historically plausible late-16th-century rural GDL/Belarus-region log house as a simple real 3D game asset, not an illustration. Preserve believable log construction, roof pitch, openings and farmstead proportions. Large simple geometry, flat/soft shading, restricted palette, minimal texture noise. Reuse the same base structure with two roof modules, optional porch, optional chimney, summer, rain/wet, winter/snow, damaged and cursed states. Maximum 3–4 material families. No generic fantasy cottage, no dense props, no tiny carvings. Include a small top-down gameplay-scale comparison.
+> Production concept sheet for Folkhero. Show one historically plausible late-16th-century rural GDL/Belarus-region log house as a simple real 3D game asset, not an illustration. Use the approved evidence packet for log construction, roof form, openings and farmstead proportions. Do not invent a chimney or porch to satisfy a generic fantasy house template. Large simple geometry, flat/soft shading, restricted palette, minimal texture noise. Reuse the same base structure with two roof modules, only source-supported attachments and heating/smoke outlet configuration selected in the brief, summer, rain/wet, winter/snow, damaged and cursed states. Maximum 3–4 material families. No generic fantasy cottage, no dense props, no tiny carvings. Include a small top-down gameplay-scale comparison.
 
 ## Example — modular human system
 
@@ -211,3 +215,10 @@ Reject/revise when:
 - it cannot plausibly be reproduced in Unity.
 
 Approve only when the concept makes the next implementation decision easier.
+
+## Generation constraints
+- User sequence: complete gap research/documentation, discuss and select, then try generation. No automatic batch generation.
+- Every object inherits explicit metric scale from the shared human ruler. A family image is not a modeling sheet.
+- High-resolution final layouts may be composed from multiple native views; preserve native files and disclose upscaling.
+- Separate evidence, game assumption and approved visual treatment. Missing evidence must not be hidden by detailed rendering.
+- A01 is consolidated from selected calibration objects; early outputs are provisional, not final style locks.

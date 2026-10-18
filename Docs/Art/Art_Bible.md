@@ -1,6 +1,6 @@
 # Art Bible
 
-Status: v0.4 — systemic 3D direction for pre-production.
+Status: v0.5 — systemic 3D direction and concept delivery standards for pre-production.
 
 ## Purpose
 
@@ -559,3 +559,9 @@ The direction succeeds only if it is:
 - historically recognizable;
 - compatible with ordinary 3D production;
 - strong enough that simple assets feel intentional.
+
+## Concept documentation standards
+See Asset_Sheet_Standard.md for mandatory individual object sheets, human-relative metric scale, consistent multi-view modeling references and high-resolution delivery.
+See Concept_Readiness.md and Concept_Register.md for stage tracking and unresolved choices. Historical claims require scoped evidence; use ../../References/Act_I_Evidence_Dossier.md.
+PC-first release planning and mobile-readable art are compatible: primary PC HUD and separate touch/readability comparisons. Current classes use HP/cooldowns without mana/stamina/rage.
+Written rendering direction is locked; actual target images must be stored/referenced and explicitly identified before they are treated as approved visual targets.

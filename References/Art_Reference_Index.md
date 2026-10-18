@@ -129,3 +129,6 @@ High priority:
 - archaeological/architectural evidence for 16th-century rural Upper Berezina / Polotsk-region settlements;
 - military clothing and equipment by social role;
 - regional boats, fishing gear, axes, agricultural tools and household ceramics.
+
+## Act I research audit — 2026-10-18
+See [Act I Evidence Dossier](Act_I_Evidence_Dossier.md) for reviewed sources R01–R10, exact scope, access limitations, exclusions and remaining work. This supplements rather than replaces the research gaps above. No catalogue listing or search excerpt is automatically a selected production reference.

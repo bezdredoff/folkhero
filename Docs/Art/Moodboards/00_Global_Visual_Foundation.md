@@ -1,6 +1,6 @@
 # Moodboard 00 — Global Visual Foundation
 
-Status: first-pass brief for reference collection and concept generation.
+Status: revised 2026-10-18 to follow Art Bible v0.4. This board does not approve a visual target image.
 
 ## Intent
 
@@ -8,7 +8,7 @@ Establish a shared visual grammar for Folkhero before producing class, creature 
 
 Working phrase:
 
-> **Grounded dark-fairytale stylized realism in a late-16th-century Belarusian / Ruthenian / Lithuanian / Polish material world.**
+> **Historically grounded dark-fairytale simple modular 3D in a late-16th-century Belarusian / Ruthenian / Lithuanian / Polish material world.**
 
 ## What the board must communicate
 
@@ -30,8 +30,8 @@ Working phrase:
 - expressive silhouette without deformation.
 
 ### Surface/material treatment
-- painterly/game-readable rather than photoreal;
-- visible textile weave, wood grain, iron wear and dampness at useful scale;
+- flat/soft-shaded simple 3D, restricted palette and low-frequency surfaces;
+- cloth, timber and iron distinguished primarily by broad material response; no dense weave/grain;
 - limited micro-detail;
 - strong large-value grouping for isometric camera.
 
@@ -98,3 +98,7 @@ A proposed Folkhero image passes this board if:
 4. bright natural color has a reason;
 5. folklore elements feel local rather than imported fantasy;
 6. the scene remains readable at isometric gameplay scale.
+
+## Production authority
+Follow ../Art_Bible.md, ../Concept_Generation_Guide.md and ../Asset_Sheet_Standard.md.
+Films and realistic games above provide context/mood, not a final rendering/detail target.
