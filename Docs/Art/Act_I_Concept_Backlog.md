@@ -1,6 +1,10 @@
 # Act I Art Concept Backlog
 
-Status: v0.1 — concept-production plan for Act I / Upper Berezina.
+Status: v0.2 — concept-production plan for Act I / Upper Berezina.
+
+Track readiness/output in [Concept Register](Concept_Register.md). Apply [Asset Sheet Standard](Asset_Sheet_Standard.md), [Concept Readiness](Concept_Readiness.md) and [Evidence Dossier](../../References/Act_I_Evidence_Dossier.md).
+
+These 60 tasks are family/system/composition briefs, not 60 finished object sheets. Each selected modeled object gets a child ID and separate modeling packet. P0 means important to core production or the slice, not that all P0 art must be finished before placeholder gameplay.
 
 ## Goal
 
@@ -52,8 +56,8 @@ Define:
 ### B01 — Historically grounded rural house family — P0
 One or two base structures with:
 - roof modules;
-- porch/lean-to;
-- chimney/no chimney;
+- porch/lean-to only when supported for the selected context;
+- heating/smoke outlet selected from evidence, not arbitrary chimney/no-chimney swaps;
 - window/door modules;
 - wet/snow/damage/curse states.
 
@@ -360,12 +364,12 @@ Translate real grammar into:
 ### K03 — Application variants — P1
 Same item with several ornaments without visual noise.
 
-## Phase 12 — UI / mobile presentation
+## Phase 12 — UI / PC baseline and mobile readability
 
-### L01 — Core mobile combat HUD — P0
-- left joystick;
-- right attack/skills;
-- HP/resource;
+### L01 — Core combat HUD and touch comparison — P0
+- primary PC layout with selected input prompts;
+- separate touch comparison: left joystick and right attack/skills;
+- HP and cooldowns, no mana/stamina/rage;
 - minimap;
 - objective;
 - target/status.
@@ -400,6 +404,8 @@ Only after systems above are stable.
 ### M10 — Displaced-community mini-hub — P1
 
 ## Recommended order
+
+This is a family expansion order after evidence/brief selection. Provisional calibration objects come before consolidated A01/A03; see Concept_Readiness.md. M scenes follow the needed kits, not every P1 in the whole act.
 
 1. A01–A03
 2. B01, B05
