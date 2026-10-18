@@ -434,3 +434,15 @@ A concept is done only when:
 - gameplay-scale readability is shown;
 - detail level fits mobile/systemic production;
 - implementation in Unity is plausible.
+
+## Approved discussion supplement — 2026-10-18
+Use [Village Design](Act_I_Village_Design.md), [Character Briefs](Act_I_Character_Briefs.md) and [Community](../Vision/Act_I_Community.md) to specialize existing tasks rather than adding unrelated families.
+- B01–B06: small houses/shutters/stone supports, functionally differentiated outbuildings, hazel/pine fences, two well mechanisms and shared/private water grammar.
+- B02/B04/B05: small smithy; natural-drop watermill plus woodworking shelter; household weaving.
+- F01–F03: ordinary reference pair and shared seasonal/cultural/role modules, child grazing, no dedicated shepherd/potter.
+- F04/F05: named household continuity and daughter/smith/healer departure variants.
+- G01/G02: male reference heroes, minimal metal and three seasonal states.
+- K01–K03: eldest weaver daughter supplies ornament service; mother remains home; real motif grammar and fictional affinities stay separate.
+- M01/M02/M09/M10: modest village/community, individual leaving/staying identities, no destruction of home.
+D04 livestock/grazing context reuses children/household roles. Equipment and mechanism packets listed in Character Briefs remain research-dependent.
+This does not mark entire task families finished or increase Vertical Slice scope.
