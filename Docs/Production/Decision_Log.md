@@ -248,3 +248,32 @@ These are intentionally not locked yet:
 - exact military service name;
 - final visual reference board;
 - detailed Act I quest scripts.
+
+
+## 2026-10-18 — Systemic 3D art-direction lock
+
+### Rendering / production language
+**Decision:** Folkhero uses simple modular 3D with large readable forms, flat/soft-shaded materials, restricted palette and low texture noise.
+
+**Rejected as production target:** painterly/illustrative rendering that requires dense unique detail or makes gameplay assets read as 2D art.
+
+### Asset multiplication
+**Decision:** Prefer a small number of reusable base meshes multiplied through:
+- modular attachments;
+- palette/material parameters;
+- weather/season states;
+- damage;
+- gameplay status;
+- corruption.
+
+### Historical silhouette
+**Decision:** Simplification must preserve historically plausible late-16th-century regional silhouettes and construction logic, especially architecture and clothing.
+
+### Mobile readability
+**Decision:** Art is authored for top-down mobile readability first. Large shape/color masses outrank micro-detail.
+
+### Corruption
+**Decision:** The “Cursed Treasures” dark/corrupted visual language is a reusable overlay/state, not a separate base rendering style.
+
+### VFX
+**Decision:** Persistent state VFX stay restrained. Bright effects are primarily reserved for short gameplay reactions, attacks and telegraphs.
