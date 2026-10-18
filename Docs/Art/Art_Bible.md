@@ -1,466 +1,561 @@
 # Art Bible
 
-Status: v0.3 pre-production visual foundation. Core visual pillars are directionally approved; reference boards and production budgets remain in progress.
+Status: v0.4 — systemic 3D direction for pre-production.
 
 ## Purpose
 
-Define constraints that let human artists and AI-assisted pipelines create assets that belong to the same game while remaining readable, reusable, historically grounded and affordable for a very small team.
+Folkhero needs a visual language that allows a very small team to build a large systemic action RPG from a small number of reusable 3D assets.
+
+The art direction must support:
+- historical and ethnographic grounding;
+- Belarusian / Ruthenian / Lithuanian / Polish regional identity;
+- top-down mobile readability;
+- modular reuse;
+- seasonal and weather transformation;
+- gameplay status states;
+- AI-assisted concepting;
+- affordable 3D production;
+- mobile-class performance.
+
+The target is not a painted illustration recreated in 3D. It is a simple, deliberate 3D game language whose variation comes from systems.
 
 ## Core visual thesis
 
-**Grounded dark-fairytale stylized realism.**
+**Flat dark-fairytale systemic 3D.**
 
-Folkhero uses:
-- realistic human anatomy and broadly realistic object construction;
-- historically grounded late-16th-century material culture;
-- restrained stylization in forms, materials, lighting, color and VFX;
-- selective supernatural exaggeration;
-- painterly/game-readable presentation rather than photorealism.
+Working formula:
 
-The target is not cartoon proportion stylization and not cinematic photorealism.
+historically grounded shapes  
++ simple readable 3D geometry  
++ large flat color masses  
++ restricted regional palette  
++ modular parts  
++ data-driven materials/states  
++ restrained VFX  
+= Folkhero
 
-### Production reason
+The game should clearly read as 3D:
+- real volume;
+- stable lighting;
+- readable silhouettes;
+- simple modeled forms;
+- consistent camera-space proportions.
 
-Human characters and humanlike creatures should remain compatible, where practical, with:
-- standard humanoid rigs;
-- Unity Humanoid retargeting;
-- commercial/free animation libraries;
-- shared body bases;
-- shared skeletons;
-- modular clothing/equipment;
-- reusable materials.
+Avoid:
+- detailed 2D-illustration appearance in gameplay;
+- painterly concept detail treated as final asset specification;
+- noisy realistic PBR;
+- miniature/toy diorama aesthetics;
+- high-frequency fantasy decoration.
 
-Do not introduce exaggerated anatomy when silhouette, clothing, material, VFX or animation can carry the identity instead.
+## Production-first art principle
+
+The primary question is not “How many beautiful variants can we draw?” but:
+
+> How many useful game variants can one base asset produce?
+
+Prefer:
+- one house mesh + modular roof/porch/chimney + palette/state parameters;
+- one tree family + foliage/material/state variants;
+- one humanoid base + modular heads/clothing/equipment;
+- one enemy chassis + attachments/materials/animation/VFX states;
+- one terrain family + dry/wet/snow/ice/poison/curse states.
+
+Avoid separate unique assets when a shared base can express the same distinction.
 
 ## Visual pillars
 
-1. **Human-first realism** — people look like people from this world before they look like fantasy classes.
-2. **Dark fairytale, not generic grimdark** — the world is dangerous and uncanny, but natural beauty remains important.
-3. **Regional historical grounding** — Belarusian, Ruthenian, Lithuanian and Polish material culture is the primary historical reference field.
-4. **Selective clean color** — saturated/clean color is meaningful rather than ubiquitous.
-5. **Purity vs disruption** — healthy nature, old agreements and intact ritual order contrast with corruption and militarized supernatural disruption.
-6. **Folklore through material culture** — identity comes through clothing, textiles, tools, architecture, ritual objects, landscape and behavior, not fantasy labels.
-7. **Production-friendly realism** — assets should be reusable, retargetable and modular wherever possible.
+1. **Systemic before bespoke** — reuse geometry and let modules, materials, weather, status and world state create variation.
+2. **Large forms before texture detail** — objects must read at top-down mobile scale.
+3. **Historically grounded silhouette** — architecture, clothing, tools and weapons come from late-16th-century GDL / early PLC material culture.
+4. **Dark fairytale through palette and atmosphere** — uncanny and restrained without monochrome grimdark.
+5. **Folk identity through real material culture** — textiles, dress, architecture, tools and ritual objects beat generic fantasy symbols.
+6. **Limited clean accents** — white linen, red ornament, healthy green, clean water and selected warm light carry meaning because they are not everywhere.
+7. **Readable system states** — Wet, Frozen, Burning, Shocked, Poisoned and Cursed remain distinct without covering the screen in effects.
 
-## Tone and color logic
+## Camera and readability
 
-The dominant mood is **dark fairytale**.
+Target:
+- 3D top-down / isometric;
+- fixed or very limited rotation;
+- controlled zoom;
+- gameplay-first composition.
 
-The baseline world may use:
-- damp earth;
-- weathered wood;
-- linen;
-- wool;
-- leather;
-- iron;
-- smoke;
-- peat;
-- reeds;
-- fog;
-- muted water;
-- overcast skies;
-- autumn and winter neutrals.
+A game object must remain legible:
+- at phone size;
+- partially occluded;
+- in rain/fog;
+- next to VFX;
+- among several units.
 
-Brighter clean color should be comparatively rare and therefore valuable.
+### Readability hierarchy
 
-Primary clean-color associations:
-- healthy trees and fresh foliage;
-- grass, fields and meadows;
-- clean water;
-- sunlight through healthy landscape;
-- selected intact sacred/ritual places;
-- white and red elements of regional traditional clothing and textiles.
+At gameplay distance:
+1. traversable / blocked space;
+2. player characters;
+3. enemies and tactical role;
+4. attack telegraphs;
+5. systemic surfaces and status states;
+6. interactables/objectives;
+7. decoration.
 
-Do not make the whole game brown/gray. The contrast between healthy living color and damaged/corrupted states is an intentional storytelling tool.
+Decoration must never compete with 1–6.
+
+## Detail budget
+
+### Environment
+Prefer a few large forms.
+
+Typical forest composition:
+- 2–4 strong tree masses;
+- 1 undergrowth mass;
+- 1–2 rock/log shapes;
+- 0–1 gameplay prop.
+
+Typical swamp module:
+- one water/ground shape;
+- 1–3 reed/sedge clumps;
+- one dead tree/root mass;
+- one bank/island shape;
+- one crossing/gameplay prop.
+
+### Characters
+At gameplay distance, a humanoid should read as roughly 5–8 major visual masses:
+- head/skin;
+- hair/headwear;
+- shirt/tunic;
+- lower body;
+- outer layer;
+- one cultural color/ornament accent;
+- weapon/tool;
+- optional class-specific prop.
+
+Avoid accessories and embroidery visible only in close-up.
+
+### Architecture
+A rural house should read through:
+- wall mass;
+- roof mass;
+- openings;
+- one trim/accent family;
+- 0–2 optional attachments.
 
 ## Shape language
 
-### Humans
-- realistic proportions;
-- practical silhouettes;
-- readable garment layering;
-- weight and function visible in clothing/equipment;
-- heroism through posture, silhouette, equipment and cultural detail rather than superhero anatomy.
+### People
+- realistic or mildly stylized human proportions;
+- standard humanoid-rig compatibility;
+- animation-library friendly;
+- simple facial planes;
+- slightly softened/rounded folk-fairytale character;
+- rounded, somewhat broad noses can be a recurring shape-language trait;
+- avoid fashion-model faces as the default.
 
-### Architecture
-- simple structural logic;
-- timber/log construction first in rural spaces;
-- strong roof silhouettes;
-- fences, barns, sheds, granaries, workshops and utility structures matter as much as hero buildings;
-- settlements should feel grown from daily work and landscape rather than laid out as fantasy theme parks.
+Local population can visually lean toward fair/light hair and light eyes while retaining believable variation. Minority groups may appear where historically and narratively appropriate and should be represented as people, not costume archetypes.
+
+### Buildings
+Rural structures remain historically grounded even when simplified.
+
+Preserve:
+- plausible log/timber construction;
+- believable roof pitch/material logic;
+- functional doors/windows;
+- barns, sheds, granaries, wells and fences;
+- regional farmstead organization.
+
+Simplify:
+- joinery detail;
+- plank count;
+- surface noise;
+- small carving.
+
+Do not replace historical silhouettes with generic fantasy cottages.
 
 ### Supernatural
-Supernatural forms can break ordinary shape rules, but should still feel derived from:
-- local ecology;
-- human fears and rituals;
-- material culture;
-- corruption of recognizable anatomy or natural structure.
+Prefer:
+base body/rig  
++ head/face module  
++ attachment family  
++ material state  
++ VFX state  
++ animation layer.
+
+## Settlement and landscape grammar
+
+Permanent settlement normally sits on:
+- comparatively dry ground;
+- low ridges;
+- terraces;
+- gentle hills/rises;
+- forest edges above wet ground.
+
+Default gradient:
+
+**village / khutor on dry rise**  
+→ yards / gardens / small fields  
+→ hay meadow / pasture / livestock routes  
+→ wet meadow / floodplain  
+→ marsh / bog / water.
+
+Lowland near wetlands is more likely to contain haymaking, pasture, livestock routes, fishing access and flood-prone paths than permanent homes.
 
 ## Historical and ethnographic policy
 
-Historical/ethnographic references must be treated as research, not decorative inspiration.
+Reference priority:
+1. primary-period / near-primary evidence;
+2. archaeology, inventories, surviving objects;
+3. museum/scholarly reconstruction with documented basis;
+4. later ethnography explicitly marked as continuity evidence;
+5. films/games only as artistic inspiration.
 
-Preferred approach:
-1. use primary-period or near-primary evidence where available;
-2. use museum/research reconstructions with source notes;
-3. use later ethnographic material only when clearly labeled as later continuity evidence;
-4. use films/games as visual inspiration, never as factual authority.
+For approved references record where possible:
+- source;
+- approximate date;
+- region;
+- social context;
+- confidence;
+- evidence-based vs game extrapolation.
 
-For clothing, ornaments, tools and architecture:
-- record the source;
-- record approximate date;
-- record region/culture where known;
-- mark confidence;
-- distinguish documented element from game extrapolation.
+Generated images are never historical evidence.
 
-New game ornament families may be assembled from historical/ethnographic principles, but should preserve the visual grammar of their sources rather than freely mixing unrelated motifs.
+### Ornament
+Do not use random “Slavic pattern”.
 
-## Religious visual layer
+Use:
+- documented motif families;
+- documented placement logic;
+- real textile construction;
+- restrained application at gameplay scale.
 
-Christianity exists but should not dominate the visual identity of the early/home-region experience.
+At gameplay distance ornament often reads as one red/white band, border or chest/sleeve/hem accent rather than dense micro-pattern.
 
-Use relatively little overt Christian imagery in:
-- remote villages;
-- forest/marsh wilderness;
-- folk ritual spaces;
-- the starting community.
+## Religious layer
 
-Christian visual presence increases substantially in **Polotsk** and other larger administrative/urban spaces through:
+Christianity is present but visually restrained in the home region.
+
+Remote villages / wilderness:
+- occasional cross;
+- local icon;
+- small chapel/church where appropriate.
+
+Polotsk:
+- stronger institutional Christian layer;
 - churches;
 - crosses;
-- icons;
 - clergy;
-- urban ritual;
-- institutional architecture.
+- icons;
+- urban/institutional architecture.
 
-The contrast between institutional Christianity, local folk practice and older place-bound agreements should be visible without turning the game into a religious conflict simulator.
+## Color language
 
-## Folklore first
+### Base families
+- peat/earth brown;
+- dark weathered wood;
+- linen white / warm off-white;
+- charcoal / iron gray;
+- desaturated forest green;
+- moss/olive;
+- cold blue-gray water;
+- fog gray.
 
-Visual identity should communicate Belarusian and wider regional culture through:
-- silhouette;
-- textiles and ornament;
-- clothing;
-- tools/weapons;
-- ritual objects;
-- architecture;
-- landscape;
-- creature anatomy;
-- environmental storytelling.
+### Controlled accents
+- textile red;
+- clean white;
+- healthy green;
+- clean-water blue-green;
+- warm fire/lamplight;
+- rare supernatural colors.
 
-Avoid generic fantasy with folklore names pasted onto it.
+A scene should not use every accent simultaneously.
 
-## Historical frame
+## Material model
 
-The world is alternate-history late-16th-century Grand Duchy of Lithuania / early Polish–Lithuanian Commonwealth.
+Use a small number of shared material families:
+- wood;
+- cloth;
+- leather;
+- metal;
+- stone;
+- terrain;
+- foliage;
+- water.
 
-Use recognizable historical material culture as a foundation, then allow supernatural divergence.
+Shared parameters where useful:
+- BaseColor / PaletteIndex;
+- SecondaryColor;
+- Roughness;
+- Wetness;
+- SnowAmount;
+- FrostAmount;
+- BurnAmount;
+- PoisonAmount;
+- CurseAmount;
+- DamageAmount;
+- OrnamentMask;
+- DirtAmount.
 
-Strict museum reconstruction is not the production goal, but deliberate deviations should be traceable to gameplay, readability or supernatural fiction rather than ignorance.
+Prefer:
+- low-frequency albedo;
+- low texture noise;
+- shared tiling/trim textures;
+- masks;
+- atlasable decals;
+- simple normals only where needed.
 
-## Gameplay readability
+Avoid unique high-resolution texture sets for ordinary repeated assets and baked painterly lighting.
 
-Combat readability beats detail.
+## Modular architecture system
 
-At gameplay camera distance the player should quickly read:
-- enemy role;
-- attack telegraph;
-- status state;
-- dangerous surface;
-- elite/boss state;
-- interactable objective.
+Act I village kit should use a small vocabulary:
+- House A;
+- House B / wealthier house;
+- barn;
+- shed;
+- granary;
+- animal shelter;
+- well;
+- fence/gate;
+- haystack;
+- bridge/boardwalk;
+- small ritual/church object.
 
-Do not spend detail budget on elements invisible from the top-down/isometric camera.
+Variation:
+- roof module;
+- porch/lean-to;
+- chimney;
+- windows/doors;
+- fence style;
+- palette;
+- weather/season;
+- damage;
+- curse.
 
-## Camera-driven production
+A concept is successful when it demonstrates many believable outcomes from few modules.
 
-Camera is fixed or very limited-rotation with controlled zoom.
+## Modular character system
 
-Environment production can optimize for:
-- expected viewing angles;
-- combat readability;
-- modular composition;
-- occlusion control;
-- performance.
+Use:
+- few body bases;
+- shared humanoid rig;
+- interchangeable heads/hair/headwear;
+- interchangeable torso/lower-body/outerwear;
+- modular weapon/tool;
+- limited bags/accessories;
+- ornament masks/decals.
 
-Do not assume every asset must survive unrestricted third-person inspection.
-
-## Character/class identity
-
-Initial player archetypes:
+Identity should come mainly from silhouette, role prop, large clothing colors, headwear, posture/animation and one or two cultural accents.
 
 ### Warrior
-- realistic human proportions;
-- practical physical silhouette;
-- axe and spear foundations;
-- veteran/returned-soldier grounding;
-- equipment should plausibly belong to the regional late-16th-century world;
-- should read as capable without looking like a generic high-fantasy knight.
+- ordinary human first;
+- returned-soldier/veteran grounding;
+- strong weapon silhouette;
+- practical regional clothing/armor;
+- shares the civilian/soldier system where possible.
 
 ### Vedun
-- human first, magic practitioner second;
-- plausible rural clothing and equipment base;
-- ranged/ritual identity expressed through carried objects, textiles, herbs/materials, gestures and VFX;
-- should look like a person from the same community/ecology, not a wizard-school archetype.
+- ordinary human first;
+- rural clothing foundation;
+- identity through staff/tool, ritual object, herbs/material bundle and restrained supernatural VFX;
+- not wizard-school fantasy.
 
-## Ordinary people first
+## Enemy production grammar
 
-The first detailed character reference work should focus on:
-- villagers;
-- farmers;
-- craftspeople;
-- fishers/hunters;
-- older people and children where useful;
-- displaced community NPCs;
-- household and work clothing.
+### Human family
+One shared human foundation can support:
+- bandit;
+- authority soldier;
+- officer;
+- cursed human;
+- militia/local fighter.
 
-The village and its ordinary people are the baseline against which heroes, soldiers, urban residents and supernatural beings are judged.
+### Folklore families
+Prefer a small number of body/rig families. Each creature should answer:
+1. what makes the folklore identity recognizable?
+2. what can remain shared?
 
-## Ornament language
+Do not assume each named creature needs a unique rig.
 
-Belarusian/regional ornament patterns are a gameplay system and must be legible as more than decoration.
+## Seasons, weather and world states
 
-Art direction should support:
-- historically/ethnographically sourced pattern grammar;
-- recognizable pattern families;
-- application to equipment/accessories;
-- clear visual distinction without excessive UI noise;
-- white/red textile language where appropriate;
-- color/material variation tied to affinity only when it does not destroy cultural plausibility.
-
-The Slutsk belt is a required culturally important reference for later high-value equipment/relic design.
-
-All approved ornament families should retain source links and notes.
-
-## Creature visual gradient
-
-Creature design should use a deliberate gradient.
-
-### Place-bound / neutral spirits
-- uncanny;
-- old;
-- locally specific;
-- may be beautiful, solemn or unsettling;
-- not automatically monstrous or hostile.
-
-### Dangerous supernatural creatures
-- more predatory and threatening;
-- stronger silhouette distortion;
-- clearer danger cues.
-
-### Cursed / corrupted beings
-- body horror is allowed;
-- anatomy/material order may visibly fail;
-- roots, swelling, fractures, asymmetry, parasitic growth, exposed internal-like structures and other disturbing motifs may be explored;
-- corruption should look like a broken rule, not random gore.
-
-### Militarized / experimental supernatural
-- should be among the most disturbing visual categories;
-- combines institutional/military intervention with broken folklore/natural logic.
-
-## International content-safety production rule
-
-The project should preserve the ability to produce stricter regional builds without redesigning core creatures or encounters.
-
-Therefore:
-- gore should be a replaceable VFX/decal layer where possible;
-- blood color/intensity should be data-driven;
-- dismemberment should not be mechanically required;
-- exposed bone/skeleton imagery should not be the only readable form of a creature;
-- corpse persistence should be configurable;
-- death presentation should support non-gory alternatives;
-- horror silhouettes should remain effective after gore reduction.
-
-This is a production/localization constraint, not a guarantee of approval in any territory. Regional publishing requirements must be re-checked near submission.
-
-## Creature production philosophy
-
-Prefer reusable visual grammar.
-
-Conceptual monster construction:
-Body/Rig Family
-+ Head/Face
-+ Attachments
-+ Material
-+ VFX
-+ Status/Corruption State.
-
-Where practical, build around a small number of foundational rigs/chassis and produce variants through:
-- proportions;
-- attachments;
-- materials;
-- animation layers;
-- VFX;
-- damage/corruption states.
-
-Do not assume every folklore creature requires a unique rig.
-
-## Gameplay-driven visual states
-
-Gameplay tags should drive presentation.
-
-Examples:
-- Wet -> wetness/material response;
-- Frozen -> frost/ice response;
-- Burning -> flame/ember response;
-- Shocked -> electrical response;
-- Poisoned -> contamination response;
-- Cursed -> supernatural/corruption overlay.
-
-These visual states should work across multiple characters/enemies where possible.
-
-## Environment production
-
-Regions are modular systems, not one-off scenes.
-
-A production kit may contain:
-- gameplay geometry modules;
-- terrain/material rules;
-- vegetation;
-- rocks;
-- structures;
-- props;
-- decals;
-- weather;
-- lighting profiles;
-- hazard/surface elements;
-- seasonal material/prop variants.
-
-GeNa Pro should apply authored rules, not replace level design.
-
-## Seasonal reuse
-
-One strong region kit should support distinct gameplay/readability states:
+Core seasonal states:
 - summer;
-- rainy/autumn;
+- autumn/rain;
 - winter;
-- flood.
+- spring flood.
 
-Seasonal work should reuse geometry and assets where possible while visibly changing:
-- ground state;
-- foliage;
-- water level;
-- snow/ice;
-- lighting;
-- fog/precipitation;
-- traversal cues;
-- combat surfaces.
+World/system states:
+- dry;
+- wet;
+- snow-covered;
+- frozen;
+- burned;
+- poisoned;
+- cursed;
+- damaged.
 
-## Initial region direction
+Preferred transformation order:
 
-The first region is based on an Upper Berezina / Berezinsky-reserve-like forest-marsh landscape:
-- mixed forest;
-- bog and peatland;
-- river headwaters;
-- springs;
-- lakes;
-- floodplains;
-- small fields/meadows;
-- villages;
-- khutors;
-- wet clearings;
-- seasonal snow/flood states.
+**material parameter**  
+→ **reusable overlay/attachment**  
+→ **geometry swap only when necessary**.
 
-It must support the Vertical Slice and first Early Access act.
+## Status presentation
 
-## VFX
+### Wet
+- darker material;
+- controlled highlights;
+- puddle/water response;
+- very light particles.
 
-VFX should be stylized, readable and reusable.
+### Frozen
+- cold/pale shift;
+- edge frost;
+- limited ice attachment;
+- status icon.
 
-Build shared presentation for:
-- hit impact;
-- Physical heavy hit/Shatter;
+### Burning
+- small flame/ember layer;
+- char;
+- short strong reaction burst.
+
+### Shock
+- brief arcs;
+- chain line only when mechanically relevant.
+
+### Poison
+- contamination tint;
+- limited vapor/particles;
+- surface propagation when systemic.
+
+### Curse
+- darker/cooler palette;
+- selected unnatural accent;
+- restrained emissive marking;
+- shape corruption only where necessary.
+
+## VFX rules
+
+Two tiers:
+
+### State VFX
+Persistent and low intensity:
 - Wet;
-- Burning;
-- Cold/Frozen;
-- Shock;
 - Poison;
+- Frozen;
 - Curse;
-- status reaction;
-- elite appearance;
-- Downed/revive;
-- boss phase;
-- objective completion.
+- Burning.
 
-Feel/MMFeedbacks should provide reusable feedback profiles around these events.
+### Reaction VFX
+Short and high intensity:
+- Shatter;
+- Wet + Shock chain;
+- steam/extinguish;
+- critical ritual trigger;
+- boss reaction.
 
-## AI-assisted asset pipeline
+Bright effects should usually signal a gameplay event. Avoid rainbow clutter.
 
-AI generation is a production tool, not an art director.
+## Corruption / “Cursed Treasures” overlay
 
-Preferred flow:
-brief
--> sourced reference board
--> cheap concept alternatives
--> human approval
--> production asset
--> cleanup
--> rig/material/animation as needed
--> Unity validation
--> gameplay-camera review.
+This is a reusable state, not the base rendering style.
 
-Generated output must be checked for:
-- style consistency;
-- anatomy;
-- historical plausibility;
-- ethnographic plausibility;
-- topology;
-- UV quality;
-- material correctness;
-- animation compatibility;
-- licensing/usage constraints;
-- performance.
+Possible components:
+- material palette shift;
+- desaturated/dark vegetation;
+- selected violet/unnatural accent;
+- corruption decals;
+- sparse emissive markings;
+- dead/bent foliage attachment;
+- fog profile;
+- VFX/audio profile;
+- enemy posture/animation layer.
 
-Avoid depending on random one-off generated 3D assets that cannot be reproduced or maintained.
+The cursed version must remain recognizably the same underlying asset/location.
+
+## Mobile/performance constraints
+
+Prefer:
+- few material families;
+- instancing;
+- atlases/trim sheets;
+- low overdraw;
+- limited transparency;
+- low particle count;
+- simple foliage;
+- reusable LODs;
+- camera-dependent detail.
+
+Avoid:
+- excessive unique props;
+- dense alpha foliage;
+- overlapping transparent VFX;
+- tiny geometry detail;
+- high-frequency textures invisible from gameplay camera.
+
+Exact poly/texture budgets will be set from prototype profiling.
+
+## AI-assisted concept pipeline
+
+AI concepting must test production rules.
+
+Every concept should answer:
+- what are the reusable base assets?
+- what are modular swaps?
+- what changes by material parameters?
+- what changes by weather/status?
+- what is readable at gameplay distance?
+
+Reject concepts that:
+- rely on micro-detail;
+- add dozens of one-off props;
+- read as 2D rather than game-ready 3D;
+- cannot plausibly be assembled from reusable assets;
+- replace historical construction with generic fantasy.
+
+See Docs/Art/Concept_Generation_Guide.md.
 
 ## Reference taxonomy
 
-Every significant reference should be labeled as one of:
-- **Evidence** — historical, museum, archival or scholarly material used to support factual design;
-- **Inspiration** — useful artistic treatment, mood or presentation;
-- **Target** — approved direction we intentionally want to approach;
-- **Anti-reference** — useful example of what to avoid.
+- **Evidence** — historical/museum/scholarly factual support.
+- **Inspiration** — artistic treatment only.
+- **Target** — approved visual/production direction.
+- **Anti-reference** — what to avoid.
 
-Do not treat unreviewed AI generations as evidence or approved art direction.
+## First-region target
 
-## Local vs cloud
+Upper Berezina / home region:
+- dry elevated village/khutor;
+- fields/gardens;
+- hay meadow/pasture;
+- forest edge;
+- wet meadow;
+- river/spring;
+- marsh/bog;
+- rain/snow/flood.
 
-Use local ComfyUI where it provides good quality at low marginal cost and iteration speed.
+The same module kit should create:
+- safe village;
+- rainy route;
+- winter route;
+- flooded route;
+- corrupted route;
 
-Use paid/cloud tools when they clearly save meaningful human time.
+without requiring a separate environment set for each.
 
-Optimize for accepted production output per human hour, not minimum API cost.
+## Current target summary
 
-## Reference-board plan
+Folkhero is:
 
-Global visual development should be approved through separate boards:
+**historically grounded late-16th-century regional forms**  
+rendered as  
+**simple modular 3D with flat/soft shading and a limited palette**  
+supporting  
+**system-driven weather, status, season, corruption and procedural recombination**.
 
-1. Overall visual direction.
-2. Color / palette / material language.
-3. Ordinary people and village life.
-4. Hero direction: Warrior + Vedun.
-5. Human factions and military authority.
-6. Folklore / creature gradient.
-7. Environment and regional language.
-8. Ornament / ritual object / prop language.
-9. VFX / magic / corruption language.
-10. UI / graphic tone.
-
-The **Ordinary People and Village Life** board is the first detailed board.
-
-## Art Bible TODO before Vertical Slice
-
-Add/approve:
-- visual reference boards above;
-- final palette sheet;
-- final material language;
-- ordinary-villager baseline;
-- Warrior reference;
-- Vedun reference;
-- first enemy-family reference;
-- first-region reference;
-- ornament reference set with sources;
-- UI direction;
-- polygon/texture/VFX budgets;
-- animation timing examples;
-- regional gore/content presentation matrix if China/Japan launch remains a goal.
+The direction succeeds only if it is:
+- distinctive;
+- readable on mobile;
+- cheap to multiply;
+- historically recognizable;
+- compatible with ordinary 3D production;
+- strong enough that simple assets feel intentional.
