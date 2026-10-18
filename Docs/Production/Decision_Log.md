@@ -277,3 +277,12 @@ These are intentionally not locked yet:
 
 ### VFX
 **Decision:** Persistent state VFX stay restrained. Bright effects are primarily reserved for short gameplay reactions, attacks and telegraphs.
+
+## 2026-10-18 — Concept preparation standards
+User sequence: resolve documentation/research gaps, then discuss designs, then try generation. No generation in this pass.
+- Individual modeled objects require separate high-resolution multi-view packets and explicit metric scale relative to a fixed human ruler; delivery details in Docs/Art/Asset_Sheet_Standard.md.
+- Mobile readability does not replace PC-first implementation. PC HUD is primary; touch is a separate comparison, with HP/cooldowns and no new resource bars.
+- Earlier painterly moodboard wording is superseded by simple modular 3D.
+- Keep source evidence, later ethnographic continuity, visual target approval and deliberate fiction separate.
+- Record all 60 backlog tasks; do not mark missing images as generated/approved. Final asset counts follow selected child-object briefs.
+- House construction, local date/authority, clothing cuts, motifs, roster and target images remain open where evidence or selection is missing. Documentation standards do not approve a design.
