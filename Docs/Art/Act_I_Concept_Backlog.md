@@ -434,3 +434,23 @@ A concept is done only when:
 - gameplay-scale readability is shown;
 - detail level fits mobile/systemic production;
 - implementation in Unity is plausible.
+
+## Approved discussion supplement — 2026-10-18
+Use [Village Design](Act_I_Village_Design.md), [Character Briefs](Act_I_Character_Briefs.md) and [Community](../Vision/Act_I_Community.md) to specialize existing tasks rather than adding unrelated families.
+- B01–B06: small houses/shutters/stone supports, functionally differentiated outbuildings, hazel/pine fences, two well mechanisms and shared/private water grammar.
+- B02/B04/B05: small smithy; natural-drop watermill plus woodworking shelter; household weaving.
+- F01–F03: ordinary reference pair and shared seasonal/cultural/role modules, child grazing, no dedicated shepherd/potter.
+- F04/F05: named household continuity and daughter/smith/healer departure variants.
+- G01/G02: male reference heroes, minimal metal and three seasonal states.
+- K01–K03: eldest weaver daughter supplies ornament service; mother remains home; real motif grammar and fictional affinities stay separate.
+- M01/M02/M09/M10: modest village/community, individual leaving/staying identities, no destruction of home.
+D04 livestock/grazing context reuses children/household roles. Equipment and mechanism packets listed in Character Briefs remain research-dependent.
+This does not mark entire task families finished or increase Vertical Slice scope.
+
+## Environment discussion and pilot — 2026-10-18
+[Environment and States](Act_I_Environment_and_States.md) specializes C01–C04/D01–D03/E01–E03/H01–H02/I02/J01–J04.
+[Production Pilot](Concept_Production_Pilot.md) overrides any interpretation of this backlog as an immediate batch:
+one house, one tree, one ground/water patch, one civilian, one humanoid Bolotnik.
+First route: limited tree/vegetation kit; bridge/ford only. Broader habitats/crossings remain deferred.
+Heavy boulder fragmentation and permanently missing pieces replace earlier simple-crack/post-marker alternatives.
+Source links belong in each child packet; accepted fiction remains labeled.

@@ -9,12 +9,12 @@ Research = registered/research stage, not research completed.
 | A01 | Final systemic 3D style sheet | P0 | Research | Written direction; provisional B01/F01/C01/D01; target selection | — | — |
 | A02 | Mobile readability benchmark | P0 | Research | Written direction; provisional B01/F01/C01/D01; target selection | — | — |
 | A03 | Final palette and material families | P0 | Research | Written direction; provisional B01/F01/C01/D01; target selection | — | — |
-| B01 | Historically grounded rural house family | P0 | Research | R01/R02; house brief; scale standard | — | — |
-| B02 | Farm/outbuilding kit | P0 | Research | R01/R02; house brief; scale standard | — | — |
-| B03 | Fence/gate/yard kit | P0 | Research | R01/R02; house brief; scale standard | — | — |
-| B04 | Well and household utility kit | P1 | Research | R01/R02; house brief; scale standard | — | — |
-| B05 | Village layout grammar | P0 | Research | R01/R02; house brief; scale standard | — | — |
-| B06 | Rural wealth tiers | P1 | Research | R01/R02; house brief; scale standard | — | — |
+| B01 | Historically grounded rural house family | P0 | Research |R01/R02; house brief; scale standard; Village §§ House family | — | Written scope accepted 2026-10-18; image — |
+| B02 | Farm/outbuilding kit | P0 | Research |R01/R02; house brief; scale standard; Village §§ Farm buildings / Workplaces | — | Written scope accepted 2026-10-18; image — |
+| B03 | Fence/gate/yard kit | P0 | Research |R01/R02; house brief; scale standard; Village §§ Fences | — | Written scope accepted 2026-10-18; image — |
+| B04 | Well and household utility kit | P1 | Research |R01/R02; house brief; scale standard; Village §§ Water / Dressing / Workplaces | — | Written scope accepted 2026-10-18; image — |
+| B05 | Village layout grammar | P0 | Research |R01/R02; house brief; scale standard; Village landscape and water rules | — | Written scope accepted 2026-10-18; image — |
+| B06 | Rural wealth tiers | P1 | Research |R01/R02; house brief; scale standard; Village household/wealth variation | — | Written scope accepted 2026-10-18; image — |
 | C01 | Tree families | P0 | Research | Ecology references; geometry/material brief | — | — |
 | C02 | Forest ground kit | P0 | Research | Ecology references; geometry/material brief | — | — |
 | C03 | Procedural forest modules | P0 | Research | Ecology references; geometry/material brief | — | — |
@@ -27,13 +27,13 @@ Research = registered/research stage, not research completed.
 | E01 | Ritual spring location grammar | P0 | Research | R07/R08; fictional ritual brief; D kit | — | — |
 | E02 | Ritual prop kit | P0 | Research | R07/R08; fictional ritual brief; D kit | — | — |
 | E03 | Pact intact vs broken | P0 | Research | R07/R08; fictional ritual brief; D kit | — | — |
-| F01 | Human base proportions / face language | P0 | Research | R01/R03/R04; garment brief; human base | — | — |
-| F02 | Rural clothing modules | P0 | Research | R01/R03/R04; garment brief; human base | — | — |
-| F03 | Villager role assemblies | P0 | Research | R01/R03/R04; garment brief; human base | — | — |
-| F04 | Displaced community variants | P1 | Research | R01/R03/R04; garment brief; human base | — | — |
-| F05 | Service NPCs | P1 | Research | R01/R03/R04; garment brief; human base | — | — |
-| G01 | Warrior production concept | P0 | Research | F01/F02; sourced equipment; class silhouette brief | — | — |
-| G02 | Vedun production concept | P0 | Research | F01/F02; sourced equipment; class silhouette brief | — | — |
+| F01 | Human base proportions / face language | P0 | Research |R01/R03/R04; garment brief; human base; Character shared human system | — | Written scope accepted 2026-10-18; image — |
+| F02 | Rural clothing modules | P0 | Research |R01/R03/R04; garment brief; human base; Character seasonal clothing | — | Written scope accepted 2026-10-18; image — |
+| F03 | Villager role assemblies | P0 | Research |R01/R03/R04; garment brief; human base; Community roster / character records | — | Written scope accepted 2026-10-18; image — |
+| F04 | Displaced community variants | P1 | Research |R01/R03/R04; garment brief; human base; Community displacement / character travel | — | Written scope accepted 2026-10-18; image — |
+| F05 | Service NPCs | P1 | Research |R01/R03/R04; garment brief; human base; Daughter, smith, healer service briefs | — | Written scope accepted 2026-10-18; image — |
+| G01 | Warrior production concept | P0 | Research |F01/F02; sourced equipment; class silhouette brief; Warrior brief; minimal metal | — | Written scope accepted 2026-10-18; image — |
+| G02 | Vedun production concept | P0 | Research |F01/F02; sourced equipment; class silhouette brief; Vedun brief; wooden staff | — | Written scope accepted 2026-10-18; image — |
 | G03 | Player gear progression | P1 | Research | F01/F02; sourced equipment; class silhouette brief | — | — |
 | H01 | Authority soldier modular family | P0 | Research | DEC-01/DEC-05; military evidence; F base | — | — |
 | H02 | Authority visual identity | P0 | Research | DEC-01/DEC-05; military evidence; F base | — | — |
@@ -50,22 +50,22 @@ Research = registered/research stage, not research completed.
 | J04 | Weather combat readability | P0 | Research | Approved base objects; status grammar; camera test | — | — |
 | J05 | Downed/revive feedback | P1 | Research | Approved base objects; status grammar; camera test | — | — |
 | K01 | Sourced ornament research board | P0 | Research | Dated motif/placement evidence; fiction boundary | — | — |
-| K02 | Gameplay ornament simplification | P0 | Research | Dated motif/placement evidence; fiction boundary | — | — |
-| K03 | Application variants | P1 | Research | Dated motif/placement evidence; fiction boundary | — | — |
-| L01 | Core mobile combat HUD | P0 | Research | PC controls; cooldown-only; separate touch comparison | — | — |
+| K02 | Gameplay ornament simplification | P0 | Research |Dated motif/placement evidence; fiction boundary; Worker identity only; motif pending | — | Written scope accepted 2026-10-18; image — |
+| K03 | Application variants | P1 | Research |Dated motif/placement evidence; fiction boundary; Worker identity only; applications pending | — | Written scope accepted 2026-10-18; image — |
+| L01 | Core combat HUD and touch comparison | P0 | Research | PC controls; cooldown-only; separate touch comparison | — | — |
 | L02 | Co-op HUD | P0 | Research | PC controls; cooldown-only; separate touch comparison | — | — |
 | L03 | Build/ornament screen | P1 | Research | PC controls; cooldown-only; separate touch comparison | — | — |
 | L04 | Loot/reward presentation | P1 | Research | PC controls; cooldown-only; separate touch comparison | — | — |
-| M01 | Home village establishing gameplay scene | P0 | Research | Approved reusable kits and narrative anchor | — | — |
-| M02 | Ordinary village life / community hub | P1 | Research | Approved reusable kits and narrative anchor | — | — |
+| M01 | Home village establishing gameplay scene | P0 | Research |Approved reusable kits and narrative anchor; Village establishing direction | — | Written scope accepted 2026-10-18; image — |
+| M02 | Ordinary village life / community hub | P1 | Research |Approved reusable kits and narrative anchor; Community household direction | — | Written scope accepted 2026-10-18; image — |
 | M03 | Village → meadow/pasture → wetland journey | P1 | Research | Approved reusable kits and narrative anchor | — | — |
 | M04 | Ritual spring before conflict | P0 | Research | Approved reusable kits and narrative anchor | — | — |
 | M05 | Authority confrontation | P0 | Research | Approved reusable kits and narrative anchor | — | — |
 | M06 | Ritual site destroyed / pact broken | P0 | Research | Approved reusable kits and narrative anchor | — | — |
 | M07 | First corrupted wilderness traversal | P0 | Research | Approved reusable kits and narrative anchor | — | — |
 | M08 | Bolotnik boss gameplay scene | P0 | Research | Approved reusable kits and narrative anchor | — | — |
-| M09 | Leaving home / first displacement | P1 | Research | Approved reusable kits and narrative anchor | — | — |
-| M10 | Displaced-community mini-hub | P1 | Research | Approved reusable kits and narrative anchor | — | — |
+| M09 | Leaving home / first displacement | P1 | Research |Approved reusable kits and narrative anchor; Departure membership, reasons pending | — | Written scope accepted 2026-10-18; image — |
+| M10 | Displaced-community mini-hub | P1 | Research |Approved reusable kits and narrative anchor; Initial hub identities | — | Written scope accepted 2026-10-18; image — |
 
 ## Child object record
 Create a record for every selected object; do not silently assume a family sheet completes all children.
@@ -83,3 +83,14 @@ Research permits discussion once evidence and uncertainty are bounded.
 Only explicit human selection can mark Selected/Approved; technical checks alone cannot.
 Modeling-ready requires Asset_Sheet_Standard.md compliance and agreement across views.
 Implementation status requires Unity validation; a generated image is not implemented.
+
+## Written direction updates — 2026-10-18
+[Village](Act_I_Village_Design.md), [Community](../Vision/Act_I_Community.md), [Characters](Act_I_Character_Briefs.md).
+Acceptance cells above refer only to the written scope described by these briefs, not image approval. Family stage remains Research because detailed object briefs, sources/targets and geometry still need work. No output image/model exists.
+Child packets named in Character Briefs are scoped candidates; create individual execution records as their geometry/brief is resolved. Do not duplicate a row for each weather/material state.
+
+## Environment written scope accepted — 2026-10-18
+[Environment and States](Act_I_Environment_and_States.md), [Production Pilot](Concept_Production_Pilot.md).
+Applies to C01–C04/D01–D03/E01–E03/H01–H02/I02/J01–J04 and M04–M08 as relevant; geometry/source/image checks remain open.
+First execution record: B01-HOUSE-A, exploration r01; prompt/constraints in pilot. Not Selected/Modeling-ready.
+No inferred combat attack approval. Broader backlog is not the immediate production queue.

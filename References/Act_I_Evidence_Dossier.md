@@ -100,3 +100,121 @@ Scope: archaeological wool/damask and court/elite material context. Not evidence
 | Bolotnik | R08 late local tradition | Scan check and comparison; human choice of adaptation, rig and combat footprint |
 | Ecology | Existing UNESCO entry | Species-specific visual records for chosen trees/plants; modern ecology ≠ historical settlement |
 Research need not invent certainty: if no narrow evidence can be found, a later discussion may explicitly accept a documented game extrapolation. Such acceptance never changes the evidence classification.
+
+## Discussion supplement — 2026-10-18
+R11–R18 capture sources consulted during the subsequent discussion. Approved fictional biographies/ratios/mechanisms remain separate from source findings. Object-specific source work still applies.
+
+### R11 — boulder foundations, adjacent chronology
+E. D. Kvitnitskaya, “Архитектура Белоруссии XVII в.”, Vseobshchaya istoriya arkhitektury, vol.6 (1968), pp.469–502.
+URL: https://tehne.com/event/arhivsyachina/arhitektura-belorussii-xvii-veka
+Access: REVIEWED reproduced chapter on third-party host; P2 architectural synthesis.
+Locator: opening construction discussion, printed p.469.
+Supports: boulders placed separately at corners or joined in mortar as timber-building foundations in the described XVII-century corpus.
+Limit: not direct evidence for every late-XVI peasant home in Upper Berezina.
+Accepted use: low individual stone supports in B01; precise geometry/dimensions remain game design.
+
+### R12 — hazel, material plausibility
+Woodland Trust, Types of woodland management:
+https://www.woodlandtrust.org.uk/plant-trees/managing-trees-and-woods/types-of-woodland-management/
+Access: SEARCH-EXCERPT; contemporary woodland practice, not period evidence.
+Supports hazel use for hurdle-making.
+Royal Botanic Gardens Kew, Corylus avellana:
+https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:295446-1
+Access: SEARCH-EXCERPT; modern botanical distribution includes Belarus.
+Use: B03 material plausibility. Neither source documents an Upper Berezina XVI-century woven fence or coppice regime.
+
+### R13 — pine, material plausibility
+Woodland Trust, Scots pine:
+https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/scots-pine/
+Access: SEARCH-EXCERPT; contemporary species/use account.
+Supports suitability/use for gate posts and fencing.
+Use: pine pole/plank enclosure material as user-accepted game extrapolation. Does not date diagonal bracing, joints or boards.
+
+### R14 — selected settlement water rule (GAME, not external evidence)
+Origin: user discussion 2026-10-18.
+Shared sweep well for roughly 2–3 simple homes in a lower/shallow-water area; higher/deeper sites use windlass; larger livestock households have a well that neighbors may also access.
+Watermill at natural stream drop, no large pond.
+Historical well/wheel/joint references still required for object construction; no source certifies hydrology or this household allocation.
+
+### R15 — Tatars of the GDL
+National Museum of Lithuania, “Prayers, Divinitions, and Saffron: Lithuanian Tatar Manuscripts from the Vilnius Muftiate Collection”.
+https://lnm.lt/en/events/prayers-divinitions-and-saffron-lithuanian-tatar-manuscripts-from-the-vilnius-muftiate-collection/
+Access: SEARCH-EXCERPT, institutional historical exhibition description.
+Supports settlement of ancestors of Lithuanian Tatars in GDL lands in XIV–XVI centuries.
+Limits: no selected XVI-century garment or evidence for HH-06's exact village/occupation. Mounted-service biography and horse yard are accepted fiction, not a universal ethnic role.
+
+### R16 — Jewish regional context
+POLIN Museum, Paradisus Iudaeorum (1569–1648):
+https://polin.pl/en/wystawy-wystawa-glowna-galerie/paradisus-iudaeorum
+Access: SEARCH-EXCERPT / exhibition scope; detailed clothing evidence not retrieved.
+Use: historical context and research entrypoint only.
+Limits: no direct support for a specific Upper Berezina village family, shoe repair occupation, garment pattern or demographic share. HH-07 is fiction requiring more specific art references.
+
+### R17 — Roma regional presence
+Orbis Lituaniae, “Gypsies, the Vagabonds of Lithuania” (historical title):
+https://www.ldkistorija.lt/gypsies-the-vagabonds-of-lithuania/
+Access: SEARCH-EXCERPT; full account not reviewed in this pass.
+Council of Europe historical education factsheet:
+https://www.coe.int/t/dg4/education/roma/Source/FS/2.0_Ankunft-in-Europa.pdf
+Access: SEARCH-EXCERPT; map lists Vilnius in 1501; no underlying primary document inspected.
+Use: regional presence research leads.
+Limits: not proof of the proposed settled household, healer occupation, magic or a costume. HH-08 and healer knowledge are individual fictional choices.
+
+### R18 — Cossack historical context
+Internet Encyclopedia of Ukraine, Registered Cossacks:
+https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CR%5CE%5CRegisteredCossacks.htm
+Access: SEARCH-EXCERPT; scholarly reference entry, no primary decree inspected.
+Supports registered Cossack formation context from 1572.
+Limits: no chosen local outfit, no evidence for a particular hunter/fisher or local household. A Cossack past is an accepted biography, not a separate ethnic phenotype.
+
+## Explicitly accepted extrapolations vs remaining research
+[Village brief](../Docs/Art/Act_I_Village_Design.md) and [character briefs](../Docs/Art/Act_I_Character_Briefs.md) hold selected game choices.
+- Small membrane windows and shutters are selected for baseline houses. R01 supports membrane-window discussion; universal shutter use and local construction are not established.
+- R02's fence passage lists wattle, poles, boards and other enclosures in estate context. It does not establish the dominant fence of poor local farmers.
+- R01 period clothing discussion includes a 1582 Minsk-district wealthier household with sheepskin and beaver-fur finishing. This supports material possibilities, not fur trim on all villagers.
+- Wool cloth and sheepskin baseline, plus limited selected wild fur, are approved. Clothing cuts, shoes and headwear remain object-level research.
+- Winter fleece-inward concept, smoke exit, anvil shape, leather apron, wheel type and mechanism are not newly certified by source generalities.
+- Homemade simple ceramics is a game possibility, not a claim that every household produces all its pottery.
+- Group presence sources cannot establish population ratio, occupation, fictional magic or shared residence. Those are authored choices.
+Approved extrapolation allows discussion to move forward; preserve the evidence label in prompts and modeling notes.
+
+## Ecology and visual discussion supplement
+### R19 — modern vegetation map
+D. G. Grummo, R. V. Tsvirko, N. A. Zelenkevich, E. V. Moyseychik (2025), “Карта растительности Березинского биосферного заповедника”, Geobotanical Mapping, pp.3–20. DOI 10.31111/geobotmap/2025.03.
+https://www.binran.ru/publications/geobotanicheskoe-kartografirovanie/2344/17620/
+Access: REVIEWED publisher abstract/metadata; linked full-text retrieval failed. Ground/remote-sensing based current map, 59 mapped units. Supports a mosaic of coniferous forest, deciduous swamp forest and open mire; not a XVI-century map.
+Use: habitat-level assembly C/D; do not copy modern coverage percentages into historic settlement layout.
+
+### R20 — black-alder swamp woodland
+V. S. Ivkovich, E. N. Ivkovich, V. M. Arnolbik, “Фиторазнообразие и естественная динамика растительности черноольховых лесов Березинского заповедника”, pp.165–166, reproduced research.
+https://bp21.org.by/ru/books/celeb055.html
+Access: REVIEWED research text by reserve staff, third-party reproduction.
+Supports willow/fern/sedge-associated alder communities, downy birch/spruce admixture, and oak/ash/aspen near mineral-island transitions. Modern ecological evidence.
+Use: D02/C01 wetland tree and lower-vegetation placement; not uniform plant distribution.
+
+### R21 — mixed forest / birch research
+Parfenov et al., “Особенности биоразнообразия еловых лесов Беловежской пущи, Березинского биосферного и Припятского заповедников”.
+https://bp21.org.by/ru/books/gef_bp10.html
+Access: REVIEWED relevant Berezinsky section; other sections discuss other reserves and must not be transplanted silently.
+Supports mixed spruce/broadleaf forest on mineral islands.
+Starikova, Yermokhin, Pugachevsky, Ivkovich (2023), “Динамика структуры высоковозрастных древостоев березы повислой ...”, Botanika 52, pp.100–113.
+https://www.researchgate.net/publication/374922017
+Access: SEARCH-EXCERPT of author-uploaded paper; full content not inspected. Lead for local silver-birch/hazel associations; no final modeling measurements extracted.
+Use: C01/C02; local silver/downy birches are not one undifferentiated habitat asset.
+
+### R22 — mire ground/vegetation
+“Soil Cover Patterns and Pedo- and Biodiversity of the Berezinsky Biospheric Reserve”.
+https://www.researchgate.net/publication/364580429
+Access: SEARCH-EXCERPT of research publication, not full text inspection.
+Supports cotton-grass/sphagnum and Ledum/sphagnum pine-community references in reserve. Use as scoped lead for open-bog plants, not precise species distribution.
+D02 plant forms still need visual specimen references before final model sheets.
+
+### INSP-01 — user systems-first video
+https://www.youtube.com/watch?v=KuWTf7KrF6Y
+User-supplied production inspiration, repeatedly identified as desired approach. No new video/transcript verification in this pass.
+Project's approved interpretation: few bases; material/module/state multiplication; separate genuine geometry changes; validate a small set before expanding. Do not attribute unverified implementation details to video author.
+
+## Current accepted visual decisions
+See [Environment and States](../Docs/Art/Act_I_Environment_and_States.md) and [Production Pilot](../Docs/Art/Concept_Production_Pilot.md).
+Bolotnik barefoot/plain mossy clothing, concealed eyes, short clumped hair/beard and standard humanoid anatomy are accepted adaptations, not all sourced folklore features.
+Boulder fragmentation/removal, visiting cloth-dominant military palette, violet Curse, status colors and seasonal production hierarchy are authored game decisions.
